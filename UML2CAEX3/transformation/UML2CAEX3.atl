@@ -9,84 +9,114 @@ helper def : IH: CAEX3!InstanceHierarchy = OclUndefined; -- Global variable
 helper def : RCLib: CAEX3!RoleClassLib = OclUndefined; -- Global variable
 helper def : ICLib: CAEX3!InterfaceClassLib = OclUndefined; -- Global variable
 
---helper def : ExtIMap: Map (UML!Port, CAEX3!ExternalInterface) = Map {}; --- Global variable
+helper def : IntEMap: Map (CAEX3!InternalElement, CAEX3!InternalElement) = Map {}; --- Global variable
 
 
 rule Model2CaexFile{
-	from 
-		input : UML!Model
-	to 
-		root : CAEX3!CAEXFile (
+  from 
+    input : UML!Model
+  to 
+    root : CAEX3!CAEXFile (
            fileName <- input.name,
-		   systemUnitClassLib <- suc,
-		   instanceHierarchy <- ih,
-		   roleClassLib <- rc,
-		   interfaceClassLib <- ic
-		),
-		ih : CAEX3!InstanceHierarchy(
-			name <- input.name + 'IH'	
-		),
-		suc : CAEX3!SystemUnitClassLib(
-			name <- input.name +'SUCLib'	
-		),
-		rc : CAEX3!RoleClassLib(
-			name <- input.name + 'RCLib'
-			),
-		ic : CAEX3!InterfaceClassLib(
-			name <- input.name + 'ICLib'
-		)
-	do{
-    	thisModule.SUCLib <- suc;
-    	thisModule.IH <- ih;
-    	thisModule.RCLib <- rc;
-    	thisModule.ICLib <- ic;
-  	}
+       systemUnitClassLib <- suc,
+       instanceHierarchy <- ih,
+       roleClassLib <- rc,
+       interfaceClassLib <- ic
+    ),
+    ih : CAEX3!InstanceHierarchy(
+      name <- input.name + 'IH'  
+    ),
+    suc : CAEX3!SystemUnitClassLib(
+      name <- input.name +'SUCLib'  
+    ),
+    rc : CAEX3!RoleClassLib(
+      name <- input.name + 'RCLib'
+      ),
+    ic : CAEX3!InterfaceClassLib(
+      name <- input.name + 'ICLib'
+    )
+  do{
+      thisModule.SUCLib <- suc;
+      thisModule.IH <- ih;
+      thisModule.RCLib <- rc;
+      thisModule.ICLib <- ic;
+    }
 }
 
 
-rule Block2SUC {
-	from 
-		input : UML!Class (input.hasStereotype('Block') and input.hasStereotype('SUC'))
-	to 
-		suc : CAEX3!SystemUnitClass (
-           name <- input.name		   
-		),
-		ie : CAEX3!InternalElement  (
-			name <- input.name ,
-			externalInterface <- input.getOwnedPorts()  ->  collect(e | thisModule.getExtI(e) ),
-			attribute <- input.getAllAttributes() -> select(attr |if attr.association.oclIsUndefined() and attr.aggregation=#none then true else false endif) 
-						-> collect (e | thisModule.getAttr(e))  
-			)
-	do{
-		thisModule.SUCLib.systemUnitClass <- suc;
-		thisModule.IH.internalElement <- ie;  -- temporary
-		
-	}
+rule Block2SUC1 {
+  from 
+    input : UML!Class (input.hasStereotype('Block') and input.hasStereotype('SUC') and input.hasInnerElement())
+  to 
+    suc : CAEX3!SystemUnitClass (
+           name <- input.name        
+    ),
+    ie : CAEX3!InternalElement (
+      name <- input.name ,
+      externalInterface <- input.getOwnedPorts() ->  collect(e | thisModule.getExtI(e) ),
+      attribute <- input.getAllAttributes() -> select(attr |if attr.association.oclIsUndefined() and attr.aggregation=#none then true else false endif) 
+            -> collect (e | thisModule.getAttr(e))
+      )
+  do{
+    thisModule.SUCLib.systemUnitClass <- suc;
+    thisModule.IH.internalElement <- ie;  
+    for(iterator in input.getAllAttributes() -> select(attr |if attr.aggregation=#composite and attr.namespace.name=input.name and not attr.association.oclIsUndefined() then true else false endif) ) {
+      thisModule.IntEMap <- thisModule.IntEMap.including(iterator.type,ie);
+    }
+  }
+}
+
+rule Block2InnerSUC {
+  from 
+    input : UML!Class (input.hasStereotype('Block') and input.hasStereotype('SUC') and not input.hasInnerElement())
+  to 
+    ie : CAEX3!InternalElement  (
+      name <- input.name,
+      externalInterface <- input.getOwnedPorts()  ->  collect(e | thisModule.getExtI(e) ),
+      attribute <- input.getAllAttributes() -> select(attr |if attr.association.oclIsUndefined() and attr.aggregation=#none then true else false endif) 
+            -> collect (e | thisModule.getAttr(e))
+      )
+    do{
+      thisModule.IntEMap.get(input).internalElement <- ie ;
+    }
+    
 }
 
 
 rule Block2IC {
-	from 
-		input : UML!Class (input.hasStereotype('Block') and input.hasStereotype('IC'))
-	to 
-		out : CAEX3!InterfaceClass  (
+  from 
+    input : UML!Class (input.hasStereotype('InterfaceBlock') and input.hasStereotype('IC'))
+  to 
+    out : CAEX3!InterfaceClass  (
            name <- input.name
-		)
-	do{
-		thisModule.ICLib.interfaceClass <- out;
-	}
+    )
+  do{
+    thisModule.ICLib.interfaceClass <- out;
+  }
 }
 
 rule Block2IE {
-	from 
-		input : UML!Class (input.hasStereotype('Block') and input.hasStereotype('IE'))
-	to 
-		out : CAEX3!InternalElement  (
+  from 
+    input : UML!Class (input.hasStereotype('Block') and input.hasStereotype('IE'))
+  to 
+    out : CAEX3!InternalElement  (
            name <- input.name
-		)
-	do{
-		thisModule.IH.internalElement <- out;
-	}
+    )
+  do{
+    thisModule.IH.internalElement <- out;
+  }
+}
+
+rule Block2RC {
+  from 
+    input : UML!Class (input.hasStereotype('Block') and input.hasStereotype('RC'))
+  to 
+    out : CAEX3!RoleClass  (
+           name <- input.name
+    )
+  do{
+    thisModule.RCLib.roleClass <- out;
+  }
 }
 
 lazy rule getExtI {
@@ -94,8 +124,8 @@ lazy rule getExtI {
      i: UML!Port 
    to 
      rel: CAEX3!ExternalInterface (
-     	name <- i.name,
-		baseClass <- i.type
+       name <- i.name,
+    baseClass <- i.type
      )
 }
  
@@ -104,17 +134,24 @@ lazy rule getAttr {
      i: UML!Property  
    to 
      rel: CAEX3!Attribute (
-     	name <- i.name,
-		attributeDataType <- i.type.name
+       name <- i.name,
+    attributeDataType <- i.type.name
      )
 }
 
-	
-helper context UML!Class def: hasStereotype (s : String) : Boolean =
-	if self.getAppliedStereotypes() -> select(e | e.name =s ) -> notEmpty() then
-		true
-	else
-		false
-	endif;
 
-	
+  
+helper context UML!Class def: hasStereotype (s : String) : Boolean =
+  if self.getAppliedStereotypes() -> select(e | e.name =s ) -> notEmpty() then
+    true
+  else
+    false
+  endif;
+
+helper context UML!Class def: hasInnerElement () : Boolean =
+  if self.getAllAttributes() -> select(attr |if attr.aggregation=#composite and attr.namespace.name=self.name
+        and not attr.association.oclIsUndefined() then  true else false endif)-> notEmpty() then
+    true
+  else
+    false
+  endif;
