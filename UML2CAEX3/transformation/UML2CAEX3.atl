@@ -1,0 +1,120 @@
+-- @nsURI UML=http://www.eclipse.org/uml2/5.0.0/UML
+-- @path CAEX3=/Sysml2CAEX/caex30/CAEX30.ecore
+
+module UML2CAEX3;
+create OUT : CAEX3 from IN : UML;
+
+helper def : SUCLib: CAEX3!SystemUnitClassLib = OclUndefined; -- Global variable
+helper def : IH: CAEX3!InstanceHierarchy = OclUndefined; -- Global variable
+helper def : RCLib: CAEX3!RoleClassLib = OclUndefined; -- Global variable
+helper def : ICLib: CAEX3!InterfaceClassLib = OclUndefined; -- Global variable
+
+--helper def : ExtIMap: Map (UML!Port, CAEX3!ExternalInterface) = Map {}; --- Global variable
+
+
+rule Model2CaexFile{
+	from 
+		input : UML!Model
+	to 
+		root : CAEX3!CAEXFile (
+           fileName <- input.name,
+		   systemUnitClassLib <- suc,
+		   instanceHierarchy <- ih,
+		   roleClassLib <- rc,
+		   interfaceClassLib <- ic
+		),
+		ih : CAEX3!InstanceHierarchy(
+			name <- input.name + 'IH'	
+		),
+		suc : CAEX3!SystemUnitClassLib(
+			name <- input.name +'SUCLib'	
+		),
+		rc : CAEX3!RoleClassLib(
+			name <- input.name + 'RCLib'
+			),
+		ic : CAEX3!InterfaceClassLib(
+			name <- input.name + 'ICLib'
+		)
+	do{
+    	thisModule.SUCLib <- suc;
+    	thisModule.IH <- ih;
+    	thisModule.RCLib <- rc;
+    	thisModule.ICLib <- ic;
+  	}
+}
+
+
+rule Block2SUC {
+	from 
+		input : UML!Class (input.hasStereotype('Block') and input.hasStereotype('SUC'))
+	to 
+		suc : CAEX3!SystemUnitClass (
+           name <- input.name		   
+		),
+		ie : CAEX3!InternalElement  (
+			name <- input.name ,
+			externalInterface <- input.getOwnedPorts()  ->  collect(e | thisModule.getExtI(e) ),
+			attribute <- input.getAllAttributes() -> select(attr |if attr.association.oclIsUndefined() and attr.aggregation=#none then true else false endif) 
+						-> collect (e | thisModule.getAttr(e))  
+			)
+	do{
+		thisModule.SUCLib.systemUnitClass <- suc;
+		thisModule.IH.internalElement <- ie;  -- temporary
+		
+	}
+}
+
+
+rule Block2IC {
+	from 
+		input : UML!Class (input.hasStereotype('Block') and input.hasStereotype('IC'))
+	to 
+		out : CAEX3!InterfaceClass  (
+           name <- input.name
+		)
+	do{
+		thisModule.ICLib.interfaceClass <- out;
+	}
+}
+
+rule Block2IE {
+	from 
+		input : UML!Class (input.hasStereotype('Block') and input.hasStereotype('IE'))
+	to 
+		out : CAEX3!InternalElement  (
+           name <- input.name
+		)
+	do{
+		thisModule.IH.internalElement <- out;
+	}
+}
+
+lazy rule getExtI {
+   from
+     i: UML!Port 
+   to 
+     rel: CAEX3!ExternalInterface (
+     	name <- i.name,
+		baseClass <- i.type
+     )
+}
+ 
+lazy rule getAttr {
+   from
+     i: UML!Property  
+   to 
+     rel: CAEX3!Attribute (
+     	name <- i.name,
+		attributeDataType <- i.type.name
+     )
+}
+
+	
+helper context UML!Class def: hasStereotype (s : String) : Boolean =
+	if self.getAppliedStereotypes() -> select(e | e.name =s ) -> notEmpty() then
+		true
+	else
+		false
+	endif;
+
+	
