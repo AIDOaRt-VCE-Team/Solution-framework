@@ -54,6 +54,7 @@ rule Block2SUC {
     ),
     ie : CAEX3!InternalElement (
       name <- input.name ,
+	  baseSystemUnit <- suc,
       externalInterface <- input.getOwnedPorts() ->  collect(e | thisModule.getExtI(e) ),
       attribute <- input.getAllAttributes() -> select(attr |if attr.association.oclIsUndefined() and attr.aggregation=#none then true else false endif) 
             -> collect (e | thisModule.getAttr(e))
@@ -78,6 +79,7 @@ rule Block2NestedSUC {
     ),
     ie : CAEX3!InternalElement  (
       name <- input.name,
+	  baseSystemUnit <- suc,
       externalInterface <- input.getOwnedPorts()  ->  collect(e | thisModule.getExtI(e) ),
       attribute <- input.getAllAttributes() -> select(attr |if attr.association.oclIsUndefined() and attr.aggregation=#none then true else false endif) 
             -> collect (e | thisModule.getAttr(e))
