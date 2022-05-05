@@ -10,6 +10,7 @@ helper def : RCLib: CAEX3!RoleClassLib = OclUndefined; -- Global variable
 helper def : ICLib: CAEX3!InterfaceClassLib = OclUndefined; -- Global variable
 
 helper def : IntEMap: Map (CAEX3!InternalElement, CAEX3!InternalElement) = Map {}; --- Global variable
+helper def : SUCMap: Map (CAEX3!SystemUnitClass, CAEX3!SystemUnitClass) = Map {}; --- Global variable
 
 
 rule Model2CaexFile{
@@ -44,7 +45,7 @@ rule Model2CaexFile{
 }
 
 
-rule Block2SUC1 {
+rule Block2SUC {
   from 
     input : UML!Class (input.hasStereotype('Block') and input.hasStereotype('SUC') and input.hasInnerElement())
   to 
@@ -60,16 +61,21 @@ rule Block2SUC1 {
   do{
     thisModule.SUCLib.systemUnitClass <- suc;
     thisModule.IH.internalElement <- ie;  
-    for(iterator in input.getAllAttributes() -> select(attr |if attr.aggregation=#composite and attr.namespace.name=input.name and not attr.association.oclIsUndefined() then true else false endif) ) {
+    for(iterator in input.getAllAttributes() -> select(attr |if attr.aggregation=#composite and attr.namespace.name=input.name
+    	and not attr.association.oclIsUndefined() then true else false endif) ) {
       thisModule.IntEMap <- thisModule.IntEMap.including(iterator.type,ie);
+      thisModule.SUCMap <- thisModule.SUCMap.including(iterator.type,suc);
     }
   }
 }
 
-rule Block2InnerSUC {
+rule Block2NestedSUC {
   from 
     input : UML!Class (input.hasStereotype('Block') and input.hasStereotype('SUC') and not input.hasInnerElement())
   to 
+  	suc : CAEX3!SystemUnitClass (
+           name <- input.name        
+    ),
     ie : CAEX3!InternalElement  (
       name <- input.name,
       externalInterface <- input.getOwnedPorts()  ->  collect(e | thisModule.getExtI(e) ),
@@ -78,8 +84,8 @@ rule Block2InnerSUC {
       )
     do{
       thisModule.IntEMap.get(input).internalElement <- ie ;
+      thisModule.SUCMap.get(input).systemUnitClass <- suc;
     }
-    
 }
 
 
@@ -125,7 +131,7 @@ lazy rule getExtI {
    to 
      rel: CAEX3!ExternalInterface (
        name <- i.name,
-    baseClass <- i.type
+	   baseClass <- i.type
      )
 }
  
@@ -135,7 +141,7 @@ lazy rule getAttr {
    to 
      rel: CAEX3!Attribute (
        name <- i.name,
-    attributeDataType <- i.type.name
+    	attributeDataType <- i.type.name
      )
 }
 
