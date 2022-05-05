@@ -48,10 +48,6 @@
         <externalInterface xsi:type="caex:ExternalInterface" name="m1" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
       </internalElement>
     </internalElement>
-    <internalElement name="Block36" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.1">
-      <internalElement name="Block37" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.1/@systemUnitClass.0"/>
-      <internalElement name="Block39" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.1/@systemUnitClass.1"/>
-    </internalElement>
   </instanceHierarchy>
   <interfaceClassLib name="AIDOaRt_Hackaton_ART-NGICLib">
     <interfaceClass name="Mechanical"/>
@@ -73,10 +69,6 @@
       <systemUnitClass name="DumperBody"/>
       <systemUnitClass name="BodySideExtension"/>
       <systemUnitClass name="TailLight"/>
-    </systemUnitClass>
-    <systemUnitClass name="Block36">
-      <systemUnitClass name="Block37"/>
-      <systemUnitClass name="Block39"/>
     </systemUnitClass>
   </systemUnitClassLib>
 </caex:CAEXFile>
