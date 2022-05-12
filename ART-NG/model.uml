@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:AutomationML="http:///schemas/AutomationML/_SjM6AMYqEeyNXYQP18bTYA/12" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/AutomationML/_SjM6AMYqEeyNXYQP18bTYA/12 ../AutomationML/AutomationML.profile.uml#_SjRLcMYqEeyNXYQP18bTYA http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows">
   <uml:Model xmi:id="_DIA1UL2NEeyYSd5Mmk2Dww" name="model">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_jis2oNEjEeyRpaJ4ASPaIg">
+      <body>Analysts are not able to get partial views of the system&#xD;
+</body>
+    </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_DLzJIr2NEeyYSd5Mmk2Dww">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
@@ -95,9 +99,16 @@
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_7SSDcL_iEeykNMko8NVP7w" name="IF-M.72" conveyed="_FTKMIL_bEeykNMko8NVP7w" informationSource="_YjZGsL_bEeykNMko8NVP7w" informationTarget="_YjZGsL_bEeykNMko8NVP7w"/>
       <packagedElement xmi:type="uml:DataType" xmi:id="_hUKXwL_mEeykNMko8NVP7w" name="InterfaceOutput"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_ty73sNEgEeyRpaJ4ASPaIg" name="EngrAnalysisViewpoint" isActive="true"/>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_2ZVs0NEgEeyRpaJ4ASPaIg" name="Analyst"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_S6c84NEhEeyRpaJ4ASPaIg" client="_ty73sNEgEeyRpaJ4ASPaIg" supplier="_V7hI4L2TEeyYSd5Mmk2Dww"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_gO_xgNHkEeyjkfmIUgfR0g" name="Views">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ty73sNEgEeyRpaJ4ASPaIg" name="EngrAnalysisViewpoint" visibility="private" isActive="true">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_N5NtANHkEeyjkfmIUgfR0g" name="CreateView"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_2ZVs0NEgEeyRpaJ4ASPaIg" name="Analyst"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="__adnsNEjEeyRpaJ4ASPaIg" name="MechanicalView">
+        <generalization xmi:type="uml:Generalization" xmi:id="_Kq2W0NEkEeyRpaJ4ASPaIg" general="_ty73sNEgEeyRpaJ4ASPaIg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_GKOrUNEkEeyRpaJ4ASPaIg" name="" client="__adnsNEjEeyRpaJ4ASPaIg" supplier="_V7hI4L2TEeyYSd5Mmk2Dww"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DJSnsL2NEeyYSd5Mmk2Dww">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DJVrAL2NEeyYSd5Mmk2Dww" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -202,7 +213,13 @@
   <AutomationML:Attr xmi:id="_hCTPkMYkEeyNXYQP18bTYA" base_Property="_8bk0oL5fEeyKeItDfqTpmQ"/>
   <AutomationML:Attr xmi:id="_hx45cMYkEeyNXYQP18bTYA" base_Property="_LFkj4L5gEeyKeItDfqTpmQ"/>
   <AutomationML:Attr xmi:id="_ilYL4MYkEeyNXYQP18bTYA" base_Property="_nXkH8L5iEeyKeItDfqTpmQ"/>
-  <ModelElements:Viewpoint xmi:id="_tzAwMNEgEeyRpaJ4ASPaIg" base_Class="_ty73sNEgEeyRpaJ4ASPaIg" purpose="Engineering model for analysts" stakeholder="_2ZZ-QNEgEeyRpaJ4ASPaIg"/>
-  <ModelElements:Stakeholder xmi:id="_2ZZ-QNEgEeyRpaJ4ASPaIg" base_Classifier="_2ZVs0NEgEeyRpaJ4ASPaIg"/>
-  <ModelElements:Expose xmi:id="_S6gnQNEhEeyRpaJ4ASPaIg" base_Dependency="_S6c84NEhEeyRpaJ4ASPaIg"/>
+  <ModelElements:Viewpoint xmi:id="_tzAwMNEgEeyRpaJ4ASPaIg" base_Class="_ty73sNEgEeyRpaJ4ASPaIg" concernList="_jis2oNEjEeyRpaJ4ASPaIg" purpose="Engineering model for analysts" stakeholder="_2ZZ-QNEgEeyRpaJ4ASPaIg">
+    <language>en_US</language>
+    <presentation>PDF</presentation>
+  </ModelElements:Viewpoint>
+  <ModelElements:Stakeholder xmi:id="_2ZZ-QNEgEeyRpaJ4ASPaIg" base_Classifier="_2ZVs0NEgEeyRpaJ4ASPaIg" concernList="_jis2oNEjEeyRpaJ4ASPaIg"/>
+  <ModelElements:Problem xmi:id="_jiv58NEjEeyRpaJ4ASPaIg" base_Comment="_jis2oNEjEeyRpaJ4ASPaIg"/>
+  <ModelElements:View xmi:id="__afc4NEjEeyRpaJ4ASPaIg" base_Class="__adnsNEjEeyRpaJ4ASPaIg"/>
+  <ModelElements:Expose xmi:id="_GKQggNEkEeyRpaJ4ASPaIg" base_Dependency="_GKOrUNEkEeyRpaJ4ASPaIg"/>
+  <ModelElements:Conform xmi:id="_Kq4MANEkEeyRpaJ4ASPaIg" base_Generalization="_Kq2W0NEkEeyRpaJ4ASPaIg"/>
 </xmi:XMI>
