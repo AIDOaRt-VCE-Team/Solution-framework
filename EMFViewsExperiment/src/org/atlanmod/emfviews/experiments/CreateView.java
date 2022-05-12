@@ -36,7 +36,7 @@ public class CreateView {
     Map<String, Object> map = Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap();
     map.put("xmi", new XMIResourceFactoryImpl());
     map.put("ecore", new EcoreResourceFactoryImpl());
-    map.put("uml", new Uml EcoreResourceFactoryImpl());
+    map.put("uml", new EcoreResourceFactoryImpl());
 
     //Create EMF Resources and register packages for the main used metamodels
     ResourceSet rs = new ResourceSetImpl();
