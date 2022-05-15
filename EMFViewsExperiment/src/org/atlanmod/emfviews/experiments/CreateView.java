@@ -7,6 +7,7 @@ import java.util.Map;
 
 import org.atlanmod.emfviews.core.View;
 import org.atlanmod.emfviews.core.Viewpoint;
+import org.atlanmod.emfviews.helper.ModelHelper;
 import org.atlanmod.emfviews.virtuallinks.ConcreteConcept;
 import org.atlanmod.emfviews.virtuallinks.ConcreteElement;
 import org.atlanmod.emfviews.virtuallinks.ContributingModel;
@@ -14,6 +15,7 @@ import org.atlanmod.emfviews.virtuallinks.Filter;
 import org.atlanmod.emfviews.virtuallinks.VirtualAssociation;
 import org.atlanmod.emfviews.virtuallinks.VirtualLinksFactory;
 import org.atlanmod.emfviews.virtuallinks.WeavingModel;
+import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -22,6 +24,9 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
+import org.eclipse.papyrus.sysml16.sysml.SysMLPackage;
+import org.eclipse.uml2.uml.UMLPackage;
+import org.eclipse.uml2.uml.internal.resource.UMLResourceFactoryImpl;
 
 public class CreateView {
   static String root = new File("../").getAbsolutePath();
@@ -36,71 +41,89 @@ public class CreateView {
     Map<String, Object> map = Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap();
     map.put("xmi", new XMIResourceFactoryImpl());
     map.put("ecore", new EcoreResourceFactoryImpl());
-    map.put("uml", new EcoreResourceFactoryImpl());
+    map.put("uml", new UMLResourceFactoryImpl());
+    
+    ResourceSet resourceSet = new ResourceSetImpl();    
 
-    //Create EMF Resources and register packages for the main used metamodels
-    ResourceSet rs = new ResourceSetImpl();
-    EPackage SysML = (EPackage) rs.getResource(URI.createFileURI("http://www.eclipse.org/papyrus/sysml/1.6/SysML"), true).getContents().get(0);    
-    EPackage.Registry.INSTANCE.put(SysML.getNsURI(), SysML);
+	// Register the various metamodels that will be used, here we are using UML and SysML
+    EPackage.Registry.INSTANCE.put(UMLPackage.eNS_URI, UMLPackage.eINSTANCE);
+    EPackage.Registry.INSTANCE.put(SysMLPackage.eNS_URI, SysMLPackage.eINSTANCE);
 
-    Resource book = rs.getResource(resourceURI(""), true);
-    Resource publ = rs.getResource(resourceURI("/models/Basic/Publication.xmi"), true);
-
-    // 1. Build viewpoint weaving model
+	// Load the resources
+	URI modelUri = resourceURI("/ART-NG/AIDOaRt_Hackaton_ART-NG.uml");
+	Resource model = resourceSet.getResource(modelUri, true);
+	URI umlUri = resourceURI("/../org.eclipse.uml2.examples.gettingstarted/models/ExtendedPO2.uml");
+	Resource umlModel = resourceSet.getResource(umlUri, true);
+	
+	// 1. Build viewpoint weaving model
     VirtualLinksFactory vLinksFactory = VirtualLinksFactory.eINSTANCE;
     WeavingModel viewpointWeavingModel = vLinksFactory.createWeavingModel();
-    viewpointWeavingModel.setName("publicationsAndBooks");
-
+    viewpointWeavingModel.setName("linkDesigUnitWithSoftwareComponent");
+    
     ConcreteConcept source;
     {
       ContributingModel cm = vLinksFactory.createContributingModel();
       viewpointWeavingModel.getContributingModels().add(cm);
-      cm.setURI("http://publication");
+      cm.setURI("http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks");
       ConcreteConcept cc = vLinksFactory.createConcreteConcept();
       cm.getConcreteElements().add(cc);
-      cc.setPath("Publication");
+      cc.setPath("Block");
       source = cc;
     }
-
+    
     ConcreteConcept target;
     
-    ConcreteElement nbPages;
+    ConcreteElement behaviourName;
     {
       ContributingModel contributingModel = vLinksFactory.createContributingModel();
       viewpointWeavingModel.getContributingModels().add(contributingModel);
-      contributingModel.setURI("http://book");
+      contributingModel.setURI("http://www.eclipse.org/uml2/5.0.0/UML");
       ConcreteConcept cConcept = vLinksFactory.createConcreteConcept();
       contributingModel.getConcreteElements().add(cConcept);
-      cConcept.setPath("Chapter");
+      cConcept.setPath("Class");
       target = cConcept;
       ConcreteElement cElement = vLinksFactory.createConcreteElement();
       contributingModel.getConcreteElements().add(cElement);
-      cElement.setPath("Chapter.nbPages");
-      nbPages = cElement;
+      cElement.setPath("Class.name");
+      behaviourName = cElement;
     }
-
+    
     {
-      VirtualAssociation vAssociation = vLinksFactory.createVirtualAssociation();
-      viewpointWeavingModel.getVirtualLinks().add(vAssociation);
-      vAssociation.setName("bookChapters");
-      vAssociation.setUpperBound(-1);
-      vAssociation.setSource(source);
-      vAssociation.setTarget(target);
+        VirtualAssociation vAssociation = vLinksFactory.createVirtualAssociation();
+        viewpointWeavingModel.getVirtualLinks().add(vAssociation);
+        vAssociation.setName("blockBehavior");
+        vAssociation.setUpperBound(-1);
+        vAssociation.setSource(source);
+        vAssociation.setTarget(target);
     }
-
+    
     {
-      Filter fi = vLinksFactory.createFilter();
-      viewpointWeavingModel.getVirtualLinks().add(fi);
-      fi.setName("nbPages");
-      fi.setTarget(nbPages);
+        Filter fi = vLinksFactory.createFilter();
+        viewpointWeavingModel.getVirtualLinks().add(fi);
+        fi.setName("behaviourName");
+        fi.setTarget(behaviourName);
     }
-
+    
     // 2. Build viewpoint
     Map<String, EPackage> contributingModels = Map.ofEntries(
-            Map.entry("book", Book),
-            Map.entry("publ", Publ)
+            Map.entry("model", SysMLPackage.eINSTANCE),
+            Map.entry("umlModel", UMLPackage.eINSTANCE)
             );
     Viewpoint viewpoint = new Viewpoint(contributingModels, viewpointWeavingModel);
+
+    
+    /*
+    
+
+   
+
+    
+
+    
+
+    
+
+    
 
     // 3. Build view weaving model
     WeavingModel viewWeavingModel = vLinksFactory.createWeavingModel();
@@ -139,6 +162,6 @@ public class CreateView {
 
     // 5. Navigate the new association in the view
     EObject vpubl = view.getVirtualContents().get(1);
-    System.out.println(vpubl.eGet(vpubl.eClass().getEStructuralFeature("title")));
+    System.out.println(vpubl.eGet(vpubl.eClass().getEStructuralFeature("title")));*/
   }
 }
