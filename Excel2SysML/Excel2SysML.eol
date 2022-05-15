@@ -1,0 +1,48 @@
+var umlTool : new Native("org.eclipse.epsilon.emc.uml.dt.UMLTool");
+
+//Load profiles
+//var ecoreProfile = umlTool.getProfile("http://www.eclipse.org/uml2/schemas/Ecore/5");
+var sysmlProfile = umlTool.getProfile("http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks");
+var blocksProfile = sysmlProfile.getPackagedElement("Blocks");
+
+var amlProfile = AML!Profile.all.first();
+amlProfile.println();
+// or 
+// var ecoreProfile = umlTool.getProfileFromPathmapUri("pathmap://UML_PROFILES/Ecore.profile.uml").println();
+
+// Get hold of the ActivityFunctions profile
+// that contains the Function stereotype
+//var profile = ActivityFunctionsProfile!Profile.all.first();
+
+//create model
+var m : new UML!Model(name="VCE");
+
+//profiles application
+//SysML
+m.applyProfile(sysmlProfile);
+m.applyProfile(blocksProfile);
+var blockStereotype = blocksProfile.getPackagedElement("Block");
+
+//AutomationML
+m.applyProfile(amlProfile);
+var sucStereotype = amlProfile.getPackagedElement("SUC");
+
+
+//build Model
+
+
+for (row in Excel!Matrix.all) { 
+	
+	var c : new UML!Class;
+	c.name = row.VariantName != "" ? row.VariantName:row.Name;
+	c.name += "-"+row.ID;
+	m.packagedElement.add(c);
+	
+	//Annotation: SysML
+	c.applyStereotype(blockStereotype);
+	//annotation: AML
+	c.applyStereotype(sucStereotype);
+	
+}
+
+"DONE".println();
