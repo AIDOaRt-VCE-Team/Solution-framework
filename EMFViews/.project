@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>EMFViews</name>
+	<comment></comment>
+	<projects>
+		<project>AIDOaRt_Hackaton_ART-NG</project>
+		<project>AutomationML</project>
+		<project>SysMLexample</project>
+		<project>UML2CAEX3</project>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+</projectDescription>
