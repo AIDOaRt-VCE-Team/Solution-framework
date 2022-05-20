@@ -4,23 +4,58 @@ var umlTool : new Native("org.eclipse.epsilon.emc.uml.dt.UMLTool");
 
 //registered
 var sysmlProfile = umlTool.getProfile("http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks");
+
+var activitiesProfile = sysmlProfile.getPackagedElement("Activities");
+var allocationsProfile = sysmlProfile.getPackagedElement("Allocations");
 var blocksProfile = sysmlProfile.getPackagedElement("Blocks");
+var constraintBlocksProfile = sysmlProfile.getPackagedElement("ConstraintBlocks");
+var deprecatedElementsProfile = sysmlProfile.getPackagedElement("DeprecatedElements");
+var modelElementsProfile = sysmlProfile.getPackagedElement("ModelElements");
+var portsAndFlowsProfile = sysmlProfile.getPackagedElement("PortsAndFlows");
+var requirementsProfile = sysmlProfile.getPackagedElement("Requirements");
+
+var ecoreProfile = umlTool.getProfileFromPathmapUri("pathmap://UML_PROFILES/Ecore.profile.uml");
 
 //available in the same workspace
 var amlProfile = AML!Profile.all.first();
 var vceProfile = VCE!Profile.all.first();
 
-// or 
-// var ecoreProfile = umlTool.getProfileFromPathmapUri("pathmap://UML_PROFILES/Ecore.profile.uml").println();
+//load libraries
+// Load the standard UML primitive types library
+var libURI = UML.resource.uri.createURI("platform:/plugin/org.eclipse.uml2.uml.resources/libraries/UMLPrimitiveTypes.library.uml");
+var libResource = UML.resource.resourceSet.createResource(libURI);
+libResource.load(null);
+UML.resource.resourceSet.resources.add(libResource);
+
+// Load the SysML standard library
+var sysmlLibURI = UML.resource.uri.createURI("platform:/plugin/org.eclipse.papyrus.sysml16_2.0.0.202203311810/resources/library/SysML-Standard-Library.uml");
+var sysmlLibResource = UML.resource.resourceSet.createResource(sysmlLibURI);
+sysmlLibResource.load(null);
+UML.resource.resourceSet.resources.add(sysmlLibResource);
+sysmlLibResource.println();
+
 
 
 //create model root
 var m : new UML!Model(name="VCE");
 
+//Ecore Profile
+m.applyProfile(ecoreProfile);
+
 //profiles application and collection of stereotype's definitions'
 //SysML
 m.applyProfile(sysmlProfile);
+
+m.applyProfile(activitiesProfile); // because SysML includes many profile packages
+m.applyProfile(allocationsProfile); // because SysML includes many profile packages
 m.applyProfile(blocksProfile); // because SysML includes many profile packages
+m.applyProfile(constraintBlocksProfile); // because SysML includes many profile packages
+m.applyProfile(deprecatedElementsProfile); // because SysML includes many profile packages
+m.applyProfile(modelElementsProfile); // because SysML includes many profile packages
+m.applyProfile(portsAndFlowsProfile); // because SysML includes many profile packages
+m.applyProfile(requirementsProfile); // because SysML includes many profile packages
+
+
 var blockStereotype = blocksProfile.getPackagedElement("Block");
 
 //AutomationML
