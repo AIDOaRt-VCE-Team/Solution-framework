@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variability-exchange-models id="root" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../VEL.xsd">
+	<version>1</version>
+	<variability-exchange-model type="variationpoint-description" id="model1">
+		<!-- Add variationpoints here -->
+	</variability-exchange-model>
+	<variability-exchange-model type="variationpoint-configuration" id="model2">
+		<!-- Add variationpoints here -->
+	</variability-exchange-model>
+</variability-exchange-models>

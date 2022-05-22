@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variability-exchange-models id="root" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../VEL.xsd">
+	<version>1</version>
+	<variability-exchange-model type="variationpoint-description" id="model">
+		<parameter-variationpoint id="vp1" type="optional">
+			<variation id="vp1v1">
+				<expression type="x:pvscl">6*9</expression>
+			</variation>
+		</parameter-variationpoint>
+	</variability-exchange-model>
+</variability-exchange-models>

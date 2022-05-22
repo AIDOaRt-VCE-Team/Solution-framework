@@ -76,6 +76,26 @@ var moduleStereotype = vceProfile.getPackagedElement("Module");
 var setId: new Set;
 var setGenericId: new Set;
 
+
+//levels
+var level1 ;
+var level2 ;
+var level3 ;
+var level4 ;
+var level5 ;
+var level6 ;
+var level7 ;
+var level8 ;
+var level9 ;
+var level10 ;
+var level11 ;
+var level12 ;
+var level13 ;
+var level14 ;
+var level15 ;
+var level16 ;
+var level17 ;
+
 for (row in Excel!Matrix.all) { 
 	
 	var id = row.ID;
@@ -87,7 +107,12 @@ for (row in Excel!Matrix.all) {
 	
 	var c : new UML!Class;
 	c.println();
-	c.name = row.VariantName != "" ? row.VariantName:row.Name;
+	c.name = row.VariantName != "" ? 
+		(row.VariantName+row.No):
+		row.Name+row.No;
+	
+	c.name = c.name.substring(0, c.name.length()-2);
+	//c.name.replace(" ", "");
 	
 	m.packagedElement.add(c);
 	
@@ -129,6 +154,50 @@ for (row in Excel!Matrix.all) {
  			
  		}
  	}
+ 	
+ 	
+
+}
+
+// nesting classes
+
+for (row in Excel!Matrix.all) { 
+	var block1 = m.getPackagedElements().selectOne(b|b.name==row.Level1);
+	var block2 = m.getPackagedElements().selectOne(b|b.name==row.Level2);
+	var block3 = m.getPackagedElements().selectOne(b|b.name==row.Level3);
+	var block4 = m.getPackagedElements().selectOne(b|b.name==row.Level4);
+	
+
+/*
+Association createAssociation(boolean end1IsNavigable,
+                              AggregationKind end1Aggregation,
+                              java.lang.String end1Name,
+                              int end1Lower,
+                              int end1Upper,
+                              Type end1Type,
+                              boolean end2IsNavigable,
+                              AggregationKind end2Aggregation,
+                              java.lang.String end2Name,
+                              int end2Lower,
+                              int end2Upper)
+*/
+
+
+	if(not block2.isUndefined())
+	var containmentAss = block1.createAssociation(false,
+	                              UML!AggregationKind#composite,//AggregationKind end1Aggregation,
+	                              block2.name.toLowerCase().trim(),//java.lang.String end1Name,
+	                              1,//int end1Lower,
+	                              1,//int end1Upper,
+	                              block2,
+	                              true,
+	                              UML!AggregationKind#none,
+	                              block1.name.toLowerCase().trim(),
+	                              1,
+	                              1);
+
+	if(not containmentAss.isUndefined())
+	m.packagedElement.add(containmentAss);
 
 }
 
@@ -138,5 +207,9 @@ for (row in Excel!Matrix.all) {
 
 operation UML!Class isDesignUnit() {
 	return self.appliedStereotypes.exists(s|s.name = "Design Unit");
+}
+
+operation UML!Class isBlock() {
+	return self.appliedStereotypes.exists(s|s.name = "Block");
 }
 
