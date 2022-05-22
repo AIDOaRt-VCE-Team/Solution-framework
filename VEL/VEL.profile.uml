@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_-BCqcNnmEeynhL2fNbKsrQ" name="VEL" metaclassReference="_yEPEwNnnEeynhL2fNbKsrQ">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQMNnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jpp_oNnpEeynhL2fNbKsrQ" source="PapyrusVersion">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jpp_odnpEeynhL2fNbKsrQ" key="Version" value="0.0.0"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jpp_otnpEeynhL2fNbKsrQ" key="Comment" value="&lt;undefined>"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jpp_o9npEeynhL2fNbKsrQ" key="Copyright" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jpp_pNnpEeynhL2fNbKsrQ" key="Date" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jpp_pdnpEeynhL2fNbKsrQ" key="Author" value="&lt;undefined>"/>
+    </eAnnotations>
+    <contents xmi:type="ecore:EPackage" xmi:id="_eGEzkNnvEeynhL2fNbKsrQ" name="VEL" nsURI="http:///schemas/VEL/_eGEMgNnvEeynhL2fNbKsrQ/4" nsPrefix="VEL">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGGBtdnvEeynhL2fNbKsrQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eGGBttnvEeynhL2fNbKsrQ" key="Version" value="0.0.5"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eGGBt9nvEeynhL2fNbKsrQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eGGBuNnvEeynhL2fNbKsrQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eGGBudnvEeynhL2fNbKsrQ" key="Date" value="2022-05-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eGGButnvEeynhL2fNbKsrQ" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEzkdnvEeynhL2fNbKsrQ" name="VariabilityExchangeModels">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzktnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ACGjQNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEzk9nvEeynhL2fNbKsrQ" name="variabilityexchangemodel" ordered="false" upperBound="-1" eType="_eGEzl9nvEeynhL2fNbKsrQ" eOpposite="_eGEzndnvEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEzldnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEzl9nvEeynhL2fNbKsrQ" name="VariabilityExchangeModel">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzmNnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CAb4MNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEzmdnvEeynhL2fNbKsrQ" name="variationpoint" ordered="false" upperBound="-1" eType="_eGEzn9nvEeynhL2fNbKsrQ" eOpposite="_eGEzo9nvEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEzm9nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEzndnvEeynhL2fNbKsrQ" name="variabilityexchangemodels" ordered="false" lowerBound="1" eType="_eGEzkdnvEeynhL2fNbKsrQ" eOpposite="_eGEzk9nvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEzn9nvEeynhL2fNbKsrQ" name="VariationPoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzoNnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Esz-4NnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEzodnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEzo9nvEeynhL2fNbKsrQ" name="variabilityexchangemodel" ordered="false" lowerBound="1" eType="_eGEzl9nvEeynhL2fNbKsrQ" eOpposite="_eGEzmdnvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEzpdnvEeynhL2fNbKsrQ" name="StructuralVariationPoint" eSuperTypes="_eGEzn9nvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzptnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_GZ8PENnnEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzp9nvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_eGEzqNnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzqdnvEeynhL2fNbKsrQ" source="redefines" references="_eGEzodnvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEzrNnvEeynhL2fNbKsrQ" name="ParameterVariationPoint" eSuperTypes="_eGEzn9nvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzrdnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_JDgSUNnnEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzrtnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_eGEzr9nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzsNnvEeynhL2fNbKsrQ" source="redefines" references="_eGEzodnvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEzs9nvEeynhL2fNbKsrQ" name="OptionalStructuralVariationPoint" eSuperTypes="_eGEzpdnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEztNnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LTtaYNnnEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEztdnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_eGEzttnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzt9nvEeynhL2fNbKsrQ" source="redefines" references="_eGEzodnvEeynhL2fNbKsrQ _eGEzqNnvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEzudnvEeynhL2fNbKsrQ" name="optionalvariation" ordered="false" lowerBound="1" upperBound="-1" eType="_eGEzvNnvEeynhL2fNbKsrQ" eOpposite="_eGEzwtnvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEzvNnvEeynhL2fNbKsrQ" name="OptionalVariation" eSuperTypes="_eGEzxdnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzvdnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8Mj_oNnnEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzvtnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_eGEzv9nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzwNnvEeynhL2fNbKsrQ" source="redefines" references="_eGEzy9nvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEzwtnvEeynhL2fNbKsrQ" name="optionalstructuralvariationpoint" ordered="false" lowerBound="1" eType="_eGEzs9nvEeynhL2fNbKsrQ" eOpposite="_eGEzudnvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEzxdnvEeynhL2fNbKsrQ" name="Variation" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzxtnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_P_0uwNnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEzx9nvEeynhL2fNbKsrQ" name="variationdependency" ordered="false" upperBound="-1" eType="_eGEzzdnvEeynhL2fNbKsrQ" volatile="true"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEzydnvEeynhL2fNbKsrQ" name="variationpointhierarchy" ordered="false" eType="_eGEz2dnvEeynhL2fNbKsrQ" eOpposite="_eGEz3dnvEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEzy9nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEzzdnvEeynhL2fNbKsrQ" name="VariationDependency">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzztnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_V9tCcNnoEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEzz9nvEeynhL2fNbKsrQ" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz0NnvEeynhL2fNbKsrQ" source="variation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eGEz0dnvEeynhL2fNbKsrQ" key="upperBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_eGEz0tnvEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" upperBound="-1" eType="_eGEzxdnvEeynhL2fNbKsrQ" eOpposite="_eGEzx9nvEeynhL2fNbKsrQ">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz09nvEeynhL2fNbKsrQ" source="redefines" references="_eGEz1dnvEeynhL2fNbKsrQ"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEz1dnvEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" upperBound="-1" eType="_eGEzxdnvEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEz19nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEz2dnvEeynhL2fNbKsrQ" name="VariationPointHierarchy">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz2tnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rOzokNnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEz29nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEz3dnvEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" eType="_eGEzxdnvEeynhL2fNbKsrQ" eOpposite="_eGEzydnvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEz39nvEeynhL2fNbKsrQ" name="XorStructuralVariationPoint" eSuperTypes="_eGEzpdnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz4NnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Ns9wwNnnEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz4dnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_eGEz4tnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz49nvEeynhL2fNbKsrQ" source="redefines" references="_eGEzodnvEeynhL2fNbKsrQ _eGEzqNnvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEz5dnvEeynhL2fNbKsrQ" name="xorvariation" ordered="false" lowerBound="1" upperBound="-1" eType="_eGEz6NnvEeynhL2fNbKsrQ" eOpposite="_eGEz7tnvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEz6NnvEeynhL2fNbKsrQ" name="XorVariation" eSuperTypes="_eGEzxdnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz6dnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Fk3y0NnoEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz6tnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_eGEz69nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz7NnvEeynhL2fNbKsrQ" source="redefines" references="_eGEzy9nvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eGEz7tnvEeynhL2fNbKsrQ" name="xorstructuralvariationpoint" ordered="false" lowerBound="1" eType="_eGEz39nvEeynhL2fNbKsrQ" eOpposite="_eGEz5dnvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEz8dnvEeynhL2fNbKsrQ" name="CalculatedParameterVariationPoint" eSuperTypes="_eGEzrNnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz8tnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_sgD_oNnpEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz89nvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_eGEz9NnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz9dnvEeynhL2fNbKsrQ" source="redefines" references="_eGEzodnvEeynhL2fNbKsrQ _eGEzr9nvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEz-NnvEeynhL2fNbKsrQ" name="XorParameterVariationPoint" eSuperTypes="_eGEzrNnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz-dnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wdamANnpEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz-tnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_eGEz-9nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGEz_NnvEeynhL2fNbKsrQ" source="redefines" references="_eGEzodnvEeynhL2fNbKsrQ _eGEzr9nvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGEz_9nvEeynhL2fNbKsrQ" name="CalculatedVariation" eSuperTypes="_eGEzxdnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGE0ANnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0_XHMNnpEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGE0AdnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_eGE0AtnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGE0A9nvEeynhL2fNbKsrQ" source="redefines" references="_eGEzy9nvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eGE0BtnvEeynhL2fNbKsrQ" name="ValueVariation" eSuperTypes="_eGEzxdnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGE0B9nvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4x_EQNnpEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGE0CNnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_eGE0CdnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eGE0CtnvEeynhL2fNbKsrQ" source="redefines" references="_eGEzy9nvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_NgGf0NnvEeynhL2fNbKsrQ" name="VEL" nsURI="http:///schemas/VEL/_NgF4wNnvEeynhL2fNbKsrQ/3" nsPrefix="VEL">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgIVBNnvEeynhL2fNbKsrQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NgIVBdnvEeynhL2fNbKsrQ" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NgIVBtnvEeynhL2fNbKsrQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NgIVB9nvEeynhL2fNbKsrQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NgIVCNnvEeynhL2fNbKsrQ" key="Date" value="2022-05-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NgIVCdnvEeynhL2fNbKsrQ" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGf0dnvEeynhL2fNbKsrQ" name="VariabilityExchangeModels">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf0tnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ACGjQNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGf09nvEeynhL2fNbKsrQ" name="variabilityexchangemodel" ordered="false" upperBound="-1" eType="_NgGf19nvEeynhL2fNbKsrQ" eOpposite="_NgGf3dnvEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGf1dnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGf19nvEeynhL2fNbKsrQ" name="VariabilityExchangeModel">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf2NnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CAb4MNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGf2dnvEeynhL2fNbKsrQ" name="variationpoint" ordered="false" upperBound="-1" eType="_NgGf39nvEeynhL2fNbKsrQ" eOpposite="_NgGf49nvEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGf29nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGf3dnvEeynhL2fNbKsrQ" name="variabilityexchangemodels" ordered="false" lowerBound="1" eType="_NgGf0dnvEeynhL2fNbKsrQ" eOpposite="_NgGf09nvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGf39nvEeynhL2fNbKsrQ" name="VariationPoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf4NnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Esz-4NnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGf4dnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGf49nvEeynhL2fNbKsrQ" name="variabilityexchangemodel" ordered="false" lowerBound="1" eType="_NgGf19nvEeynhL2fNbKsrQ" eOpposite="_NgGf2dnvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGf5dnvEeynhL2fNbKsrQ" name="StructuralVariationPoint" eSuperTypes="_NgGf39nvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf5tnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_GZ8PENnnEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGf6NnvEeynhL2fNbKsrQ" name="ParameterVariationPoint" eSuperTypes="_NgGf39nvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf6dnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_JDgSUNnnEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf6tnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_NgGf69nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf7NnvEeynhL2fNbKsrQ" source="redefines" references="_NgGf4dnvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGf79nvEeynhL2fNbKsrQ" name="OptionalStructuralVariationPoint" eSuperTypes="_NgGf5dnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf8NnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LTtaYNnnEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf8dnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_NgGf8tnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf89nvEeynhL2fNbKsrQ" source="redefines" references="_NgGf4dnvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGf9dnvEeynhL2fNbKsrQ" name="optionalvariation" ordered="false" lowerBound="1" upperBound="-1" eType="_NgGf-NnvEeynhL2fNbKsrQ" eOpposite="_NgGf_tnvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGf-NnvEeynhL2fNbKsrQ" name="OptionalVariation" eSuperTypes="_NgGgAdnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf-dnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8Mj_oNnnEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf-tnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_NgGf-9nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGf_NnvEeynhL2fNbKsrQ" source="redefines" references="_NgGgB9nvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGf_tnvEeynhL2fNbKsrQ" name="optionalstructuralvariationpoint" ordered="false" lowerBound="1" eType="_NgGf79nvEeynhL2fNbKsrQ" eOpposite="_NgGf9dnvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGgAdnvEeynhL2fNbKsrQ" name="Variation" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgAtnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_P_0uwNnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGgA9nvEeynhL2fNbKsrQ" name="variationdependency" ordered="false" upperBound="-1" eType="_NgGgCdnvEeynhL2fNbKsrQ" volatile="true"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGgBdnvEeynhL2fNbKsrQ" name="variationpointhierarchy" ordered="false" eType="_NgGgFdnvEeynhL2fNbKsrQ" eOpposite="_NgGgGdnvEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGgB9nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGgCdnvEeynhL2fNbKsrQ" name="VariationDependency">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgCtnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_V9tCcNnoEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgC9nvEeynhL2fNbKsrQ" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgDNnvEeynhL2fNbKsrQ" source="variation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NgGgDdnvEeynhL2fNbKsrQ" key="upperBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_NgGgDtnvEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" upperBound="-1" eType="_NgGgAdnvEeynhL2fNbKsrQ" eOpposite="_NgGgA9nvEeynhL2fNbKsrQ">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgD9nvEeynhL2fNbKsrQ" source="redefines" references="_NgGgEdnvEeynhL2fNbKsrQ"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGgEdnvEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" upperBound="-1" eType="_NgGgAdnvEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGgE9nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGgFdnvEeynhL2fNbKsrQ" name="VariationPointHierarchy">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgFtnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rOzokNnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGgF9nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGgGdnvEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" eType="_NgGgAdnvEeynhL2fNbKsrQ" eOpposite="_NgGgBdnvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGgG9nvEeynhL2fNbKsrQ" name="XorStructuralVariationPoint" eSuperTypes="_NgGf5dnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgHNnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Ns9wwNnnEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgHdnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_NgGgHtnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgH9nvEeynhL2fNbKsrQ" source="redefines" references="_NgGf4dnvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGgIdnvEeynhL2fNbKsrQ" name="xorvariation" ordered="false" lowerBound="1" upperBound="-1" eType="_NgGgJNnvEeynhL2fNbKsrQ" eOpposite="_NgGgJtnvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGgJNnvEeynhL2fNbKsrQ" name="XorVariation" eSuperTypes="_NgGgAdnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgJdnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Fk3y0NnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NgGgJtnvEeynhL2fNbKsrQ" name="xorstructuralvariationpoint" ordered="false" lowerBound="1" eType="_NgGgG9nvEeynhL2fNbKsrQ" eOpposite="_NgGgIdnvEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGgKdnvEeynhL2fNbKsrQ" name="CalculatedParameterVariationPoint" eSuperTypes="_NgGf6NnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgKtnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_sgD_oNnpEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgK9nvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_NgGgLNnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgLdnvEeynhL2fNbKsrQ" source="redefines" references="_NgGf4dnvEeynhL2fNbKsrQ _NgGf69nvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGgMNnvEeynhL2fNbKsrQ" name="XorParameterVariationPoint" eSuperTypes="_NgGf6NnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgMdnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wdamANnpEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgMtnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_NgGgM9nvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgNNnvEeynhL2fNbKsrQ" source="redefines" references="_NgGf4dnvEeynhL2fNbKsrQ _NgGf69nvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGgN9nvEeynhL2fNbKsrQ" name="CalculatedVariation" eSuperTypes="_NgGgAdnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgONnvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_0_XHMNnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NgGgOtnvEeynhL2fNbKsrQ" name="ValueVariation" eSuperTypes="_NgGgAdnvEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgO9nvEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4x_EQNnpEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgPNnvEeynhL2fNbKsrQ" source="duplicates">
+          <contents xmi:type="ecore:EReference" xmi:id="_NgGgPdnvEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NgGgPtnvEeynhL2fNbKsrQ" source="redefines" references="_NgGgB9nvEeynhL2fNbKsrQ"/>
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+          </contents>
+        </eAnnotations>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_q38LQdnpEeynhL2fNbKsrQ" name="VEL" nsURI="http:///schemas/VEL/_q38LQNnpEeynhL2fNbKsrQ/2" nsPrefix="VEL">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q39ZYdnpEeynhL2fNbKsrQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q39ZYtnpEeynhL2fNbKsrQ" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q39ZY9npEeynhL2fNbKsrQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q39ZZNnpEeynhL2fNbKsrQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q39ZZdnpEeynhL2fNbKsrQ" key="Date" value="2022-05-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q39ZZtnpEeynhL2fNbKsrQ" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_q38LQtnpEeynhL2fNbKsrQ" name="VariabilityExchangeModels">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LQ9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ACGjQNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LRNnpEeynhL2fNbKsrQ" name="variabilityexchangemodel" ordered="false" upperBound="-1" eType="_q38LSNnpEeynhL2fNbKsrQ" eOpposite="_q38LTtnpEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LRtnpEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_q38LSNnpEeynhL2fNbKsrQ" name="VariabilityExchangeModel">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LSdnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CAb4MNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LStnpEeynhL2fNbKsrQ" name="variationpoint" ordered="false" upperBound="-1" eType="_q38LUNnpEeynhL2fNbKsrQ" eOpposite="_q38LVNnpEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LTNnpEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LTtnpEeynhL2fNbKsrQ" name="variabilityexchangemodels" ordered="false" lowerBound="1" eType="_q38LQtnpEeynhL2fNbKsrQ" eOpposite="_q38LRNnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_q38LUNnpEeynhL2fNbKsrQ" name="VariationPoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LUdnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Esz-4NnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LUtnpEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LVNnpEeynhL2fNbKsrQ" name="variabilityexchangemodel" ordered="false" lowerBound="1" eType="_q38LSNnpEeynhL2fNbKsrQ" eOpposite="_q38LStnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_q38LVtnpEeynhL2fNbKsrQ" name="StructuralVariationPoint" eSuperTypes="_q38LUNnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LV9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_GZ8PENnnEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_q38LWdnpEeynhL2fNbKsrQ" name="ParameterVariationPoint" eSuperTypes="_q38LUNnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LWtnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_JDgSUNnnEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_q38LXNnpEeynhL2fNbKsrQ" name="OptionalStructuralVariationPoint" eSuperTypes="_q38LVtnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LXdnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LTtaYNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LXtnpEeynhL2fNbKsrQ" name="optionalvariation" ordered="false" lowerBound="1" upperBound="-1" eType="_q38LYdnpEeynhL2fNbKsrQ" eOpposite="_q38LY9npEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_q38LYdnpEeynhL2fNbKsrQ" name="OptionalVariation" eSuperTypes="_q38LZtnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LYtnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8Mj_oNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LY9npEeynhL2fNbKsrQ" name="optionalstructuralvariationpoint" ordered="false" lowerBound="1" eType="_q38LXNnpEeynhL2fNbKsrQ" eOpposite="_q38LXtnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_q38LZtnpEeynhL2fNbKsrQ" name="Variation" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LZ9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_P_0uwNnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LaNnpEeynhL2fNbKsrQ" name="variationdependency" ordered="false" upperBound="-1" eType="_q38LbtnpEeynhL2fNbKsrQ" volatile="true"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LatnpEeynhL2fNbKsrQ" name="variationpointhierarchy" ordered="false" eType="_q38LetnpEeynhL2fNbKsrQ" eOpposite="_q38LftnpEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LbNnpEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_q38LbtnpEeynhL2fNbKsrQ" name="VariationDependency">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38Lb9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_V9tCcNnoEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LcNnpEeynhL2fNbKsrQ" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LcdnpEeynhL2fNbKsrQ" source="variation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q38LctnpEeynhL2fNbKsrQ" key="upperBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_q38Lc9npEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" upperBound="-1" eType="_q38LZtnpEeynhL2fNbKsrQ" eOpposite="_q38LaNnpEeynhL2fNbKsrQ">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LdNnpEeynhL2fNbKsrQ" source="redefines" references="_q38LdtnpEeynhL2fNbKsrQ"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LdtnpEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" upperBound="-1" eType="_q38LZtnpEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LeNnpEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_q38LetnpEeynhL2fNbKsrQ" name="VariationPointHierarchy">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38Le9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rOzokNnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LfNnpEeynhL2fNbKsrQ" name="base_VariabilityExchangeModels" ordered="false" eType="_q38LQtnpEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LftnpEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" eType="_q38LZtnpEeynhL2fNbKsrQ" eOpposite="_q38LatnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_q38LgNnpEeynhL2fNbKsrQ" name="XorStructuralVariationPoint" eSuperTypes="_q38LVtnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LgdnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Ns9wwNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38LgtnpEeynhL2fNbKsrQ" name="xorvariation" ordered="false" lowerBound="1" upperBound="-1" eType="_q38LhdnpEeynhL2fNbKsrQ" eOpposite="_q38Lh9npEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_q38LhdnpEeynhL2fNbKsrQ" name="XorVariation" eSuperTypes="_q38LZtnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q38LhtnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Fk3y0NnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_q38Lh9npEeynhL2fNbKsrQ" name="xorstructuralvariationpoint" ordered="false" lowerBound="1" eType="_q38LgNnpEeynhL2fNbKsrQ" eOpposite="_q38LgtnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_k9SKsdnpEeynhL2fNbKsrQ" name="VEL" nsURI="http:///schemas/VEL/_k9SKsNnpEeynhL2fNbKsrQ/1" nsPrefix="VEL">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9Sx6dnpEeynhL2fNbKsrQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k9Sx6tnpEeynhL2fNbKsrQ" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k9Sx69npEeynhL2fNbKsrQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k9Sx7NnpEeynhL2fNbKsrQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k9Sx7dnpEeynhL2fNbKsrQ" key="Date" value="2022-05-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k9Sx7tnpEeynhL2fNbKsrQ" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_k9SKstnpEeynhL2fNbKsrQ" name="VariabilityExchangeModels">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9SKs9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ACGjQNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SKtNnpEeynhL2fNbKsrQ" name="variabilityexchangemodel" ordered="false" upperBound="-1" eType="_k9SKuNnpEeynhL2fNbKsrQ" eOpposite="_k9SKvtnpEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SKttnpEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_k9SKuNnpEeynhL2fNbKsrQ" name="VariabilityExchangeModel">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9SKudnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CAb4MNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SKutnpEeynhL2fNbKsrQ" name="variationpoint" ordered="false" upperBound="-1" eType="_k9SKwNnpEeynhL2fNbKsrQ" eOpposite="_k9SKxNnpEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SKvNnpEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SKvtnpEeynhL2fNbKsrQ" name="variabilityexchangemodels" ordered="false" lowerBound="1" eType="_k9SKstnpEeynhL2fNbKsrQ" eOpposite="_k9SKtNnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_k9SKwNnpEeynhL2fNbKsrQ" name="VariationPoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9SKwdnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Esz-4NnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SKwtnpEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SKxNnpEeynhL2fNbKsrQ" name="variabilityexchangemodel" ordered="false" lowerBound="1" eType="_k9SKuNnpEeynhL2fNbKsrQ" eOpposite="_k9SKutnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_k9SKxtnpEeynhL2fNbKsrQ" name="StructuralVariationPoint" eSuperTypes="_k9SKwNnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9SKx9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_GZ8PENnnEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_k9SKydnpEeynhL2fNbKsrQ" name="ParameterVariationPoint" eSuperTypes="_k9SKwNnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9SKytnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_JDgSUNnnEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_k9SKzNnpEeynhL2fNbKsrQ" name="OptionalStructuralVariationPoint" eSuperTypes="_k9SKxtnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9SKzdnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LTtaYNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SKztnpEeynhL2fNbKsrQ" name="optionalvariation" ordered="false" lowerBound="1" upperBound="-1" eType="_k9SK0dnpEeynhL2fNbKsrQ" eOpposite="_k9SK09npEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_k9SK0dnpEeynhL2fNbKsrQ" name="OptionalVariation" eSuperTypes="_k9SK1tnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9SK0tnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8Mj_oNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SK09npEeynhL2fNbKsrQ" name="optionalstructuralvariationpoint" ordered="false" lowerBound="1" eType="_k9SKzNnpEeynhL2fNbKsrQ" eOpposite="_k9SKztnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_k9SK1tnpEeynhL2fNbKsrQ" name="Variation" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9SK19npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_P_0uwNnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SK2NnpEeynhL2fNbKsrQ" name="variationdependency" ordered="false" upperBound="-1" eType="_k9SxwtnpEeynhL2fNbKsrQ" volatile="true"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SxwNnpEeynhL2fNbKsrQ" name="variationpointhierarchy" ordered="false" eType="_k9SxzNnpEeynhL2fNbKsrQ" eOpposite="_k9SxztnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_k9SxwtnpEeynhL2fNbKsrQ" name="VariationDependency">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9Sxw9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_V9tCcNnoEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9SxxNnpEeynhL2fNbKsrQ" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9SxxdnpEeynhL2fNbKsrQ" source="variation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k9SxxtnpEeynhL2fNbKsrQ" key="upperBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_k9Sxx9npEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" upperBound="-1" eType="_k9SK1tnpEeynhL2fNbKsrQ" eOpposite="_k9SK2NnpEeynhL2fNbKsrQ">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9SxyNnpEeynhL2fNbKsrQ" source="redefines" references="_k9SxytnpEeynhL2fNbKsrQ"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SxytnpEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" upperBound="-1" eType="_k9SK1tnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_k9SxzNnpEeynhL2fNbKsrQ" name="VariationPointHierarchy">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9SxzdnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rOzokNnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9SxztnpEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" eType="_k9SK1tnpEeynhL2fNbKsrQ" eOpposite="_k9SxwNnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_k9Sx0NnpEeynhL2fNbKsrQ" name="XorStructuralVariationPoint" eSuperTypes="_k9SKxtnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9Sx0dnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Ns9wwNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9Sx0tnpEeynhL2fNbKsrQ" name="xorvariation" ordered="false" lowerBound="1" upperBound="-1" eType="_k9Sx1dnpEeynhL2fNbKsrQ" eOpposite="_k9Sx19npEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_k9Sx1dnpEeynhL2fNbKsrQ" name="XorVariation" eSuperTypes="_k9SK1tnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k9Sx1tnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Fk3y0NnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_k9Sx19npEeynhL2fNbKsrQ" name="xorstructuralvariationpoint" ordered="false" lowerBound="1" eType="_k9Sx0NnpEeynhL2fNbKsrQ" eOpposite="_k9Sx0tnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_f1wQMdnpEeynhL2fNbKsrQ" name="VEL" nsURI="http:///schemas/VEL/_f1vpINnpEeynhL2fNbKsrQ/0" nsPrefix="VEL">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1w3R9npEeynhL2fNbKsrQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f1w3SNnpEeynhL2fNbKsrQ" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f1w3SdnpEeynhL2fNbKsrQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f1w3StnpEeynhL2fNbKsrQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f1w3S9npEeynhL2fNbKsrQ" key="Date" value="2022-05-22"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f1w3TNnpEeynhL2fNbKsrQ" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_f1wQMtnpEeynhL2fNbKsrQ" name="VariabilityExchangeModels">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQM9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ACGjQNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQNNnpEeynhL2fNbKsrQ" name="variabilityexchangemodel" ordered="false" upperBound="-1" eType="_f1wQONnpEeynhL2fNbKsrQ" eOpposite="_f1wQPtnpEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQNtnpEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_f1wQONnpEeynhL2fNbKsrQ" name="VariabilityExchangeModel">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQOdnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CAb4MNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQOtnpEeynhL2fNbKsrQ" name="variationpoint" ordered="false" upperBound="-1" eType="_f1wQQNnpEeynhL2fNbKsrQ" eOpposite="_f1wQRNnpEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQPNnpEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQPtnpEeynhL2fNbKsrQ" name="variabilityexchangemodels" ordered="false" lowerBound="1" eType="_f1wQMtnpEeynhL2fNbKsrQ" eOpposite="_f1wQNNnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_f1wQQNnpEeynhL2fNbKsrQ" name="VariationPoint">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQQdnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Esz-4NnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQQtnpEeynhL2fNbKsrQ" name="base_Element" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQRNnpEeynhL2fNbKsrQ" name="variabilityexchangemodel" ordered="false" lowerBound="1" eType="_f1wQONnpEeynhL2fNbKsrQ" eOpposite="_f1wQOtnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_f1wQRtnpEeynhL2fNbKsrQ" name="StructuralVariationPoint" eSuperTypes="_f1wQQNnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQR9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_GZ8PENnnEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_f1wQSdnpEeynhL2fNbKsrQ" name="ParameterVariationPoint" eSuperTypes="_f1wQQNnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQStnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_JDgSUNnnEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_f1wQTNnpEeynhL2fNbKsrQ" name="OptionalStructuralVariationPoint" eSuperTypes="_f1wQRtnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQTdnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LTtaYNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQTtnpEeynhL2fNbKsrQ" name="optionalvariation" ordered="false" lowerBound="1" upperBound="-1" eType="_f1wQUdnpEeynhL2fNbKsrQ" eOpposite="_f1wQU9npEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_f1wQUdnpEeynhL2fNbKsrQ" name="OptionalVariation" eSuperTypes="_f1wQVtnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQUtnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8Mj_oNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQU9npEeynhL2fNbKsrQ" name="optionalstructuralvariationpoint" ordered="false" lowerBound="1" eType="_f1wQTNnpEeynhL2fNbKsrQ" eOpposite="_f1wQTtnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_f1wQVtnpEeynhL2fNbKsrQ" name="Variation" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQV9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_P_0uwNnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQWNnpEeynhL2fNbKsrQ" name="variationdependency" ordered="false" upperBound="-1" eType="_f1wQXNnpEeynhL2fNbKsrQ" volatile="true"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQWtnpEeynhL2fNbKsrQ" name="variationpointhierarchy" ordered="false" eType="_f1wQZtnpEeynhL2fNbKsrQ" eOpposite="_f1wQaNnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_f1wQXNnpEeynhL2fNbKsrQ" name="VariationDependency">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQXdnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_V9tCcNnoEeynhL2fNbKsrQ"/>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQXtnpEeynhL2fNbKsrQ" source="duplicates">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQX9npEeynhL2fNbKsrQ" source="variation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f1wQYNnpEeynhL2fNbKsrQ" key="upperBound" value="1"/>
+          </eAnnotations>
+          <contents xmi:type="ecore:EReference" xmi:id="_f1wQYdnpEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" upperBound="-1" eType="_f1wQVtnpEeynhL2fNbKsrQ" eOpposite="_f1wQWNnpEeynhL2fNbKsrQ">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQYtnpEeynhL2fNbKsrQ" source="redefines" references="_f1wQZNnpEeynhL2fNbKsrQ"/>
+          </contents>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQZNnpEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" upperBound="-1" eType="_f1wQVtnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_f1wQZtnpEeynhL2fNbKsrQ" name="VariationPointHierarchy">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQZ9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_rOzokNnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQaNnpEeynhL2fNbKsrQ" name="variation" ordered="false" lowerBound="1" eType="_f1wQVtnpEeynhL2fNbKsrQ" eOpposite="_f1wQWtnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_f1wQatnpEeynhL2fNbKsrQ" name="XorStructuralVariationPoint" eSuperTypes="_f1wQRtnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQa9npEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Ns9wwNnnEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQbNnpEeynhL2fNbKsrQ" name="xorvariation" ordered="false" lowerBound="1" upperBound="-1" eType="_f1wQb9npEeynhL2fNbKsrQ" containment="true" eOpposite="_f1wQcdnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_f1wQb9npEeynhL2fNbKsrQ" name="XorVariation" eSuperTypes="_f1wQVtnpEeynhL2fNbKsrQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f1wQcNnpEeynhL2fNbKsrQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Fk3y0NnoEeynhL2fNbKsrQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_f1wQcdnpEeynhL2fNbKsrQ" name="xorstructuralvariationpoint" ordered="false" lowerBound="1" eType="_f1wQatnpEeynhL2fNbKsrQ" eOpposite="_f1wQbNnpEeynhL2fNbKsrQ"/>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_yEPEwNnnEeynhL2fNbKsrQ" alias="Element">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_-D0RoNnmEeynhL2fNbKsrQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_-D0RodnmEeynhL2fNbKsrQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_ACGjQNnnEeynhL2fNbKsrQ" name="VariabilityExchangeModels">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_RDGmINnnEeynhL2fNbKsrQ" name="variabilityexchangemodel" type="_CAb4MNnnEeynhL2fNbKsrQ" association="_RDEw8NnnEeynhL2fNbKsrQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ldtpINnnEeynhL2fNbKsrQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lePNkNnnEeynhL2fNbKsrQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zJmKUNnnEeynhL2fNbKsrQ" name="base_Element" association="_zJkVINnnEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zJmKUdnnEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CAb4MNnnEeynhL2fNbKsrQ" name="VariabilityExchangeModel">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_RDHNMNnnEeynhL2fNbKsrQ" name="variabilityexchangemodels" type="_ACGjQNnnEeynhL2fNbKsrQ" association="_RDEw8NnnEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_i_-bY9nnEeynhL2fNbKsrQ" name="variationpoint" type="_Esz-4NnnEeynhL2fNbKsrQ" association="_i_-bYNnnEeynhL2fNbKsrQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_py_AQNnnEeynhL2fNbKsrQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pzf9oNnnEeynhL2fNbKsrQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_z64dUtnnEeynhL2fNbKsrQ" name="base_Element" association="_z64dUNnnEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z64dU9nnEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_Esz-4NnnEeynhL2fNbKsrQ" name="VariationPoint">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_i__CcNnnEeynhL2fNbKsrQ" name="variabilityexchangemodel" type="_CAb4MNnnEeynhL2fNbKsrQ" association="_i_-bYNnnEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0uqDodnnEeynhL2fNbKsrQ" name="base_Element" association="_0upckNnnEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0uqDotnnEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_GZ8PENnnEeynhL2fNbKsrQ" name="StructuralVariationPoint">
+    <generalization xmi:type="uml:Generalization" xmi:id="_18z40NnnEeynhL2fNbKsrQ" general="_Esz-4NnnEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_aIzswNnvEeynhL2fNbKsrQ" name="base_Element" association="_aIzFsNnvEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aIzswdnvEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_JDgSUNnnEeynhL2fNbKsrQ" name="ParameterVariationPoint">
+    <generalization xmi:type="uml:Generalization" xmi:id="_2rOeANnnEeynhL2fNbKsrQ" general="_Esz-4NnnEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GSMHoNnvEeynhL2fNbKsrQ" name="base_Element" association="_GSLgkNnvEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GSMHodnvEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_LTtaYNnnEeynhL2fNbKsrQ" name="OptionalStructuralVariationPoint">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4eNekNnnEeynhL2fNbKsrQ" general="_GZ8PENnnEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-5k_gtnnEeynhL2fNbKsrQ" name="optionalvariation" type="_8Mj_oNnnEeynhL2fNbKsrQ" association="_-5kYcNnnEeynhL2fNbKsrQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CGF-0NnoEeynhL2fNbKsrQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Fe5CcNnvEeynhL2fNbKsrQ" name="base_Element" association="_Fe4bYNnvEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fe5CcdnvEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_Ns9wwNnnEeynhL2fNbKsrQ" name="XorStructuralVariationPoint">
+    <generalization xmi:type="uml:Generalization" xmi:id="_5COxoNnnEeynhL2fNbKsrQ" general="_GZ8PENnnEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JCRt0tnoEeynhL2fNbKsrQ" name="xorvariation" type="_Fk3y0NnoEeynhL2fNbKsrQ" association="_JCRGwNnoEeynhL2fNbKsrQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OArhgNnoEeynhL2fNbKsrQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_I7WiQdnvEeynhL2fNbKsrQ" name="base_Element" association="_I7V7MNnvEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I7WiQtnvEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RDEw8NnnEeynhL2fNbKsrQ" memberEnd="_RDGmINnnEeynhL2fNbKsrQ _RDHNMNnnEeynhL2fNbKsrQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RDF_ENnnEeynhL2fNbKsrQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RDF_EdnnEeynhL2fNbKsrQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_i_-bYNnnEeynhL2fNbKsrQ" memberEnd="_i_-bY9nnEeynhL2fNbKsrQ _i__CcNnnEeynhL2fNbKsrQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i_-bYdnnEeynhL2fNbKsrQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i_-bYtnnEeynhL2fNbKsrQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_zJkVINnnEeynhL2fNbKsrQ" name="E_VariabilityExchangeModels_Element13" memberEnd="_zJljQNnnEeynhL2fNbKsrQ _zJmKUNnnEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_zJljQNnnEeynhL2fNbKsrQ" name="extension_VariabilityExchangeModels" type="_ACGjQNnnEeynhL2fNbKsrQ" aggregation="composite" association="_zJkVINnnEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_z64dUNnnEeynhL2fNbKsrQ" name="E_VariabilityExchangeModel_Element14" memberEnd="_z64dUdnnEeynhL2fNbKsrQ _z64dUtnnEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_z64dUdnnEeynhL2fNbKsrQ" name="extension_VariabilityExchangeModel" type="_CAb4MNnnEeynhL2fNbKsrQ" aggregation="composite" association="_z64dUNnnEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_0upckNnnEeynhL2fNbKsrQ" name="E_VariationPoint_Element15" memberEnd="_0uqDoNnnEeynhL2fNbKsrQ _0uqDodnnEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_0uqDoNnnEeynhL2fNbKsrQ" name="extension_VariationPoint" type="_Esz-4NnnEeynhL2fNbKsrQ" aggregation="composite" association="_0upckNnnEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_8Mj_oNnnEeynhL2fNbKsrQ" name="OptionalVariation">
+    <generalization xmi:type="uml:Generalization" xmi:id="_SWiugNnoEeynhL2fNbKsrQ" general="_P_0uwNnoEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-5k_g9nnEeynhL2fNbKsrQ" name="optionalstructuralvariationpoint" type="_LTtaYNnnEeynhL2fNbKsrQ" association="_-5kYcNnnEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Kq7pgNnvEeynhL2fNbKsrQ" name="base_Element" association="_Kq7CcNnvEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Kq7pgdnvEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-5kYcNnnEeynhL2fNbKsrQ" memberEnd="_-5k_gtnnEeynhL2fNbKsrQ _-5k_g9nnEeynhL2fNbKsrQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-5k_gNnnEeynhL2fNbKsrQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-5k_gdnnEeynhL2fNbKsrQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_Fk3y0NnoEeynhL2fNbKsrQ" name="XorVariation">
+    <generalization xmi:type="uml:Generalization" xmi:id="_TCdZUNnoEeynhL2fNbKsrQ" general="_P_0uwNnoEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JCRt09noEeynhL2fNbKsrQ" name="xorstructuralvariationpoint" type="_Ns9wwNnnEeynhL2fNbKsrQ" association="_JCRGwNnoEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZddCodnvEeynhL2fNbKsrQ" name="base_Element" association="_ZdcbkNnvEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZddCotnvEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JCRGwNnoEeynhL2fNbKsrQ" memberEnd="_JCRt0tnoEeynhL2fNbKsrQ _JCRt09noEeynhL2fNbKsrQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JCRt0NnoEeynhL2fNbKsrQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JCRt0dnoEeynhL2fNbKsrQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_P_0uwNnoEeynhL2fNbKsrQ" name="Variation" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jvhMgdnoEeynhL2fNbKsrQ" name="variationdependency" type="_V9tCcNnoEeynhL2fNbKsrQ" association="_jvglcNnoEeynhL2fNbKsrQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_plKxQNnoEeynhL2fNbKsrQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pllA8NnoEeynhL2fNbKsrQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_v3hgItnoEeynhL2fNbKsrQ" name="variationpointhierarchy" type="_rOzokNnoEeynhL2fNbKsrQ" association="_v3gSANnoEeynhL2fNbKsrQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zzaG4NnoEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_n6p6wdnpEeynhL2fNbKsrQ" name="base_Element" association="_n6pTsNnpEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n6p6wtnpEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_V9tCcNnoEeynhL2fNbKsrQ" name="VariationDependency">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dxo40tnoEeynhL2fNbKsrQ" name="variation" type="_P_0uwNnoEeynhL2fNbKsrQ" association="_dxoRwNnoEeynhL2fNbKsrQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hzhZ4NnoEeynhL2fNbKsrQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jviaoNnoEeynhL2fNbKsrQ" name="variation" type="_P_0uwNnoEeynhL2fNbKsrQ" association="_jvglcNnoEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pZ0ncdnpEeynhL2fNbKsrQ" name="base_Element" association="_pZ0AYNnpEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pZ0nctnpEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dxoRwNnoEeynhL2fNbKsrQ" memberEnd="_dxo40tnoEeynhL2fNbKsrQ _dxqG8NnoEeynhL2fNbKsrQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dxo40NnoEeynhL2fNbKsrQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dxo40dnoEeynhL2fNbKsrQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dxqG8NnoEeynhL2fNbKsrQ" name="variationdependency" type="_V9tCcNnoEeynhL2fNbKsrQ" association="_dxoRwNnoEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jvglcNnoEeynhL2fNbKsrQ" memberEnd="_jvhMgdnoEeynhL2fNbKsrQ _jviaoNnoEeynhL2fNbKsrQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jvglcdnoEeynhL2fNbKsrQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jvhMgNnoEeynhL2fNbKsrQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_rOzokNnoEeynhL2fNbKsrQ" name="VariationPointHierarchy">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_v3j8YNnoEeynhL2fNbKsrQ" name="variation" type="_P_0uwNnoEeynhL2fNbKsrQ" association="_v3gSANnoEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0HAwoNnuEeynhL2fNbKsrQ" name="base_Element" association="_0G_igNnuEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0HAwodnuEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_v3gSANnoEeynhL2fNbKsrQ" visibility="private" memberEnd="_v3hgItnoEeynhL2fNbKsrQ _v3j8YNnoEeynhL2fNbKsrQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_v3hgINnoEeynhL2fNbKsrQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_v3hgIdnoEeynhL2fNbKsrQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5GAB4NnoEeynhL2fNbKsrQ" memberEnd="_5GAB49noEeynhL2fNbKsrQ _5GCeINnoEeynhL2fNbKsrQ" navigableOwnedEnd="_5GAB49noEeynhL2fNbKsrQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5GAB4dnoEeynhL2fNbKsrQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5GAB4tnoEeynhL2fNbKsrQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5GAB49noEeynhL2fNbKsrQ" name="variationpoint" type="_Esz-4NnnEeynhL2fNbKsrQ" association="_5GAB4NnoEeynhL2fNbKsrQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A_z2wNnpEeynhL2fNbKsrQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5GCeINnoEeynhL2fNbKsrQ" name="variationpointhierarchy" type="_rOzokNnoEeynhL2fNbKsrQ" association="_5GAB4NnoEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_n6pTsNnpEeynhL2fNbKsrQ" name="E_Variation_Element28" memberEnd="_n6p6wNnpEeynhL2fNbKsrQ _n6p6wdnpEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_n6p6wNnpEeynhL2fNbKsrQ" name="extension_Variation" type="_P_0uwNnoEeynhL2fNbKsrQ" aggregation="composite" association="_n6pTsNnpEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_pZ0AYNnpEeynhL2fNbKsrQ" name="E_VariationDependency_Element29" memberEnd="_pZ0ncNnpEeynhL2fNbKsrQ _pZ0ncdnpEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_pZ0ncNnpEeynhL2fNbKsrQ" name="extension_VariationDependency" type="_V9tCcNnoEeynhL2fNbKsrQ" aggregation="composite" association="_pZ0AYNnpEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_sgD_oNnpEeynhL2fNbKsrQ" name="CalculatedParameterVariationPoint">
+    <generalization xmi:type="uml:Generalization" xmi:id="_6hIGoNnpEeynhL2fNbKsrQ" general="_JDgSUNnnEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Hy0z8tnvEeynhL2fNbKsrQ" name="base_Element" association="_Hy0z8NnvEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hy0z89nvEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_wdamANnpEeynhL2fNbKsrQ" name="XorParameterVariationPoint">
+    <generalization xmi:type="uml:Generalization" xmi:id="_7HSHsNnpEeynhL2fNbKsrQ" general="_JDgSUNnnEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HF7RsNnvEeynhL2fNbKsrQ" name="base_Element" association="_HF6qoNnvEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HF7RsdnvEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_0_XHMNnpEeynhL2fNbKsrQ" name="CalculatedVariation">
+    <generalization xmi:type="uml:Generalization" xmi:id="__B5jINnpEeynhL2fNbKsrQ" general="_P_0uwNnoEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YrxHANnvEeynhL2fNbKsrQ" name="base_Element" association="_Yrwf8NnvEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YrxHAdnvEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_4x_EQNnpEeynhL2fNbKsrQ" name="ValueVariation">
+    <generalization xmi:type="uml:Generalization" xmi:id="__sibkNnpEeynhL2fNbKsrQ" general="_P_0uwNnoEeynhL2fNbKsrQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_M7bFcNnvEeynhL2fNbKsrQ" name="base_Element" association="_M7aeYNnvEeynhL2fNbKsrQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M7bFcdnvEeynhL2fNbKsrQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8BNZUNnpEeynhL2fNbKsrQ" memberEnd="_8BOAYtnpEeynhL2fNbKsrQ _8BOAY9npEeynhL2fNbKsrQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8BOAYNnpEeynhL2fNbKsrQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8BOAYdnpEeynhL2fNbKsrQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8BOAYtnpEeynhL2fNbKsrQ" name="calculatedvariation" type="_0_XHMNnpEeynhL2fNbKsrQ" association="_8BNZUNnpEeynhL2fNbKsrQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8BOAY9npEeynhL2fNbKsrQ" name="calculatedparametervariationpoint" type="_sgD_oNnpEeynhL2fNbKsrQ" association="_8BNZUNnpEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9c4GENnpEeynhL2fNbKsrQ" memberEnd="_9c4tItnpEeynhL2fNbKsrQ _9c5UMNnpEeynhL2fNbKsrQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9c4tINnpEeynhL2fNbKsrQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9c4tIdnpEeynhL2fNbKsrQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9c4tItnpEeynhL2fNbKsrQ" name="valuevariation" type="_4x_EQNnpEeynhL2fNbKsrQ" association="_9c4GENnpEeynhL2fNbKsrQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9c5UMNnpEeynhL2fNbKsrQ" name="xorparametervariationpoint" type="_wdamANnpEeynhL2fNbKsrQ" association="_9c4GENnpEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_0G_igNnuEeynhL2fNbKsrQ" name="E_VariationPointHierarchy_Element36" memberEnd="_0HAJkNnuEeynhL2fNbKsrQ _0HAwoNnuEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_0HAJkNnuEeynhL2fNbKsrQ" name="extension_VariationPointHierarchy" type="_rOzokNnoEeynhL2fNbKsrQ" aggregation="composite" association="_0G_igNnuEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Fe4bYNnvEeynhL2fNbKsrQ" name="E_OptionalStructuralVariationPoint_Element37" memberEnd="_Fe4bYdnvEeynhL2fNbKsrQ _Fe5CcNnvEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Fe4bYdnvEeynhL2fNbKsrQ" name="extension_OptionalStructuralVariationPoint" type="_LTtaYNnnEeynhL2fNbKsrQ" aggregation="composite" association="_Fe4bYNnvEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_GSLgkNnvEeynhL2fNbKsrQ" name="E_ParameterVariationPoint_Element38" memberEnd="_GSLgkdnvEeynhL2fNbKsrQ _GSMHoNnvEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_GSLgkdnvEeynhL2fNbKsrQ" name="extension_ParameterVariationPoint" type="_JDgSUNnnEeynhL2fNbKsrQ" aggregation="composite" association="_GSLgkNnvEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_HF6qoNnvEeynhL2fNbKsrQ" name="E_XorParameterVariationPoint_Element39" memberEnd="_HF6qodnvEeynhL2fNbKsrQ _HF7RsNnvEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_HF6qodnvEeynhL2fNbKsrQ" name="extension_XorParameterVariationPoint" type="_wdamANnpEeynhL2fNbKsrQ" aggregation="composite" association="_HF6qoNnvEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Hy0z8NnvEeynhL2fNbKsrQ" name="E_CalculatedParameterVariationPoint_Element40" memberEnd="_Hy0z8dnvEeynhL2fNbKsrQ _Hy0z8tnvEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Hy0z8dnvEeynhL2fNbKsrQ" name="extension_CalculatedParameterVariationPoint" type="_sgD_oNnpEeynhL2fNbKsrQ" aggregation="composite" association="_Hy0z8NnvEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_I7V7MNnvEeynhL2fNbKsrQ" name="E_XorStructuralVariationPoint_Element41" memberEnd="_I7WiQNnvEeynhL2fNbKsrQ _I7WiQdnvEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_I7WiQNnvEeynhL2fNbKsrQ" name="extension_XorStructuralVariationPoint" type="_Ns9wwNnnEeynhL2fNbKsrQ" aggregation="composite" association="_I7V7MNnvEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Kq7CcNnvEeynhL2fNbKsrQ" name="E_OptionalVariation_Element42" memberEnd="_Kq7CcdnvEeynhL2fNbKsrQ _Kq7pgNnvEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Kq7CcdnvEeynhL2fNbKsrQ" name="extension_OptionalVariation" type="_8Mj_oNnnEeynhL2fNbKsrQ" aggregation="composite" association="_Kq7CcNnvEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_M7aeYNnvEeynhL2fNbKsrQ" name="E_ValueVariation_Element43" memberEnd="_M7aeYdnvEeynhL2fNbKsrQ _M7bFcNnvEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_M7aeYdnvEeynhL2fNbKsrQ" name="extension_ValueVariation" type="_4x_EQNnpEeynhL2fNbKsrQ" aggregation="composite" association="_M7aeYNnvEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Yrwf8NnvEeynhL2fNbKsrQ" name="E_CalculatedVariation_Element44" memberEnd="_Yrwf8dnvEeynhL2fNbKsrQ _YrxHANnvEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Yrwf8dnvEeynhL2fNbKsrQ" name="extension_CalculatedVariation" type="_0_XHMNnpEeynhL2fNbKsrQ" aggregation="composite" association="_Yrwf8NnvEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_ZdcbkNnvEeynhL2fNbKsrQ" name="E_XorVariation_Element45" memberEnd="_ZddCoNnvEeynhL2fNbKsrQ _ZddCodnvEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_ZddCoNnvEeynhL2fNbKsrQ" name="extension_XorVariation" type="_Fk3y0NnoEeynhL2fNbKsrQ" aggregation="composite" association="_ZdcbkNnvEeynhL2fNbKsrQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_aIzFsNnvEeynhL2fNbKsrQ" name="E_StructuralVariationPoint_Element46" memberEnd="_aIzFsdnvEeynhL2fNbKsrQ _aIzswNnvEeynhL2fNbKsrQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_aIzFsdnvEeynhL2fNbKsrQ" name="extension_StructuralVariationPoint" type="_GZ8PENnnEeynhL2fNbKsrQ" aggregation="composite" association="_aIzFsNnvEeynhL2fNbKsrQ"/>
+  </packagedElement>
+</uml:Profile>
