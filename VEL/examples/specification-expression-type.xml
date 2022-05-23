@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variability-exchange-models id="root" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../VEL.xsd">
+	<version>1</version>
+	<variability-exchange-model type="variationpoint-configuration" id="model">
+		<structural-variationpoint id="vp1" type="xor">
+			<variation id="vp1v1">
+				<condition type="single-feature-condition" datatype="bool">Feature1</condition>
+			</variation>
+			<variation id="vp1v2">
+				<condition type="and-feature-condition" datatype="bool">Feature2,Feature3</condition>
+			</variation>
+			<variation id="vp1v3">
+				<condition type="or-feature-condition" datatype="bool">
+					Feature4, Feature5, Feature6
+				</condition>
+			</variation>
+			<variation id="vp1v4">
+				<condition type="x:pvscl" datatype="ps:boolean">
+					Feaure7 AND Feature8
+				</condition>
+			</variation>
+		</structural-variationpoint>
+	</variability-exchange-model>
+</variability-exchange-models>

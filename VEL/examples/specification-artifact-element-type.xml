@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variability-exchange-models id="root" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../VEL.xsd">
+	<version>1</version>
+	<variability-exchange-model type="variationpoint-configuration" id="model">
+		<structural-variationpoint id="vp1" type="optional">
+			<variation id="vp1v1">
+				<condition type="single-feature-condition">Feature1</condition>
+				<variable-artifact uri="file:///C:/SPES/file1.c"/>
+			</variation>
+		</structural-variationpoint>
+		<structural-variationpoint id="vp2" type="optional">
+			<variation id="vp2v1">
+				<condition type="single-feature-condition">Feature1</condition>
+				<variable-artifact type="simulink">
+					<simulink-id>12</simulink-id>
+				</variable-artifact>
+			</variation>
+		</structural-variationpoint>
+	</variability-exchange-model>
+</variability-exchange-models>

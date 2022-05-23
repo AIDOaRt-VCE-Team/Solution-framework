@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variability-exchange-models id="root" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../VEL.xsd">
+	<version>1</version>
+	<variability-exchange-model type="variationpoint-description" id="model">
+		<structural-variationpoint id="vp1" type="optional">
+			<bindingtime>
+				<name>preprocessor-time</name>
+			</bindingtime>
+			<variation id="vp1v1">
+				<condition type="single-feature-condition">Feature1</condition>
+			</variation>
+		</structural-variationpoint>
+		<structural-variationpoint id="vp2" type="optional">
+			<bindingtime>
+				<name>preprocessor-time</name>
+				<condition type="single-feature-condition">SmallSoftwareFootprint</condition>
+			</bindingtime>
+			<bindingtime>
+				<name>post-build</name>
+				<condition type="single-feature-condition">LargeSoftwareFootprint</condition>
+			</bindingtime>
+			<variation id="vp2v1">
+				<condition type="single-feature-condition">Feature1</condition>
+			</variation>
+		</structural-variationpoint>
+	</variability-exchange-model>
+</variability-exchange-models>

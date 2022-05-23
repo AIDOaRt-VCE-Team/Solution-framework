@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variability-exchange-models id="root" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../VEL.xsd">
+	<special-data name="CreatorInfo">
+		<data>
+			<key>Creator</key>
+			<value>SPES </value>
+		</data>
+		<data>
+			<key>Created</key>
+			<value type="xs:date">1998-11-17</value>
+		</data>
+	</special-data>
+	<version>1</version>
+	<variability-exchange-model type="variationpoint-configuration" id="model">
+		<structural-variationpoint id="vp1" name="optional variationpoint" type="optional">
+			<special-data name="CreatorInfo">
+				<data>
+					<key>Created</key>
+					<value type="xs:date">1998-11-17</value>
+				</data>
+			</special-data>
+			<variation id="vp1v1" name="optional variation">
+				<condition type="single-feature-condition">Feature1</condition>
+			</variation>
+		</structural-variationpoint>
+	</variability-exchange-model>
+</variability-exchange-models>

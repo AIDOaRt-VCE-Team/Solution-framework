@@ -1,0 +1,116 @@
+var umlTool : new Native("org.eclipse.epsilon.emc.uml.dt.UMLTool");
+
+var m = UML!Model.all.selectOne(m|m.isTypeOf(UML!Model));
+
+var appliedProfiles : Sequence = m.getAppliedProfiles().println();
+
+//registered
+var sysmlProfile = umlTool.getProfile("http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks");
+
+var activitiesProfile = sysmlProfile.getPackagedElement("Activities");
+var allocationsProfile = sysmlProfile.getPackagedElement("Allocations");
+//var blocksProfile = sysmlProfile.getPackagedElement("Blocks");
+var constraintBlocksProfile = sysmlProfile.getPackagedElement("ConstraintBlocks");
+var deprecatedElementsProfile = sysmlProfile.getPackagedElement("DeprecatedElements");
+var modelElementsProfile = sysmlProfile.getPackagedElement("ModelElements");
+var portsAndFlowsProfile = sysmlProfile.getPackagedElement("PortsAndFlows");
+var requirementsProfile = sysmlProfile.getPackagedElement("Requirements");
+
+var blocksProfile = appliedProfiles.selectOne(p|p.name == "Blocks");
+
+//available in the same workspace
+var amlProfile = appliedProfiles.selectOne(p|p.name == "AutomationML");
+var vceProfile = appliedProfiles.selectOne(p|p.name == "VCE_Profile");
+
+amlProfile.println();
+vceProfile.println();
+//retrieve stereotypes
+var blockStereotype = blocksProfile.getPackagedElement("Block");
+
+
+
+
+//available in the same workspace
+m.applyProfile(amlProfile);
+var sucStereotype = amlProfile.getPackagedElement("SUC");
+sucStereotype.println();
+
+//VCE
+m.applyProfile(vceProfile);
+var cpsElementStereotype = vceProfile.getPackagedElement("CpsElement");
+var variantStereotype = vceProfile.getPackagedElement("Variant");
+var designUnitStereotype = vceProfile.getPackagedElement("Design Unit");
+var moduleStereotype = vceProfile.getPackagedElement("Module");
+
+//build Model
+
+//collection of unique IDs from the Excel document
+var setId: new Set;
+var setGenericId: new Set;
+
+for (row in Excel!Matrix.all) { 
+	
+	var id = row.ID;
+	var genericId= row.GenericID;
+	
+	setId.add(id);
+	setGenericId.add(genericId);
+	
+	
+	var c : new UML!Class;
+	c.println();
+	c.name = row.VariantName != "" ? row.VariantName:row.Name;
+	
+	m.packagedElement.add(c);
+	
+	//Annotation: SysML
+	c.applyStereotype(blockStereotype);
+	
+	//annotation: AML
+	c.applyStereotype(sucStereotype);
+	
+	//annotation: VCE
+	var typeStereotype = vceProfile.getPackagedElement(row.Type);
+	
+	//the current Class is a Module or a DesignUnit, depending on the content of the Excel Sheet
+	c.applyStereotype(typeStereotype);
+	
+	//we can collect all the information from the spreadsheet for each CPS element using the VCE profile
+	var cpsElement = c.applyStereotype(cpsElementStereotype); 
+	cpsElement.id = row.ID;
+	cpsElement.genericId = row.GenericID;
+	cpsElement.origin ?= row.Origin;
+	
+	//variant identification
+	cpsElement.no ?= row.No; 
+	//the baseVersion is identified by 0, variants No is greater than 0.
+ 	if(cpsElement.no.asFloat() > 0){
+ 		
+ 		//given the identified variant..
+ 		var variant = c.applyStereotype(variantStereotype); 
+ 		
+ 		//..we look for the corresponding base version of the variant Design Unit element (= an annotated UML Class)
+ 		var elements : Sequence = m.getPackagedElements().asSequence(); 
+ 		var designUnitsClasses : Sequence = elements.select(c|c.isTypeOf(UML!Class) and c.isDesignUnit()); 
+ 		//..as reported in the row.Name column in the spreadsheet 
+ 		var designUnitsClass = designUnitsClasses.selectOne(c|c.name == row.Name); 
+ 		//..if the base version exists the we establish the bidirectional association
+ 		if(not designUnitsClass.isUndefined()){
+ 			
+			variant.baseVersion = designUnitsClass.getStereotypeApplication(designUnitStereotype);	
+ 			
+ 		}
+ 	}
+
+}
+
+
+
+"DONE".println();
+
+operation UML!Class isDesignUnit() {
+	return self.appliedStereotypes.exists(s|s.name = "Design Unit");
+}
+
+
+

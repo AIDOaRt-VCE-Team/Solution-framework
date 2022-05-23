@@ -4,23 +4,58 @@ var umlTool : new Native("org.eclipse.epsilon.emc.uml.dt.UMLTool");
 
 //registered
 var sysmlProfile = umlTool.getProfile("http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks");
+
+var activitiesProfile = sysmlProfile.getPackagedElement("Activities");
+var allocationsProfile = sysmlProfile.getPackagedElement("Allocations");
 var blocksProfile = sysmlProfile.getPackagedElement("Blocks");
+var constraintBlocksProfile = sysmlProfile.getPackagedElement("ConstraintBlocks");
+var deprecatedElementsProfile = sysmlProfile.getPackagedElement("DeprecatedElements");
+var modelElementsProfile = sysmlProfile.getPackagedElement("ModelElements");
+var portsAndFlowsProfile = sysmlProfile.getPackagedElement("PortsAndFlows");
+var requirementsProfile = sysmlProfile.getPackagedElement("Requirements");
+
+var ecoreProfile = umlTool.getProfileFromPathmapUri("pathmap://UML_PROFILES/Ecore.profile.uml");
 
 //available in the same workspace
 var amlProfile = AML!Profile.all.first();
 var vceProfile = VCE!Profile.all.first();
 
-// or 
-// var ecoreProfile = umlTool.getProfileFromPathmapUri("pathmap://UML_PROFILES/Ecore.profile.uml").println();
+//load libraries
+// Load the standard UML primitive types library
+var libURI = UML.resource.uri.createURI("platform:/plugin/org.eclipse.uml2.uml.resources/libraries/UMLPrimitiveTypes.library.uml");
+var libResource = UML.resource.resourceSet.createResource(libURI);
+libResource.load(null);
+UML.resource.resourceSet.resources.add(libResource);
+
+// Load the SysML standard library
+var sysmlLibURI = UML.resource.uri.createURI("platform:/plugin/org.eclipse.papyrus.sysml16_2.0.0.202203311810/resources/library/SysML-Standard-Library.uml");
+var sysmlLibResource = UML.resource.resourceSet.createResource(sysmlLibURI);
+sysmlLibResource.load(null);
+UML.resource.resourceSet.resources.add(sysmlLibResource);
+sysmlLibResource.println();
+
 
 
 //create model root
 var m : new UML!Model(name="VCE");
 
+//Ecore Profile
+m.applyProfile(ecoreProfile);
+
 //profiles application and collection of stereotype's definitions'
 //SysML
 m.applyProfile(sysmlProfile);
+
+m.applyProfile(activitiesProfile); // because SysML includes many profile packages
+m.applyProfile(allocationsProfile); // because SysML includes many profile packages
 m.applyProfile(blocksProfile); // because SysML includes many profile packages
+m.applyProfile(constraintBlocksProfile); // because SysML includes many profile packages
+m.applyProfile(deprecatedElementsProfile); // because SysML includes many profile packages
+m.applyProfile(modelElementsProfile); // because SysML includes many profile packages
+m.applyProfile(portsAndFlowsProfile); // because SysML includes many profile packages
+m.applyProfile(requirementsProfile); // because SysML includes many profile packages
+
+
 var blockStereotype = blocksProfile.getPackagedElement("Block");
 
 //AutomationML
@@ -41,6 +76,26 @@ var moduleStereotype = vceProfile.getPackagedElement("Module");
 var setId: new Set;
 var setGenericId: new Set;
 
+
+//levels
+var level1 ;
+var level2 ;
+var level3 ;
+var level4 ;
+var level5 ;
+var level6 ;
+var level7 ;
+var level8 ;
+var level9 ;
+var level10 ;
+var level11 ;
+var level12 ;
+var level13 ;
+var level14 ;
+var level15 ;
+var level16 ;
+var level17 ;
+
 for (row in Excel!Matrix.all) { 
 	
 	var id = row.ID;
@@ -51,7 +106,13 @@ for (row in Excel!Matrix.all) {
 	
 	
 	var c : new UML!Class;
-	c.name = row.VariantName != "" ? row.VariantName:row.Name;
+	c.println();
+	c.name = row.VariantName != "" ? 
+		(row.VariantName+row.No):
+		row.Name+row.No;
+	
+	c.name = c.name.substring(0, c.name.length()-2);
+	//c.name.replace(" ", "");
 	
 	m.packagedElement.add(c);
 	
@@ -93,6 +154,50 @@ for (row in Excel!Matrix.all) {
  			
  		}
  	}
+ 	
+ 	
+
+}
+
+// nesting classes
+
+for (row in Excel!Matrix.all) { 
+	var block1 = m.getPackagedElements().selectOne(b|b.name==row.Level1);
+	var block2 = m.getPackagedElements().selectOne(b|b.name==row.Level2);
+	var block3 = m.getPackagedElements().selectOne(b|b.name==row.Level3);
+	var block4 = m.getPackagedElements().selectOne(b|b.name==row.Level4);
+	
+
+/*
+Association createAssociation(boolean end1IsNavigable,
+                              AggregationKind end1Aggregation,
+                              java.lang.String end1Name,
+                              int end1Lower,
+                              int end1Upper,
+                              Type end1Type,
+                              boolean end2IsNavigable,
+                              AggregationKind end2Aggregation,
+                              java.lang.String end2Name,
+                              int end2Lower,
+                              int end2Upper)
+*/
+
+
+	if(not block2.isUndefined())
+	var containmentAss = block1.createAssociation(false,
+	                              UML!AggregationKind#composite,//AggregationKind end1Aggregation,
+	                              block2.name.toLowerCase().trim(),//java.lang.String end1Name,
+	                              1,//int end1Lower,
+	                              1,//int end1Upper,
+	                              block2,
+	                              true,
+	                              UML!AggregationKind#none,
+	                              block1.name.toLowerCase().trim(),
+	                              1,
+	                              1);
+
+	if(not containmentAss.isUndefined())
+	m.packagedElement.add(containmentAss);
 
 }
 
@@ -102,5 +207,9 @@ for (row in Excel!Matrix.all) {
 
 operation UML!Class isDesignUnit() {
 	return self.appliedStereotypes.exists(s|s.name = "Design Unit");
+}
+
+operation UML!Class isBlock() {
+	return self.appliedStereotypes.exists(s|s.name = "Block");
 }
 

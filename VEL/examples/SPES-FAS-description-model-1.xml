@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variability-exchange-models id="root" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../VEL.xsd">
+	<version>1</version>
+	<variability-exchange-model type="variationpoint-description" id="spes">
+		<parameter-variationpoint id="vp1" name="VAR_DEMO_FAS_Distronic" type="xor">
+			<variation id="vp1v1" name="disabled">
+				<value>0</value>
+			</variation>
+			<variation id="vp1v2" name="enabled">
+				<value>1</value>
+			</variation>
+		</parameter-variationpoint>
+		<!-- There is no vp2 because Limiter is not a variation point in the configuration model of stage 4 -->
+		<parameter-variationpoint id="vp3" name="VAR_DEMO_FAS_EmergencyBrake" type="xor">
+			<variation id="vp3v1" name="disabled">
+				<value>0</value>
+			</variation>
+			<variation id="vp3v2" name="enabled">
+				<value>1</value>
+			</variation>
+		</parameter-variationpoint>
+		<parameter-variationpoint id="vp4" name="VAR_DEMO_FAS_Repeater" type="xor">
+			<variation id="vp4v1" name="disabled">
+				<value>0</value>
+			</variation>
+			<variation id="vp4v2" name="enabled">
+				<value>1</value>
+			</variation>
+		</parameter-variationpoint>
+		<parameter-variationpoint id="vp5" type="xor">
+			<variation id="vp5v1" name="disabled">
+				<value>0</value>
+			</variation>
+			<variation id="vp5v2" name="enabled">
+				<value>1</value>
+			</variation>
+		</parameter-variationpoint>
+		<parameter-variationpoint id="vp6" name="VAR_DEMO_FAS_FollowToStop" type="xor">
+			<variation id="vp6v1" name="disabled">
+				<value>0</value>
+			</variation>
+			<variation id="vp6v2" name="enabled">
+				<value>1</value>
+			</variation>
+		</parameter-variationpoint>
+		<parameter-variationpoint id="vp7" name="VAR_DEMO_FAS_Tempomat" type="xor">
+			<variation id="vp7v1" name="disabled">
+				<value>0</value>
+			</variation>
+			<variation id="vp7v2" name="enabled">
+				<value>1</value>
+			</variation>
+		</parameter-variationpoint>
+	</variability-exchange-model>
+</variability-exchange-models>
