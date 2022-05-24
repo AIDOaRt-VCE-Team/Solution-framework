@@ -5,7 +5,6 @@
 	<projects>
 		<project>AIDOaRt_Hackaton_ART-NG</project>
 		<project>AutomationML</project>
-		<project>BasicUML</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
