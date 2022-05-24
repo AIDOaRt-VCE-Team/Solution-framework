@@ -1,0 +1,6 @@
+create view sysMLAndUML as
+
+select uml.Class.isActive,
+       
+from 'http://www.eclipse.org/uml2/2.0.0/UML' as uml,
+     'http://www.eclipse.org/papyrus/sysml/1.6/SysML' as sysml,

@@ -1,0 +1,2 @@
+contributingMetamodels=uml::http://www.eclipse.org/uml2/2.0.0/UML,sysml::http://www.eclipse.org/papyrus/sysml/1.6/SysML
+weavingModel=sysMLAndUML.xmi

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<virtualLinks:WeavingModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:virtualLinks="http://www.atlanmod.org/emfviews/virtuallinks/0.3.0" name="sysMLAndUML" whitelist="true">
+  <virtualLinks xsi:type="virtualLinks:Filter" name="isActive" target="//@contributingModels.0/@concreteElements.0"/>
+  <contributingModels URI="http://www.eclipse.org/uml2/2.0.0/UML">
+    <concreteElements path="Class.isActive"/>
+  </contributingModels>
+  <contributingModels URI="http://www.eclipse.org/papyrus/sysml/1.6/SysML"/>
+</virtualLinks:WeavingModel>
