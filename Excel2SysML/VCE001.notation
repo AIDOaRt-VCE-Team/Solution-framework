@@ -40,10 +40,28 @@
     <element xsi:nil="true"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y2cShdnaEeyri80moLnkXw" x="200"/>
   </children>
+  <children xmi:type="notation:Shape" xmi:id="_yciJoNxQEeyIT5mVGKAHGw" type="StereotypeComment">
+    <styles xmi:type="notation:TitleStyle" xmi:id="_yciJodxQEeyIT5mVGKAHGw"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_yciJo9xQEeyIT5mVGKAHGw" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Class" href="VCE001.uml#_aZV2YtxQEeyIT5mVGKAHGw"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yciJotxQEeyIT5mVGKAHGw" x="200"/>
+  </children>
   <styles xmi:type="notation:StringValueStyle" xmi:id="__eqAUdnYEeyri80moLnkXw" name="diagram_compatibility_version" stringValue="1.4.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="__eqAUtnYEeyri80moLnkXw"/>
   <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="__eqAU9nYEeyri80moLnkXw" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
     <owner xmi:type="uml:Model" href="VCE001.uml#_fAC_8NnYEeyri80moLnkXw"/>
   </styles>
   <element xmi:type="uml:Model" href="VCE001.uml#_fAC_8NnYEeyri80moLnkXw"/>
+  <edges xmi:type="notation:Connector" xmi:id="_yciwsNxQEeyIT5mVGKAHGw" type="StereotypeCommentLink" target="_yciJoNxQEeyIT5mVGKAHGw">
+    <styles xmi:type="notation:FontStyle" xmi:id="_yciwsdxQEeyIT5mVGKAHGw"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ycjXwtxQEeyIT5mVGKAHGw" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Class" href="VCE001.uml#_aZV2YtxQEeyIT5mVGKAHGw"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yciwstxQEeyIT5mVGKAHGw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ycjXwNxQEeyIT5mVGKAHGw"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ycjXwdxQEeyIT5mVGKAHGw"/>
+  </edges>
 </notation:Diagram>
