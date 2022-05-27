@@ -1,7 +1,7 @@
 create view sysMLAndUML as
 
-select uml.Component.*,
+select uml.Component join sysMl.Block as blockComponent,
 
        
-from 'http://www.eclipse.org/uml2/2.0.0/UML' as uml,
-     'http://www.eclipse.org/papyrus/sysml/1.6/SysML' as sysml,
+from 'http://www.eclipse.org/uml2/5.0.0/UML' as uml,
+     'http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks' as sysMl
