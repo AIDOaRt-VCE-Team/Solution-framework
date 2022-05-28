@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<virtualLinks:WeavingModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:virtualLinks="http://www.atlanmod.org/emfviews/virtuallinks/0.3.0" name="viewExample" whitelist="true">
+  <virtualLinks xsi:type="virtualLinks:Filter" name="message" target="//@contributingModels.1/@concreteElements.0"/>
+  <virtualLinks xsi:type="virtualLinks:Filter" name="serialNumber" target="//@contributingModels.0/@concreteElements.0"/>
+  <virtualLinks xsi:type="virtualLinks:Filter" name="body" target="//@contributingModels.2/@concreteElements.0"/>
+  <virtualLinks xsi:type="virtualLinks:VirtualAssociation" name="ProblematicUnit" source="//@contributingModels.1/@concreteElements.1" target="//@contributingModels.0/@concreteElements.1" upperBound="-1"/>
+  <virtualLinks xsi:type="virtualLinks:VirtualAssociation" name="SystemToUse" source="//@contributingModels.1/@concreteElements.2" target="//@contributingModels.2/@concreteElements.1" upperBound="-1"/>
+  <virtualLinks xsi:type="virtualLinks:Filter" name="*" target="//@contributingModels.1/@concreteElements.3"/>
+  <contributingModels URI="http:///aidOaRtHackatonArTNg.ecore">
+    <concreteElements path="DumperBody.serialNumber"/>
+    <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="DumperBody"/>
+  </contributingModels>
+  <contributingModels URI="http://trace">
+    <concreteElements path="Log.message"/>
+    <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="Log"/>
+    <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="Log"/>
+    <concreteElements path="Trace.*"/>
+  </contributingModels>
+  <contributingModels URI="http://www.eclipse.org/uml2/5.0.0/UML">
+    <concreteElements path="Comment.body"/>
+    <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="Component"/>
+  </contributingModels>
+</virtualLinks:WeavingModel>

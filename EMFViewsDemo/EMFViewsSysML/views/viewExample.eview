@@ -1,0 +1,3 @@
+contributingModels=sysMl::../files/DumperBobyUnit.xmi,metrics::../files/log.xmi
+viewpoint=../viewpoints/viewExample.eviewpoint
+matchingModel=../viewpoints/viewExample.ecl

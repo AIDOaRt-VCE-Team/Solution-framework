@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel"
+    modelDirectory="/EMFViewsSysML/src" modelPluginID="EMFViewsSysML"
+    modelName="AIDOaRt_Hackaton_ART-NG" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="../../org.eclipse.uml2.types/model/Types.genmodel#//types" operationReflection="true"
+    importOrganizing="true">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="OPPOSITE_ROLE_NAMES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="PROCESS"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="NON_API_INVARIANTS" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNTYPED_PROPERTIES" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="INVOCATION_DELEGATES" value="PROCESS"/>
+    <details key="VALIDATION_DELEGATES" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>../../AIDOaRt_Hackaton_ART-NG/AIDOaRt_Hackaton_ART-NG.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="AidOaRtHackatonArTNg" disposableProviderFactory="true"
+      ecorePackage="aidOaRtHackatonArTNg.ecore#/">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//MandatoryDesignUnit"/>
+    <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="aidOaRtHackatonArTNg.ecore#//DesignUnit"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//DesignUnitWithVariants"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//OptionalDesignUnit"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//Mechanical">
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//Mechanical/m1"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//Wearplate">
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//Wearplate/m1"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//Wearplate/serialNumber"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//Wearplate/fgiCaf"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//Spillguard">
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//Spillguard/m1"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//Spillguard/serialNumber"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//Spillguard/fgiCaf"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//Tailgate">
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//Tailgate/m1"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//Tailgate/m2"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//Tailgate/serialNumber"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//Tailgate/fgiCaf"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//BodyAttachment">
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//BodyAttachment/m1"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//BodyAttachment/m2"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//BodyAttachment/serialNumber"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//BodyAttachment/fgiCaf"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//DumperBody">
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBody/m1"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBody/m2"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBody/m3"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBody/m4"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBody/m5"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBody/m6"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBody/m7"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBody/m8"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//DumperBody/serialNumber"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//DumperBody/fgiCaf"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//BodySideExtension">
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//BodySideExtension/m1"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//BodySideExtension/serialNumber"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//BodySideExtension/fgiCaf"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//TailLight">
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//TailLight/m1"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//TailLight/serialNumber"/>
+      <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute aidOaRtHackatonArTNg.ecore#//TailLight/fgiCaf"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//PrimarySystem"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//SecondarySystem"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="aidOaRtHackatonArTNg.ecore#//DumperBobyUnit">
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBobyUnit/wearplate"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBobyUnit/spillguard"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBobyUnit/tailgate"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBobyUnit/bodyattachment"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBobyUnit/dumperbody"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBobyUnit/bodysideextension"/>
+      <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
+          createChild="true" ecoreFeature="ecore:EReference aidOaRtHackatonArTNg.ecore#//DumperBobyUnit/taillight"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

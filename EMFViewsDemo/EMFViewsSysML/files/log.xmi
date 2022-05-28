@@ -3,9 +3,10 @@
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:trace="http://trace">
-  <logs message="CaptchaValidateFilter:doFilter()"
-      source="CaptchaValidateFilter.doFilter"
-      level="INFO">
+  <logs message="CallResponsible"
+      source="951"
+      timestamp="2022-05-20T20:50:35.000+0200"
+      level="WARNING">
     <exceptions
         message="ServletException"/>
   </logs>

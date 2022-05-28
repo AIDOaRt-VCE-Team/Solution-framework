@@ -1,9 +1,0 @@
-create view sysMLAndUML as
-
-select metrics.Log join sysMl.Block as metricsForInterface,
-
-       
-from 'http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks' as sysMl,
-     'http://trace' as metrics
-     
-where s.source = t.name for metricsForInterface
