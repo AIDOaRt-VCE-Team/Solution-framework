@@ -1,2 +1,3 @@
-contributingModels=uml::../models/AIDOaRt_Hackaton_ART-NG.uml,
+contributingModels=sysMl::../models/AIDOaRt_Hackaton_ART-NG.uml,uml::../models/ExtendedPO2.uml
 viewpoint=../src-gen/sysMLAndUML.eviewpoint
+matchingModel=../src-gen/sysMLAndUML.ecl
