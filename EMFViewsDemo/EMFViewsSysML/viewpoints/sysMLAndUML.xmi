@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<virtualLinks:WeavingModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:virtualLinks="http://www.atlanmod.org/emfviews/virtuallinks/0.3.0" name="sysMLAndUML" whitelist="true">
+  <virtualLinks xsi:type="virtualLinks:VirtualAssociation" name="metricsForInterface" source="//@contributingModels.1/@concreteElements.0" target="//@contributingModels.0/@concreteElements.0" upperBound="-1"/>
+  <contributingModels URI="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks">
+    <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="Block"/>
+  </contributingModels>
+  <contributingModels URI="http://trace">
+    <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="Log"/>
+  </contributingModels>
+</virtualLinks:WeavingModel>
