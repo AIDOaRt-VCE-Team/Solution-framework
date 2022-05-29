@@ -4,15 +4,18 @@
   <virtualLinks xsi:type="virtualLinks:Filter" name="serialNumber" target="//@contributingModels.0/@concreteElements.0"/>
   <virtualLinks xsi:type="virtualLinks:Filter" name="body" target="//@contributingModels.2/@concreteElements.0"/>
   <virtualLinks xsi:type="virtualLinks:Filter" name="isIndirectlyInstantiated" target="//@contributingModels.2/@concreteElements.1"/>
-  <virtualLinks xsi:type="virtualLinks:VirtualAssociation" name="ProblematicUnit" source="//@contributingModels.1/@concreteElements.1" target="//@contributingModels.0/@concreteElements.1" upperBound="-1"/>
-  <virtualLinks xsi:type="virtualLinks:VirtualAssociation" name="SystemToUse" source="//@contributingModels.1/@concreteElements.2" target="//@contributingModels.2/@concreteElements.2" upperBound="-1"/>
-  <virtualLinks xsi:type="virtualLinks:Filter" name="*" target="//@contributingModels.1/@concreteElements.3"/>
+  <virtualLinks xsi:type="virtualLinks:VirtualAssociation" name="ProblematicDumperBody" source="//@contributingModels.1/@concreteElements.1" target="//@contributingModels.0/@concreteElements.1" upperBound="-1"/>
+  <virtualLinks xsi:type="virtualLinks:VirtualAssociation" name="ProblematicTailGate" source="//@contributingModels.1/@concreteElements.2" target="//@contributingModels.0/@concreteElements.2" upperBound="-1"/>
+  <virtualLinks xsi:type="virtualLinks:VirtualAssociation" name="CommentFromComponent" source="//@contributingModels.1/@concreteElements.3" target="//@contributingModels.2/@concreteElements.2" upperBound="-1"/>
+  <virtualLinks xsi:type="virtualLinks:Filter" name="*" target="//@contributingModels.1/@concreteElements.4"/>
   <contributingModels URI="http:///aidOaRtHackatonArTNg.ecore">
     <concreteElements path="DumperBody.serialNumber"/>
     <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="DumperBody"/>
+    <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="Tailgate"/>
   </contributingModels>
   <contributingModels URI="http://trace">
     <concreteElements path="Log.message"/>
+    <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="Log"/>
     <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="Log"/>
     <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="Log"/>
     <concreteElements path="Trace.*"/>

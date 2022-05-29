@@ -5,13 +5,15 @@ select  metrics.Log.message,
 		sysMl.DumperBody.serialNumber,
 		uml.Comment.body,
 		uml.Component.isIndirectlyInstantiated,
-		metrics.Log join sysMl.DumperBody as ProblematicUnit,
-		metrics.Log join uml.Comment as SystemToUse
+		metrics.Log join sysMl.DumperBody as ProblematicDumperBody,
+		metrics.Log join sysMl.Tailgate as ProblematicTailGate,
+		metrics.Log join uml.Comment as CommentFromComponent
 
        
 from 'http:///aidOaRtHackatonArTNg.ecore' as sysMl,
      'http://trace' as metrics,
      'http://www.eclipse.org/uml2/5.0.0/UML' as uml
      
-where s.source = t.fgiCaf for ProblematicUnit,
-      s.source = t.fgiCaf for SystemToUse
+where s.source = t.fgiCaf for ProblematicDumperBody,
+      s.source = t.fgiCaf for ProblematicTailGate,
+      s.source.isSubstringOf(t.eContainer().name) for CommentFromComponent
