@@ -9,10 +9,10 @@ with  t : sysMl!DumperBody
 }
 rule SystemToUse
 match s : metrics!Log
-with  t : uml!Component
+with  t : uml!Comment
 {
   compare
   {
-    return t.name = "Controller";
+    return t.eContainer().name = "Controller";
   }
 }

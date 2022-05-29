@@ -4,8 +4,9 @@ select  metrics.Log.message,
 		metrics.Trace.*,
 		sysMl.DumperBody.serialNumber,
 		uml.Comment.body,
+		uml.Component.isIndirectlyInstantiated,
 		metrics.Log join sysMl.DumperBody as ProblematicUnit,
-		metrics.Log join uml.Component as SystemToUse
+		metrics.Log join uml.Comment as SystemToUse
 
        
 from 'http:///aidOaRtHackatonArTNg.ecore' as sysMl,
