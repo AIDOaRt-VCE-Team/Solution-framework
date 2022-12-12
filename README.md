@@ -26,7 +26,11 @@ The proposed software archictecture is composed of the following list of tools:
 
 ### SysML and AutomatioML modeling
 
+- Papyrus UML: [https://www.eclipse.org/papyrus/](https://www.eclipse.org/papyrus/)
+- AutomationML Modeling - CAEX Workbench: [https://github.com/amlModeling/caex-workbench/tree/variability](https://github.com/amlModeling/caex-workbench/tree/variability) 
+
 ### UML profiles
+
 
 ### EMF views tool
 
