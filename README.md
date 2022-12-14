@@ -17,8 +17,10 @@ All the resources, including the tools and the article, have been realized by:
 -  Abbas Rahimi 
 - Riccardo Rubei
 
+## Demo video
 A demo video is able at this link: [https://1drv.ms/v/s!AmJxkbIYXF4KgZRZFJZnc17IrJ-fqw?e=TNeutf](https://1drv.ms/v/s!AmJxkbIYXF4KgZRZFJZnc17IrJ-fqw?e=TNeutf).
 
+## Use cases and solution architecture
 The approach enable the capabilities depicted in the folloowing Use Case Diagram:
 
 <img width="500" alt="ucd" src="https://user-images.githubusercontent.com/925612/207573034-c31c9b41-224a-4a85-a799-590fef03a403.png">
