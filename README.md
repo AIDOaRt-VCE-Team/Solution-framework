@@ -18,7 +18,7 @@ All the resources, including the tools and the article, have been realized by:
 - Riccardo Rubei
 
 The approach enable the capabilities depicted in the folloowing Use Case Diagram:
-<img width="930" alt="ucd" src="https://user-images.githubusercontent.com/925612/207573034-c31c9b41-224a-4a85-a799-590fef03a403.png">
+<img width="500" alt="ucd" src="https://user-images.githubusercontent.com/925612/207573034-c31c9b41-224a-4a85-a799-590fef03a403.png">
 
 The solution architecture is depcited in the following component diagram:
 <img width="787" alt="software_architecture" src="https://user-images.githubusercontent.com/925612/207573346-509f6fdc-0459-469d-9be3-cc66f4949349.png">
