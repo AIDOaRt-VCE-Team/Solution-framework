@@ -51,9 +51,7 @@ In the following, we list internal and external links to repositories hosting th
 - MORGAN modeling recommender [https://github.com/MDEGroup/MORGAN](https://github.com/MDEGroup/MORGAN).
 
 ### Model generator tools
-<<<<<<< HEAD
-- Viatra-Generator [https://github.com/viatra/VIATRA-Generator](https://github.com/viatra/VIATRA-Generator)
-=======
+
 - Viatra-Genarator [https://github.com/viatra/VIATRA-Generator](https://github.com/viatra/VIATRA-Generator)
 - EMF Random instantiator: [https://github.com/atlanmod/mondo-atlzoo-benchmark](https://github.com/atlanmod/mondo-atlzoo-benchmark/tree/master/fr.inria.atlanmod.instantiator)
->>>>>>> b63ec602a61d2e995d0e4a5d0b2f87a7ec62a065
+
