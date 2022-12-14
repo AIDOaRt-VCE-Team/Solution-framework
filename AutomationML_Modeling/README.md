@@ -1,9 +1,6 @@
-# AutomationML
+# AutomationML Modeling
 
-The official AutomationML homepage: [https://www.automationml.org/](https://www.automationml.org/)
-
-## AutomationML Modeling
-AutomationML Modeling is a suite of model-driven research tools available in the GitHub repository [https://github.com/amlModeling/](https://github.com/amlModeling/) based on the AutomationML standard. In particular, it applies Eclipse Modeling Framework (EMF)-based technologies to [CAEX](https://en.wikipedia.org/wiki/CAEX) (and then AutomationML). 
+AutomationML Modeling is a suite of model-driven research tools available in the GitHub repository [https://github.com/amlModeling/](https://github.com/amlModeling/) based on the AutomationML standard ([https://www.automationml.org/](https://www.automationml.org/)). In particular, it applies Eclipse Modeling Framework (EMF)-based technologies to [CAEX](https://en.wikipedia.org/wiki/CAEX) (and then AutomationML). 
 The suite currently includes the following tools:
 - [CAEX MDE Workbench (see variability branch)](https://github.com/amlModeling/caex-workbench/tree/variability) that, in turn, consists of
   - Metamodels for CAEX version 2.15 and version 3.0.
