@@ -52,6 +52,6 @@ In the following, we list internal and external links to repositories hosting th
 
 ### Model generator tools
 
-- Viatra-Genarator [https://github.com/viatra/VIATRA-Generator](https://github.com/viatra/VIATRA-Generator)
+- Viatra-Generator [https://github.com/viatra/VIATRA-Generator](https://github.com/viatra/VIATRA-Generator)
 - EMF Random instantiator: [https://github.com/atlanmod/mondo-atlzoo-benchmark](https://github.com/atlanmod/mondo-atlzoo-benchmark/tree/master/fr.inria.atlanmod.instantiator)
 
