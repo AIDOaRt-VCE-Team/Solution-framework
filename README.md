@@ -17,8 +17,13 @@ All the resources, including the tools and the article, have been realized by:
 -  Abbas Rahimi 
 - Riccardo Rubei
 
+The approach enable the capabilities depicted in the folloowing Use Case Diagram:
+<img width="930" alt="ucd" src="https://user-images.githubusercontent.com/925612/207573034-c31c9b41-224a-4a85-a799-590fef03a403.png">
 
-The proposed software archictecture is composed of the following list of tools:
+The solution architecture is depcited in the following component diagram:
+<img width="787" alt="software_architecture" src="https://user-images.githubusercontent.com/925612/207573346-509f6fdc-0459-469d-9be3-cc66f4949349.png">
+
+In the following, we list internal and external links to repositories hosting the source codes of the integrated components:
 
 ### SysML modeling
 - Papyrus UML: [https://www.eclipse.org/papyrus/](https://www.eclipse.org/papyrus/)
@@ -31,9 +36,10 @@ The proposed software archictecture is composed of the following list of tools:
 - AutomationML profile (see AutomationML modeling)
 
 ### EMF views tool
+- EMF Views: [https://www.atlanmod.org/emfviews/manual/user.html](https://www.atlanmod.org/emfviews/manual/user.html)
 
 ### Modeling Process Mining Tool
-- Modeling Process Mining Tool: [Modeling Process Mining Tool](https://github.com/lowcomote/sirius.process.mining)
+- Modeling Process Mining Tool: [https://github.com/lowcomote/sirius.process.mining](https://github.com/lowcomote/sirius.process.mining)
 
 ### Modeling recommendations
 To support modeling recommendations, we rely on an existing tool called MORGAN, a modeling recommender system based on graph kernels. The source code is avaialble [here](https://github.com/MDEGroup/MORGAN).
