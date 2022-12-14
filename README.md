@@ -18,23 +18,22 @@ All the resources, including the tools and the article, have been realized by:
 - Riccardo Rubei
 
 
-# Repository structure
-
-
 The proposed software archictecture is composed of the following list of tools:
 
-
-### SysML and AutomatioML modeling
-
+### SysML modeling
 - Papyrus UML: [https://www.eclipse.org/papyrus/](https://www.eclipse.org/papyrus/)
+
+### AutomatioML modeling
 - AutomationML Modeling - CAEX Workbench: [https://github.com/amlModeling/caex-workbench/tree/variability](https://github.com/amlModeling/caex-workbench/tree/variability) 
 
 ### UML profiles
-
+- SysML v1.6 profile (see Papyrus UML)
+- AutomationML profile (see AutomationML modeling)
 
 ### EMF views tool
 
-### Mining Process  Modeling tool
+### Modeling Process Mining Tool
+- Modeling Process Mining Tool: [Modeling Process Mining Tool](https://github.com/lowcomote/sirius.process.mining)
 
 ### Modeling recommendations
 To support modeling recommendations, we rely on an existing tool called MORGAN, a modeling recommender system based on graph kernels. The source code is avaialble [here](https://github.com/MDEGroup/MORGAN).
