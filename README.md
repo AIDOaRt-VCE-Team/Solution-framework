@@ -2,7 +2,7 @@
 # AIDOaRt VCE Use Case Demo
 
 
-This repository contains the produced materials of the Hackathon challenges organized in the context of [AIDOaRt European project](https://sites.mdu.se/aidoart). All these materials have been presented in the paper entitled **Towards Automating the Design of Cyber-Physical Systems: The Experience of Volvo Construction Equipment** submitted to The 19th European Conference on Modelling Foundations and Applications (ECMFA 2023) 
+This repository contains the produced materials of the Hackathon challenges organized in the context of the [AIDOaRt European project](https://sites.mdu.se/aidoart). All these materials have been presented in the paper entitled **Towards Automating the Design of Cyber-Physical Systems: The Experience of Volvo Construction Equipment** submitted to The 19th European Conference on Modelling Foundations and Applications (ECMFA 2023) 
 
 All the resources, including the tools and the article, have been realized by:
 
