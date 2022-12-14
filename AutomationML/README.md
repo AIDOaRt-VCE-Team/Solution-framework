@@ -13,5 +13,7 @@ The suite currently includes the following tools:
   - Modeling rules for the correct usage of CAEX with AutomationML.
   - Migration operations for converting CAEX 2.15 models into CAEX 3.0 models.
 - UML profile for AutomationML
+  - Enterprise Architectect version (legacy): [https://github.com/amlModeling/amlProfile/tree/master/EnterpriseArchitect](https://github.com/amlModeling/amlProfile/tree/master/EnterpriseArchitect)
+  - Eclipse UML / Papyrus UML version (current): [https://github.com/amlModeling/amlProfile/tree/master/PapyrusUML](https://github.com/amlModeling/amlProfile/tree/master/PapyrusUML)
 - Model Transformations between annotated UML/SysML Models and AutomationML models.
 
