@@ -44,6 +44,7 @@ In the following, we list internal and external links to repositories hosting th
 - Modeling Process Mining Tool: [https://github.com/lowcomote/sirius.process.mining](https://github.com/lowcomote/sirius.process.mining)
 
 ### Modeling recommendations
-To support modeling recommendations, we rely on an existing tool called MORGAN, a modeling recommender system based on graph kernels. The source code is avaialble [here](https://github.com/MDEGroup/MORGAN).
+- MORGAN modeling recommender [https://github.com/MDEGroup/MORGAN](https://github.com/MDEGroup/MORGAN).
 
 ### Model generator tools
+- Viatra-Genarator [https://github.com/viatra/VIATRA-Generator](https://github.com/viatra/VIATRA-Generator)
