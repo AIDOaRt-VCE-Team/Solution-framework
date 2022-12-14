@@ -49,10 +49,10 @@ In the following, we list internal and external links to repositories hosting th
 - Modeling Process Mining Tool: [https://github.com/lowcomote/sirius.process.mining](https://github.com/lowcomote/sirius.process.mining)
 
 ### Modeling recommendations
-- MORGAN modeling recommender [https://github.com/MDEGroup/MORGAN](https://github.com/MDEGroup/MORGAN).
+- MORGAN modeling recommender: [https://github.com/MDEGroup/MORGAN](https://github.com/MDEGroup/MORGAN).
 
 ### Model generator tools
 
-- Viatra-Generator [https://github.com/viatra/VIATRA-Generator](https://github.com/viatra/VIATRA-Generator)
+- VIATRA Generator: [https://github.com/viatra/VIATRA-Generator](https://github.com/viatra/VIATRA-Generator)
 - EMF Random instantiator: [https://github.com/atlanmod/mondo-atlzoo-benchmark](https://github.com/atlanmod/mondo-atlzoo-benchmark/tree/master/fr.inria.atlanmod.instantiator)
 
