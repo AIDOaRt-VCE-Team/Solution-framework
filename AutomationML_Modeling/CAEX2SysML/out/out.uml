@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:AutomationML="http:///schemas/AutomationML/_gucLsNUHEeyKjvQmkzWSHg/13" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/AutomationML/_gucLsNUHEeyKjvQmkzWSHg/13 ../AutomationML/AutomationML.profile.uml#_gudZ0NUHEeyKjvQmkzWSHg http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
+  <uml:Class xmi:id="_DNfXYHucEe20p_EQfC4c1A" name="DumperBobyUnit"/>
+  <uml:Model xmi:id="_DNhMk3ucEe20p_EQfC4c1A" name="AIDOaRt_Hackaton_ART-NG">
+    <packagedElement xmi:type="uml:Package" xmi:id="_DNhMlHucEe20p_EQfC4c1A" name="root_AIDOaRt_Hackaton_ART-NG">
+      <packagedElement xmi:type="uml:Class" xmi:id="_DNglgHucEe20p_EQfC4c1A" name="Wearplate"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DNglgXucEe20p_EQfC4c1A" name="Spillguard"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DNglgnucEe20p_EQfC4c1A" name="Tailgate"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DNglg3ucEe20p_EQfC4c1A" name="BodyAttachment"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DNhMkHucEe20p_EQfC4c1A" name="DumperBody"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DNhMkXucEe20p_EQfC4c1A" name="BodySideExtension"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DNhMknucEe20p_EQfC4c1A" name="TailLight"/>
+    </packagedElement>
+    <profileApplication xmi:id="_DNjo0HucEe20p_EQfC4c1A">
+      <eAnnotations xmi:id="_DNn6QHucEe20p_EQfC4c1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DOPlUHucEe20p_EQfC4c1A">
+      <eAnnotations xmi:id="_DOPlUXucEe20p_EQfC4c1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DOQMYHucEe20p_EQfC4c1A">
+      <eAnnotations xmi:id="_DOQMYXucEe20p_EQfC4c1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DOQMYnucEe20p_EQfC4c1A">
+      <eAnnotations xmi:id="_DOQMY3ucEe20p_EQfC4c1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DOQzcHucEe20p_EQfC4c1A">
+      <eAnnotations xmi:id="_DOQzcXucEe20p_EQfC4c1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DOQzcnucEe20p_EQfC4c1A">
+      <eAnnotations xmi:id="_DORagHucEe20p_EQfC4c1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DORagXucEe20p_EQfC4c1A">
+      <eAnnotations xmi:id="_DORagnucEe20p_EQfC4c1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DOSBkHucEe20p_EQfC4c1A">
+      <eAnnotations xmi:id="_DOSBkXucEe20p_EQfC4c1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DOSBknucEe20p_EQfC4c1A">
+      <eAnnotations xmi:id="_DOSooHucEe20p_EQfC4c1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DOSooXucEe20p_EQfC4c1A">
+      <eAnnotations xmi:id="_DOSoonucEe20p_EQfC4c1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DOTPsHucEe20p_EQfC4c1A">
+      <eAnnotations xmi:id="_DOTPsXucEe20p_EQfC4c1A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../AutomationML/AutomationML.profile.uml#_gudZ0NUHEeyKjvQmkzWSHg"/>
+      </eAnnotations>
+      <appliedProfile href="../AutomationML/AutomationML.profile.uml#_Rip68L_zEeyAGZT21TR02w"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_DP3V8HucEe20p_EQfC4c1A" base_Class="_DNglgHucEe20p_EQfC4c1A"/>
+  <AutomationML:SUC xmi:id="_DQH0oHucEe20p_EQfC4c1A" base_Class="_DNglgHucEe20p_EQfC4c1A"/>
+  <Blocks:Block xmi:id="_DQKQ4HucEe20p_EQfC4c1A" base_Class="_DNglgXucEe20p_EQfC4c1A"/>
+  <AutomationML:SUC xmi:id="_DQMtIHucEe20p_EQfC4c1A" base_Class="_DNglgXucEe20p_EQfC4c1A"/>
+  <Blocks:Block xmi:id="_DQOiUHucEe20p_EQfC4c1A" base_Class="_DNglgnucEe20p_EQfC4c1A"/>
+  <AutomationML:SUC xmi:id="_DQQXgHucEe20p_EQfC4c1A" base_Class="_DNglgnucEe20p_EQfC4c1A"/>
+  <Blocks:Block xmi:id="_DQSzwHucEe20p_EQfC4c1A" base_Class="_DNglg3ucEe20p_EQfC4c1A"/>
+  <AutomationML:SUC xmi:id="_DQUo8HucEe20p_EQfC4c1A" base_Class="_DNglg3ucEe20p_EQfC4c1A"/>
+  <Blocks:Block xmi:id="_DQWeIHucEe20p_EQfC4c1A" base_Class="_DNhMkHucEe20p_EQfC4c1A"/>
+  <AutomationML:SUC xmi:id="_DQY6YHucEe20p_EQfC4c1A" base_Class="_DNhMkHucEe20p_EQfC4c1A"/>
+  <Blocks:Block xmi:id="_DQaIgHucEe20p_EQfC4c1A" base_Class="_DNhMkXucEe20p_EQfC4c1A"/>
+  <AutomationML:SUC xmi:id="_DQb9sHucEe20p_EQfC4c1A" base_Class="_DNhMkXucEe20p_EQfC4c1A"/>
+  <Blocks:Block xmi:id="_DQdy4HucEe20p_EQfC4c1A" base_Class="_DNhMknucEe20p_EQfC4c1A"/>
+  <AutomationML:SUC xmi:id="_DQfoEHucEe20p_EQfC4c1A" base_Class="_DNhMknucEe20p_EQfC4c1A"/>
+</xmi:XMI>

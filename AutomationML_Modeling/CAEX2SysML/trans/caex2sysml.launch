@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.epsilon.etl.eclipse.dt.launching.EtlLaunchConfigurationDelegate">
+    <booleanAttribute key="fine_grained_profiling" value="false"/>
+    <stringAttribute key="implementation_name" value="Parallel (Declarative operations)"/>
+    <listAttribute key="models">
+        <listEntry value="#Tue May 31 14:25:17 CEST 2022&#13;&#10;aliases=&#13;&#10;reuseUnmodifiedFileBasedMetamodels=true&#13;&#10;modelFile=/at.jku.bise.aidoart.hackathon.transformations/CAEX2SysML/out/out.uml&#13;&#10;metamodelUri=http\://www.eclipse.org/uml2/5.0.0/UML&#13;&#10;concurrent=false&#13;&#10;type=EMF&#13;&#10;readOnLoad=false&#13;&#10;storeOnDisposal=true&#13;&#10;expand=true&#13;&#10;fileBasedMetamodelUri=&#13;&#10;metamodelFile=&#13;&#10;cached=true&#13;&#10;name=UML&#13;&#10;modelUri=platform\:/resource/at.jku.bise.aidoart.hackathon.transformations/CAEX2SysML/out/out.uml&#13;&#10;isMetamodelFileBased=false&#13;&#10;validate=false"/>
+        <listEntry value="#Tue May 31 13:59:18 CEST 2022&#13;&#10;aliases=&#13;&#10;reuseUnmodifiedFileBasedMetamodels=true&#13;&#10;modelFile=/at.jku.bise.aidoart.hackathon.transformations/CAEX2SysML/caex30/output.caex&#13;&#10;metamodelUri=http\://www.dke.de/CAEX/300&#13;&#10;concurrent=false&#13;&#10;type=EMF&#13;&#10;readOnLoad=true&#13;&#10;storeOnDisposal=false&#13;&#10;expand=true&#13;&#10;fileBasedMetamodelUri=platform\:/resource/at.jku.bise.aidoart.hackathon.transformations/CAEX2SysML/caex30/caex30.ecore&#13;&#10;metamodelFile=/at.jku.bise.aidoart.hackathon.transformations/CAEX2SysML/caex30/caex30.ecore&#13;&#10;cached=true&#13;&#10;name=CAEX30&#13;&#10;modelUri=platform\:/resource/at.jku.bise.aidoart.hackathon.transformations/CAEX2SysML/caex30/output.caex&#13;&#10;isMetamodelFileBased=false&#13;&#10;validate=false"/>
+        <listEntry value="#Wed Jun 01 10:25:35 CEST 2022&#13;&#10;aliases=&#13;&#10;reuseUnmodifiedFileBasedMetamodels=true&#13;&#10;modelFile=/at.jku.bise.aidoart.hackathon.transformations/CAEX2SysML/AutomationML/AutomationML.profile.uml&#13;&#10;metamodelUri=http\://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard,http\://www.eclipse.org/uml2/5.0.0/UML,http\://www.eclipse.org/emf/2002/Ecore&#13;&#10;concurrent=false&#13;&#10;type=EMF&#13;&#10;readOnLoad=true&#13;&#10;storeOnDisposal=false&#13;&#10;expand=true&#13;&#10;fileBasedMetamodelUri=&#13;&#10;metamodelFile=&#13;&#10;cached=true&#13;&#10;name=AML&#13;&#10;modelUri=platform\:/resource/at.jku.bise.aidoart.hackathon.transformations/CAEX2SysML/AutomationML/AutomationML.profile.uml&#13;&#10;isMetamodelFileBased=false&#13;&#10;validate=false"/>
+    </listAttribute>
+    <intAttribute key="parallelism" value="15"/>
+    <listAttribute key="parameters"/>
+    <booleanAttribute key="profile_model_loading" value="false"/>
+    <booleanAttribute key="profiling_enabled" value="false"/>
+    <booleanAttribute key="reset_profiler" value="false"/>
+    <stringAttribute key="source" value="/at.jku.bise.aidoart.hackathon.transformations/CAEX2SysML/trans/caex2sysml.etl"/>
+</launchConfiguration>

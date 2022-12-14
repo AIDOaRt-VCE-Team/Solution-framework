@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<caex:CAEXFile
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:caex="http://www.dke.de/CAEX/300"
+    fileName="52542">
+  <instanceHierarchy
+      changeMode="state"
+      iD="142525"
+      name="IH">
+    <internalElement
+        name="IE1"/>
+    <internalElement
+        name="IE2"/>
+    <internalElement
+        name="IE3"/>
+    <internalElement
+        name="IE4"/>
+  </instanceHierarchy>
+</caex:CAEXFile>
