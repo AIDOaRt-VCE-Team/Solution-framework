@@ -42,7 +42,8 @@ In the following, we list internal and external links to repositories hosting th
 - AutomationML profile (see AutomationML modeling)
 
 ### EMF views tool
-- EMF Views: [https://www.atlanmod.org/emfviews/manual/user.html](https://www.atlanmod.org/emfviews/manual/user.html)
+- EMF Views for the VCE case study: [https://github.com/AIDOaRt-VCE-Team/ecmfa-2023/tree/main/EMFViewsDemo/EMFViewsSysML](https://github.com/AIDOaRt-VCE-Team/ecmfa-2023/tree/main/EMFViewsDemo/EMFViewsSysML)
+- The EMF Views homepage: [https://www.atlanmod.org/emfviews/manual/user.html](https://www.atlanmod.org/emfviews/manual/user.html)
 
 ### Modeling Process Mining Tool
 - Modeling Process Mining Tool: [https://github.com/lowcomote/sirius.process.mining](https://github.com/lowcomote/sirius.process.mining)
