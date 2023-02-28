@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<virtualLinks:WeavingModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:virtualLinks="http://www.atlanmod.org/emfviews/virtuallinks/0.3.0" name="simple_link" whitelist="true">
+  <virtualLinks xsi:type="virtualLinks:Filter" name="base_Class" target="//@contributingModels.1/@concreteElements.0"/>
+  <virtualLinks xsi:type="virtualLinks:VirtualAssociation" name="problematicBlock" source="//@contributingModels.2/@concreteElements.0" target="//@contributingModels.0/@concreteElements.0" upperBound="-1"/>
+  <virtualLinks xsi:type="virtualLinks:Filter" name="*" target="//@contributingModels.0/@concreteElements.1"/>
+  <virtualLinks xsi:type="virtualLinks:Filter" name="*" target="//@contributingModels.0/@concreteElements.2"/>
+  <virtualLinks xsi:type="virtualLinks:Filter" name="*" target="//@contributingModels.0/@concreteElements.3"/>
+  <virtualLinks xsi:type="virtualLinks:Filter" name="*" target="//@contributingModels.2/@concreteElements.1"/>
+  <contributingModels URI="http://www.dke.de/CAEX/300">
+    <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="InternalElement"/>
+    <concreteElements path="CAEXFile.*"/>
+    <concreteElements path="InstanceHierarchy.*"/>
+    <concreteElements path="InternalElement.*"/>
+  </contributingModels>
+  <contributingModels URI="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks">
+    <concreteElements path="Block.base_Class"/>
+  </contributingModels>
+  <contributingModels URI="http://www.eclipse.org/uml2/5.0.0/UML">
+    <concreteElements xsi:type="virtualLinks:ConcreteConcept" path="Class"/>
+    <concreteElements path="Class.*"/>
+  </contributingModels>
+</virtualLinks:WeavingModel>

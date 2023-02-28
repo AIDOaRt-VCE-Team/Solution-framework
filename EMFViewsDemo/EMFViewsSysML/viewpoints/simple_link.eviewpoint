@@ -1,0 +1,2 @@
+contributingMetamodels=CAEX::http://www.dke.de/CAEX/300,SysMLBlocks::http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks,UML::http://www.eclipse.org/uml2/5.0.0/UML
+weavingModel=simple_link.xmi

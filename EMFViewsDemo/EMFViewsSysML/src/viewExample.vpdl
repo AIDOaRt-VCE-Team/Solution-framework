@@ -1,19 +1,15 @@
-create view viewExample as
+create view simple_link as
 
-select  metrics.Log.message,
-		metrics.Trace.*,
-		sysMl.DumperBody.serialNumber,
-		uml.Comment.body,
-		uml.Component.isIndirectlyInstantiated,
-		metrics.Log join sysMl.DumperBody as ProblematicDumperBody,
-		metrics.Log join sysMl.Tailgate as ProblematicTailGate,
-		metrics.Log join uml.Comment as CommentFromComponent
+select CAEX.CAEXFile.*,
+       CAEX.InstanceHierarchy.*,
+	   CAEX.InternalElement.*,
+	   SysMLBlocks.Block.base_Class,
+	   UML.Class.*,
+	   UML.Class join CAEX.InternalElement as problematicBlock
 
-       
-from 'http:///aidOaRtHackatonArTNg.ecore' as sysMl,
-     'http://trace' as metrics,
-     'http://www.eclipse.org/uml2/5.0.0/UML' as uml
-     
-where s.source = t.fgiCaf for ProblematicDumperBody,
-      s.source = t.fgiCaf for ProblematicTailGate,
-      s.source.isSubstringOf(t.eContainer().name) for CommentFromComponent
+from 'http://www.dke.de/CAEX/300' as CAEX,
+     'http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks' 
+     as SysMLBlocks,
+     'http://www.eclipse.org/uml2/5.0.0/UML' as UML
+
+ where s.name = t.name for problematicBlock

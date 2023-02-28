@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:caex="http://www.dke.de/CAEX/300">
+  <instanceHierarchy name="Diagram">
+    <description value="Testing descriptions" changeMode="change"/>
+    <internalElement name="LoadUnit">
+      <description value="Hello desc"/>
+      <externalInterface xsi:type="caex:ExternalInterface"/>
+      <internalElement name="RearFrame">
+        <externalInterface xsi:type="caex:ExternalInterface" name="MIF_input">
+          <baseClass href="_Profile.caex#//@interfaceClassLib.0/@interfaceClass.0"/>
+        </externalInterface>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <supportedRoleClass>
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+        </supportedRoleClass>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.1/@externalInterface.0"/>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.3" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.4/@externalInterface.0"/>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.4" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.7/@externalInterface.0"/>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.6" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.6/@externalInterface.0"/>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.9" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.9/@internalElement.0/@externalInterface.1"/>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.10" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.9/@internalElement.2/@externalInterface.3"/>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.11" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.11/@internalElement.0/@externalInterface.1"/>
+      </internalElement>
+      <internalElement iD="" name="ParkingBrake">
+        <externalInterface xsi:type="caex:ExternalInterface" name="MIF_Output" refBaseClassPath="">
+          <baseClass href="_Profile.caex#//@interfaceClassLib.0/@interfaceClass.2"/>
+        </externalInterface>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <supportedRoleClass>
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+        </supportedRoleClass>
+      </internalElement>
+      <internalElement name="FrameExtension">
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <supportedRoleClass>
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+        </supportedRoleClass>
+        <supportedRoleClass>
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+        </supportedRoleClass>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.2/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.1"/>
+      </internalElement>
+      <internalElement name="BrakeCooling_Rear">
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <supportedRoleClass>
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+        </supportedRoleClass>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.3/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.2"/>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.3/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.9/@internalElement.1/@externalInterface.2"/>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.3/@externalInterface.2" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.11/@internalElement.1/@externalInterface.1"/>
+      </internalElement>
+      <internalElement name="ReverseAlarm">
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <supportedRoleClass>
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+        </supportedRoleClass>
+        <supportedRoleClass>
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+        </supportedRoleClass>
+      </internalElement>
+      <internalElement name="CameraRear">
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <supportedRoleClass>
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+        </supportedRoleClass>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.5/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.5"/>
+      </internalElement>
+      <internalElement name="BrakeLine_Rear">
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <supportedRoleClass>
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+        </supportedRoleClass>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.6/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.9/@internalElement.1/@externalInterface.1"/>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.6/@externalInterface.2" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.11/@internalElement.1/@externalInterface.2"/>
+      </internalElement>
+      <internalElement name="ReverseLight">
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <supportedRoleClass>
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+        </supportedRoleClass>
+      </internalElement>
+      <internalElement name="2X_BoogieBeam">
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <supportedRoleClass refRoleClassPath="">
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+        </supportedRoleClass>
+        <supportedRoleClass>
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+        </supportedRoleClass>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.8/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.8"/>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.8/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.9/@internalElement.2/@externalInterface.2"/>
+      </internalElement>
+      <internalElement name="AxleModule_3rd">
+        <internalElement name="2X_LevelSensor_3rdAxle">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.9/@internalElement.0/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.9/@internalElement.2/@externalInterface.1"/>
+        </internalElement>
+        <internalElement name="Axle_3rd">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.9/@internalElement.1/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.9/@internalElement.2/@externalInterface.0"/>
+        </internalElement>
+        <internalElement name="Suspension_3rdAxle">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+        </internalElement>
+        <internalLink partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.9"/>
+        <internalLink partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.9/@internalElement.0/@externalInterface.1"/>
+      </internalElement>
+      <internalElement name="Wheel_3rd">
+        <internalElement name="2X_Rim_3rd">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.10/@internalElement.0/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.9/@internalElement.1/@externalInterface.3"/>
+        </internalElement>
+        <internalElement name="2X_Tire_3rd">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.10/@internalElement.1/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.10/@internalElement.0/@externalInterface.0"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="AxleModule_2nd">
+        <internalElement name="Suspension_2ndAxle">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.11/@internalElement.0/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.8/@externalInterface.2"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.11/@internalElement.0/@externalInterface.2" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.11/@internalElement.2/@externalInterface.0"/>
+        </internalElement>
+        <internalElement name="Axle_2nd">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.11/@internalElement.1/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.11/@internalElement.0/@externalInterface.3"/>
+        </internalElement>
+        <internalElement name="2X_LevelSensor_2ndAxle">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.11/@internalElement.2/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.12"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="Wheel_2nd">
+        <internalElement name="2X_Rim_2nd">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.12/@internalElement.0/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.11/@internalElement.1/@externalInterface.3"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.12/@internalElement.0/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.12/@internalElement.1/@externalInterface.0"/>
+        </internalElement>
+        <internalElement name="2X_Tire_2nd">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+          </supportedRoleClass>
+        </internalElement>
+      </internalElement>
+      <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.0/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.1/@externalInterface.1"/>
+    </internalElement>
+    <internalElement name="PullUnit">
+      <internalElement name="HitchModule">
+        <internalElement iD="" name="IntermediateShaft_Hitch">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.0/@internalElement.0/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.0/@internalElement.1/@externalInterface.0"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.0/@internalElement.0/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.1/@externalInterface.2"/>
+        </internalElement>
+        <internalElement name="ArticulationHitch">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.0/@internalElement.1/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.0/@internalElement.3/@externalInterface.2"/>
+        </internalElement>
+        <internalElement name="BearingVertical">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.0/@internalElement.2/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.0/@internalElement.1/@externalInterface.2"/>
+        </internalElement>
+        <internalElement name="BearingHorizontal">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.0/@internalElement.3/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.2/@externalInterface.1"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.0/@internalElement.3/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.7"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="AxleModule_1st">
+        <internalElement name="2XLevelSensor_1stAxle">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.1/@internalElement.0/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.2/@externalInterface.1"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.1/@internalElement.0/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.1/@internalElement.2/@externalInterface.0"/>
+        </internalElement>
+        <internalElement name="Axle_1st">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+        </internalElement>
+        <internalElement name="Suspension_1stAxle">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.1/@internalElement.2/@externalInterface.2" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.1/@internalElement.1/@externalInterface.0"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="Front Frame">
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <externalInterface xsi:type="caex:ExternalInterface"/>
+        <supportedRoleClass>
+          <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+        </supportedRoleClass>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.2/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.0/@internalElement.2/@externalInterface.1"/>
+        <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.2/@externalInterface.2" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.1/@internalElement.2/@externalInterface.1"/>
+      </internalElement>
+      <internalElement name="Wheel_1st">
+        <internalElement name="2X_Rim_1st">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.3/@internalElement.0/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.1/@internalElement.1/@externalInterface.1"/>
+        </internalElement>
+        <internalElement name="2X_Tire_1st">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.3/@internalElement.1/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.3/@internalElement.0/@externalInterface.0"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="AftertreatmentModule">
+        <internalElement name="AirVentilationEATS">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+          </supportedRoleClass>
+        </internalElement>
+        <internalElement name="ACMSensors">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.4/@internalElement.1/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.4/@internalElement.5/@externalInterface.2"/>
+        </internalElement>
+        <internalElement name="HeatInsulation">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+        </internalElement>
+        <internalElement name="Fenderbox">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.4/@internalElement.3/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.2/@externalInterface.3"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.4/@internalElement.3/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.4/@internalElement.4/@externalInterface.0"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.4/@internalElement.3/@externalInterface.2" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.4/@internalElement.2/@externalInterface.0"/>
+        </internalElement>
+        <internalElement name="DEF-Tank">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+          </supportedRoleClass>
+        </internalElement>
+        <internalElement name="ExhaustAftertreatment">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.4/@internalElement.5/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.4/@internalElement.3/@externalInterface.3"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.4/@internalElement.5/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.4/@internalElement.0/@externalInterface.0"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="EngineAndTransmission">
+        <internalElement name="EngineMounting_Rear">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.0/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.2/@externalInterface.6"/>
+        </internalElement>
+        <internalElement name="OilFilterTransmission">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+          </supportedRoleClass>
+        </internalElement>
+        <internalElement name="Transmission">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.2/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.0/@externalInterface.1"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.2/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.1/@externalInterface.0"/>
+        </internalElement>
+        <internalElement name="EngineModule">
+          <internalElement name="PowerTake-off">
+            <externalInterface xsi:type="caex:ExternalInterface"/>
+            <externalInterface xsi:type="caex:ExternalInterface"/>
+            <supportedRoleClass>
+              <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+            </supportedRoleClass>
+            <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.3/@internalElement.0/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.2/@externalInterface.2"/>
+            <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.3/@internalElement.0/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.3/@internalElement.1/@externalInterface.0"/>
+          </internalElement>
+          <internalElement name="Engine">
+            <externalInterface xsi:type="caex:ExternalInterface"/>
+            <externalInterface xsi:type="caex:ExternalInterface"/>
+            <externalInterface xsi:type="caex:ExternalInterface"/>
+            <externalInterface xsi:type="caex:ExternalInterface"/>
+            <supportedRoleClass>
+              <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+            </supportedRoleClass>
+          </internalElement>
+          <internalElement name="OilFilterEngine">
+            <externalInterface xsi:type="caex:ExternalInterface"/>
+            <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.3/@internalElement.2/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.3/@internalElement.1/@externalInterface.3"/>
+          </internalElement>
+          <internalElement name="AirCompressor">
+            <externalInterface xsi:type="caex:ExternalInterface"/>
+            <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.3/@internalElement.3/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.3/@internalElement.1/@externalInterface.2"/>
+          </internalElement>
+          <internalElement name="ECUEngine">
+            <externalInterface xsi:type="caex:ExternalInterface"/>
+            <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.3/@internalElement.4/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.5/@internalElement.3/@internalElement.1/@externalInterface.1"/>
+          </internalElement>
+        </internalElement>
+      </internalElement>
+      <internalElement name="WaterAndCooler">
+        <internalElement name="FanFanMotorRadiator">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.0/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.2/@externalInterface.4"/>
+        </internalElement>
+        <internalElement name="FuelFilter">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+        </internalElement>
+        <internalElement name="RadiatorBracket">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.2/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.3/@externalInterface.2"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.2/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.1/@externalInterface.0"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.2/@externalInterface.2" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.2/@externalInterface.5"/>
+        </internalElement>
+        <internalElement name="Radiator">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.3/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.6/@externalInterface.2"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.3/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.4/@externalInterface.0"/>
+        </internalElement>
+        <internalElement name="Fuelheater">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.1"/>
+          </supportedRoleClass>
+        </internalElement>
+        <internalElement name="FanGuardRadiator">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+        </internalElement>
+        <internalElement name="FanShroudRadiator">
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <externalInterface xsi:type="caex:ExternalInterface"/>
+          <supportedRoleClass>
+            <roleClass href="_Profile.caex#//@roleClassLib.0/@roleClass.0"/>
+          </supportedRoleClass>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.6/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.0/@externalInterface.1"/>
+          <internalLink partnerSideA="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.6/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.6/@internalElement.5/@externalInterface.0"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="A"/>
+  </instanceHierarchy>
+</caex:CAEXFile>
