@@ -23,11 +23,12 @@ A demo video is able at this link: [https://1drv.ms/v/s!AmJxkbIYXF4KgZRZFJZnc17I
 ## Use cases and solution architecture
 The approach enable the capabilities depicted in the folloowing Use Case Diagram:
 
-<img width="500" alt="ucd" src="https://user-images.githubusercontent.com/925612/207573034-c31c9b41-224a-4a85-a799-590fef03a403.png">
+![ucd](https://user-images.githubusercontent.com/925612/222381595-0f88b93d-da94-4154-92b3-57efe3a3390d.png)
+
 
 The solution architecture is depcited in the following component diagram:
 
-<img width="900" alt="software_architecture" src="https://user-images.githubusercontent.com/925612/207573346-509f6fdc-0459-469d-9be3-cc66f4949349.png">
+<img width="1481" alt="architecture" src="https://user-images.githubusercontent.com/925612/222380745-9d2f59ca-4675-4895-b2e2-4b88d9a98bf9.png">
 
 In the following, we list internal and external links to repositories hosting the source codes of the integrated components:
 
