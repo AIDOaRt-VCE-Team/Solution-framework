@@ -1,112 +1,157 @@
 pre {
 	"Running ETL".println();
-	var caexFile = new CAEX30!CAEXFile;
-	caexFile.fileName="caex_model";
+	var caexFile; //general var for postprocessing 
 	var iH= new CAEX30!InstanceHierarchy;
-	iH.name="test_name";
+	var SUCLib= new CAEX30!SystemUnitClassLib;
+	var ICLib= new CAEX30!InterfaceClassLib;
+	var RCLib= new CAEX30!RoleClassLib;
+	
 	var umlTool : new Native("org.eclipse.epsilon.emc.uml.dt.UMLTool");
 	var sysmlProfile = umlTool.getProfile("http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks");
+	var ecoreProfile = umlTool.getProfileFromPathmapUri("pathmap://UML_PROFILES/Ecore.profile.uml");
 	
-	var activitiesProfile = sysmlProfile.getPackagedElement("Activities");
-	var allocationsProfile = sysmlProfile.getPackagedElement("Allocations");
 	var blocksProfile = sysmlProfile.getPackagedElement("Blocks");
-	var constraintBlocksProfile = sysmlProfile.getPackagedElement("ConstraintBlocks");
-	var deprecatedElementsProfile = sysmlProfile.getPackagedElement("DeprecatedElements");
-	var modelElementsProfile = sysmlProfile.getPackagedElement("ModelElements");
-	var portsAndFlowsProfile = sysmlProfile.getPackagedElement("PortsAndFlows");
-	var requirementsProfile = sysmlProfile.getPackagedElement("Requirements");
-
-//	var amlProfile = AML!Profile.all.first();
-	
 	var blockStereotype = blocksProfile.getPackagedElement("Block");
-//	var sucStereotype = amlProfile.getPackagedElement("SUC");
+
+	var amlProfile = AML!Profile.all.first();
 	
+	var sucStereotype = amlProfile.getPackagedElement("SUC");
+	var icStereotype = amlProfile.getPackagedElement("IC");
+	var ieStereotype = amlProfile.getPackagedElement("IE");
+	var rcStereotype = amlProfile.getPackagedElement("RC");
+	var externalInterfaces = new Sequence; //a list containing the externalInterfaces for postprocessing purposes
 }
 
 post{
+	var connectors = UML!Connector;
+	bindExternalInterface(connectors, iH.internalElement.internalLink);
+	caexFile.interfaceClassLib.add(ICLib);
+	caexFile.roleClassLib.add(RCLib);
+	caexFile.systemUnitClassLib.add(SUCLib);
 	caexFile.instanceHierarchy.add(iH);
+	("The transformation is done successfully!").println();
 }
 
-	
 
-rule SysML2CAEX
+rule Model2CAEXFile 
+	transform m : UML!Model
+	to c : CAEX30!CAEXFile {
+		guard : m.name!="Ecore"
+		c.fileName = m.name;
+		caexFile = c;
+}
+
+
+rule class2internalElement
 	transform s : UML!Class 
 	to  ie: CAEX30!InternalElement{
-		guard : s.hasStereotypes(blockStereotype)
-		("Class name ... "+s.name).println();
+		guard : (s.hasStereotypes(blockStereotype) and s.hasStereotypes(sucStereotype))
 		ie.name= s.name;
 		iH.internalElement.add(ie);
-		for(el in s.nestedClassifier){
-			("inner element :: "+el.name).println();
-		}
+		
 		for(prp in s.ownedAttribute){
-//			("ownedAttribute _____ "+prp.name).println();
-//			("ownedAttribute type >>>>>>>>>>>>> "+prp.EClass.name).println();
-//			("ownedAttribute >_> "+prp).println();
 			if (prp.EClass.name="Property"){
 				var attr= new CAEX30!Attribute;
 				attr.name = prp.name;
 				attr.attributeDataType= prp.type.name;
 				ie.attribute.add(attr);
-			} else if (prp.EClass.name="Port"){
-				("Port type >_> "+prp).println();
-				var port=new CAEX30!ExternalInterface;
-				port.name = prp.name;
-				ie.externalInterface.add(port);
 			}
 		}
-		for (c in s.ownedConnector){
-			("Connector type >_> "+c).println();
-			var link=new CAEX30!InternalLink;
-			link.name = c.name;
-			link.addInternalLinkPartners(c);
-			ie.internalLink.add(link);
+		if (s.ownedAttribute.isDefined())
+			ie.externalInterface ::= s.ownedPort;
+		if (s.ownedConnector.isDefined())
+			ie.internalLink ::= s.ownedConnector;
+}	
+
+rule port2externalElement 
+	transform s : UML!Port
+	to t : CAEX30!ExternalInterface {
+	guard : s.EClass.name="Port"
+	t.name=s.name;
+	externalInterfaces.add(t); //adding the externalInterface for postprocessing purposes
+}
+
+
+rule connector2InternalLink 
+	transform s : UML!Connector
+	to t : CAEX30!InternalLink {
+	t.name=s.name;
+}
+
+rule class2systemUnitClass
+	transform s : UML!Class 
+	to  suc: CAEX30!SystemUnitClass{
+		guard : s.hasStereotypes(blockStereotype) and s.hasStereotypes(sucStereotype)
+		suc.name= s.name;
+		SUCLib.systemUnitClass.add(suc);
+		
+		for(prp in s.ownedAttribute){
+			if (prp.EClass.name="Property"){
+				var attr= new CAEX30!Attribute;
+				attr.name = prp.name;
+				attr.attributeDataType= prp.type.name;
+				suc.attribute.add(attr);
+			}
+		}
+		if (s.ownedAttribute.isDefined())
+				suc.externalInterface ::= s.ownedPort;
+
+}	
+
+rule class2interfaceClass
+	transform s : UML!Class 
+	to  ic: CAEX30!InterfaceClass{
+		guard : s.hasStereotypes(blockStereotype) and s.hasStereotypes(icStereotype)
+		ic.name= s.name;
+		ICLib.interfaceClass.add(ic);
+		
+		for(prp in s.ownedAttribute){
+			if (prp.EClass.name="Property"){
+				var attr= new CAEX30!Attribute;
+				attr.name = prp.name;
+				attr.attributeDataType= prp.type.name;
+				ic.attribute.add(attr);
+			}
+		}
+}	
+
+rule class2roleClass
+	transform s : UML!Class 
+	to  rc: CAEX30!RoleClass{
+		guard : s.hasStereotypes(blockStereotype) and s.hasStereotypes(rcStereotype)
+		rc.name= s.name;
+		RCLib.roleClass.add(rc);
+		
+		for(prp in s.ownedAttribute){
+			if (prp.EClass.name="Property"){
+				var attr= new CAEX30!Attribute;
+				attr.name = prp.name;
+				attr.attributeDataType= prp.type.name;
+				rc.attribute.add(attr);
+			}
 		}
 }
-	
-operation Any hasStereotypes(r : Any) {
-	if (self.getAppliedStereotypes().first().isDefined()){
-		if (self.getAppliedStereotypes().first().name = r.name)
-			return true;
-		else return false;
+
+
+operation bindExternalInterface(connectors, internalLinks:Any) {
+	var temp_ils= new Sequence;
+	for(il in internalLinks)
+			if(il.size()>0)
+				temp_ils.addAll(il);
+			
+	for(c in connectors){
+		var internalLink= temp_ils.selectOne(iterator : InternalLink | iterator.name=c.name);
+		internalLink.partnerSideA= externalInterfaces.selectOne(iterator  | iterator.name=c.end.first().partWithPort.name);
+		internalLink.partnerSideB= externalInterfaces.selectOne(iterator  | iterator.name=c.end.second().partWithPort.name);
 	}
-	return true;
-}
-
-operation Any addInternalLinkPartners(c : Any) {
-	var temp = c.end;
-	self.refPartnerSideA=temp.first().partWithPort.name;
-	("->RefPartnerSideA of "+self.name+"("+temp.first().partWithPort.name+") is added!").println();
-	self.refPartnerSideB=temp.second().partWithPort.name;	
-	("->RefPartnerSideB of "+self.name+"("+temp.second().partWithPort.name+") is added!").println();
 }
 
 
-
-operation Any appendEquivalentsOfChildrenOf(source : Any) {	
-	for (child in source) {
-			//('--child lvl 0: ['+child.name+"] is child of -> "+ self).println();
-			("+++++++-self :"+self).println();
-			("+++++++source :"+child+" <---> "+source).println();
-			//self.packagedElement.add(source.first());
-//			('inner child is: '+child.internalElement.notEmpty()).println();
-			self.internalElement.add(child);
-//			self.appendEquivalentsOfChildrenOf(ch);
-//			if(child.packageElement.notEmpty()){
-//				("-------+self :"+self).println();
-//				("-------source :"+child.first()+" <---> "+source.first()).println();
-//				//source.first().packagedElement ::=child.first();
-//				//('child.internalElement is::: ['+child.internalElement+"]--- "+self).println();
-//				for (ch in child.internalElement) {
-//					//('--child  lvl 1: ['+ch.name+"] is child of -> "+self).println();
-//					//("******self :"+ch+" <---> "+child.internalElement).println();
-//					//self.packagedElement.add(source.internalElement.first());
-//					self.internalElement ::=ch;
-//					self.appendEquivalentsOfChildrenOf(ch);
-//				}
-//			}
-		}
+operation Any hasStereotypes(r : Any) {
+	var temp = self.getAppliedStereotypes();
+	if (temp.size()>0)
+		for (st in temp)
+			if (st.name = r.name)
+				return true;
+	return false;
 }
-
-
-

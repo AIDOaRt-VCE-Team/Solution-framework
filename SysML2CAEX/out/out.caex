@@ -1,2 +1,38 @@
 <?xml version="1.0" encoding="ASCII"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"/>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:caex="http://www.dke.de/CAEX/300" fileName="AIDOaRt_Hackaton_ART-NG">
+  <instanceHierarchy>
+    <internalElement name="Wearplate"/>
+    <internalElement name="Spillguard">
+      <internalLink name="connector1" partnerSideA="//@systemUnitClassLib.0/@systemUnitClass.1/@externalInterface.0" partnerSideB="//@systemUnitClassLib.0/@systemUnitClass.2/@externalInterface.0"/>
+      <internalLink name="connector2" partnerSideA="//@systemUnitClassLib.0/@systemUnitClass.4/@externalInterface.0" partnerSideB="//@systemUnitClassLib.0/@systemUnitClass.3/@externalInterface.0"/>
+    </internalElement>
+    <internalElement name="Tailgate">
+      <attribute name="id" attributeDataType="EInt"/>
+      <internalLink name="connector3" partnerSideA="//@systemUnitClassLib.0/@systemUnitClass.1/@externalInterface.0" partnerSideB="//@systemUnitClassLib.0/@systemUnitClass.3/@externalInterface.0"/>
+    </internalElement>
+    <internalElement name="BodyAttachment"/>
+    <internalElement name="DumperBody"/>
+  </instanceHierarchy>
+  <interfaceClassLib>
+    <interfaceClass name="BodySideExtension"/>
+  </interfaceClassLib>
+  <roleClassLib>
+    <roleClass name="TailLight"/>
+  </roleClassLib>
+  <systemUnitClassLib>
+    <systemUnitClass name="Wearplate"/>
+    <systemUnitClass name="Spillguard">
+      <externalInterface xsi:type="caex:ExternalInterface" name="p0"/>
+    </systemUnitClass>
+    <systemUnitClass name="Tailgate">
+      <attribute name="id" attributeDataType="EInt"/>
+      <externalInterface xsi:type="caex:ExternalInterface" name="p1"/>
+    </systemUnitClass>
+    <systemUnitClass name="BodyAttachment">
+      <externalInterface xsi:type="caex:ExternalInterface" name="p3"/>
+    </systemUnitClass>
+    <systemUnitClass name="DumperBody">
+      <externalInterface xsi:type="caex:ExternalInterface" name="p4"/>
+    </systemUnitClass>
+  </systemUnitClassLib>
+</caex:CAEXFile>

@@ -111,9 +111,9 @@
   <Blocks:Block xmi:id="_IjSSEKuZEe2-x4Jox-pPqg" base_Class="_Ih81VKuZEe2-x4Jox-pPqg"/>
   <AutomationML:SUC xmi:id="_IjTgMKuZEe2-x4Jox-pPqg" base_Class="_Ih81VKuZEe2-x4Jox-pPqg"/>
   <Blocks:Block xmi:id="_IjVVYKuZEe2-x4Jox-pPqg" base_Class="_Ih81VauZEe2-x4Jox-pPqg"/>
-  <AutomationML:SUC xmi:id="_IjXKkKuZEe2-x4Jox-pPqg" base_Class="_Ih81VauZEe2-x4Jox-pPqg"/>
+  <AutomationML:IC xmi:id="_IjXKkKuZEe2-x4Jox-pPqg" base_Class="_Ih81VauZEe2-x4Jox-pPqg"/>
   <Blocks:Block xmi:id="_IjY_wKuZEe2-x4Jox-pPqg" base_Class="_Ih81VquZEe2-x4Jox-pPqg"/>
-  <AutomationML:SUC xmi:id="_IjaN4KuZEe2-x4Jox-pPqg" base_Class="_Ih81VquZEe2-x4Jox-pPqg"/>
+  <AutomationML:RC xmi:id="_IjaN4KuZEe2-x4Jox-pPqg" base_Class="_Ih81VquZEe2-x4Jox-pPqg"/>
   <Blocks:Block xmi:id="_00fLUKyMEe2quNoZw-p_cg"/>
   <AutomationML:SUC xmi:id="_00fyYKyMEe2quNoZw-p_cg"/>
 </xmi:XMI>
