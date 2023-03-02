@@ -1,0 +1,91 @@
+pre {
+	"Running ETL".println();
+	var umlTool : new Native("org.eclipse.epsilon.emc.uml.dt.UMLTool");
+	var sysmlProfile = umlTool.getProfile("http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks");
+	var ecoreProfile = umlTool.getProfileFromPathmapUri("pathmap://UML_PROFILES/Ecore.profile.uml");
+	
+	var activitiesProfile = sysmlProfile.getPackagedElement("Activities");
+	var allocationsProfile = sysmlProfile.getPackagedElement("Allocations");
+	var blocksProfile = sysmlProfile.getPackagedElement("Blocks");
+	var constraintBlocksProfile = sysmlProfile.getPackagedElement("ConstraintBlocks");
+	var deprecatedElementsProfile = sysmlProfile.getPackagedElement("DeprecatedElements");
+	var modelElementsProfile = sysmlProfile.getPackagedElement("ModelElements");
+	var portsAndFlowsProfile = sysmlProfile.getPackagedElement("PortsAndFlows");
+	var requirementsProfile = sysmlProfile.getPackagedElement("Requirements");
+
+	var amlProfile = AML!Profile.all.first();
+	
+	var blockStereotype = blocksProfile.getPackagedElement("Block");
+	var sucStereotype = amlProfile.getPackagedElement("SUC");	
+}
+
+post{
+
+}
+
+rule IE2Class 
+	transform ie : CAEX30!InternalElement
+	to pe : UML!Class {
+		pe.name = ie.name;
+	}
+
+rule CAEX2SysML
+	transform s : CAEX30!CAEXFile
+	to t : UML!Model, rootpackage:UML!Package{
+		("runing CAEX2SysML ... ").println();
+		t.name = s.fileName;	
+		t.applyProfile(ecoreProfile);
+		t.applyProfile(sysmlProfile);
+		t.applyProfile(activitiesProfile); // because SysML includes many profile packages
+		t.applyProfile(allocationsProfile); // because SysML includes many profile packages
+		t.applyProfile(blocksProfile); // because SysML includes many profile packages
+		t.applyProfile(constraintBlocksProfile); // because SysML includes many profile packages
+		t.applyProfile(deprecatedElementsProfile); // because SysML includes many profile packages
+		t.applyProfile(modelElementsProfile); // because SysML includes many profile packages
+		t.applyProfile(portsAndFlowsProfile); // because SysML includes many profile packages
+		t.applyProfile(requirementsProfile); // because SysML includes many profile packages
+		t.applyProfile(amlProfile);
+		
+		rootpackage.name="root_"+s.fileName;	
+			
+		("22222222"+s.instanceHierarchy.internalElement.first()).println();
+		var rr = s.instanceHierarchy.internalElement.first();
+//		rootpackage.packagedElement::=rr;
+		rootpackage.appendEquivalentsOfChildrenOf(s.instanceHierarchy.internalElement);
+		//rootpackage.packagedElement::=rr;
+		//rootpackage.packagedElement.add(rr);
+		t.packagedElement.add(rootpackage);
+		t.addStereotypes(rootpackage);
+	}
+	
+operation Any addStereotypes(r : Any) {
+ 	var elements : Sequence = r.getPackagedElements().asSequence(); 
+ 	for(i in elements){
+ 		("--Adding Stereotypes to : "+i.name).println();
+ 		i.applyStereotype(blockStereotype);
+ 		i.applyStereotype(sucStereotype);
+ 	}
+}
+
+operation Any appendEquivalentsOfChildrenOf(source : Any) {	
+	for (child in source) {
+			//('--child lvl 0: ['+child.name+"] is child of -> "+ self).println();
+			("+++++++-self :"+self).println();
+			("+++++++source :"+child+" <---> "+source).println();
+			//self.packagedElement.add(source.first());
+//			('inner child is: '+child.internalElement.notEmpty()).println();
+			if(child.internalElement.notEmpty()){
+				("-------+self :"+self).println();
+				("-------source :"+child.first()+" <---> "+source.first()).println();
+				//source.first().packagedElement ::=child.first();
+				//('child.internalElement is::: ['+child.internalElement+"]--- "+self).println();
+				for (ch in child.internalElement) {
+					//('--child  lvl 1: ['+ch.name+"] is child of -> "+self).println();
+					//("******self :"+ch+" <---> "+child.internalElement).println();
+					//self.packagedElement.add(source.internalElement.first());
+					self.packagedElement ::=ch;
+					self.appendEquivalentsOfChildrenOf(ch);
+				}
+			}
+		}
+}

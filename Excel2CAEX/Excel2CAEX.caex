@@ -1,0 +1,1280 @@
+<?xml version="1.0" encoding="ASCII"?>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:caex="http://www.dke.de/CAEX/300" xsi:schemaLocation="http://www.dke.de/CAEX/300 ../UML2CAEX3/caex30/CAEX30.ecore" fileName="VCE">
+  <instanceHierarchy name="VCE">
+    <internalElement name="Pull Unit">
+      <internalElement name="base_0">
+        <internalElement iD="{4400A614-5AE8-4D35-851B-9410E9F70CEF}" name="Pull Unit">
+          <attribute name="id" value="{4400A614-5AE8-4D35-851B-9410E9F70CEF}"/>
+          <attribute name="genericId" value="{4400A614-5AE8-4D35-851B-9410E9F70CEF}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="f16504c1-0c67-48db-906a-a4873f098d13" name="Pull Unit">
+          <attribute name="id" value="f16504c1-0c67-48db-906a-a4873f098d13"/>
+          <attribute name="genericId" value="cc04faa1-c525-43bb-9998-9bb782bade3e"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Axle module, 1st">
+      <internalElement name="base_0">
+        <internalElement iD="{45EE620F-52CC-42D1-8E0F-1A3AF4E340FC}" name="Axle module, 1st">
+          <attribute name="id" value="{45EE620F-52CC-42D1-8E0F-1A3AF4E340FC}"/>
+          <attribute name="genericId" value="{45EE620F-52CC-42D1-8E0F-1A3AF4E340FC}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="a47fa31f-519c-4964-837b-600df4bbf406" name="Axle module, 1st">
+          <attribute name="id" value="a47fa31f-519c-4964-837b-600df4bbf406"/>
+          <attribute name="genericId" value="4fdaf47f-1446-4b10-8519-a22e6fd63f23"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Suspension, 1st axle">
+      <internalElement name="base_0">
+        <internalElement iD="{5BC075C1-9A8B-4672-B54B-02080C5F439B}" name="Suspension, 1st axle">
+          <attribute name="id" value="{5BC075C1-9A8B-4672-B54B-02080C5F439B}"/>
+          <attribute name="genericId" value="{5BC075C1-9A8B-4672-B54B-02080C5F439B}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="ee622f33-d496-4310-9ad2-7062a8776f4c" name="Suspension, 1st axle Rubber">
+          <attribute name="id" value="ee622f33-d496-4310-9ad2-7062a8776f4c"/>
+          <attribute name="genericId" value="e3cb3bf6-86b3-4daf-a020-986426b69dc2"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="63642fe3-271a-4223-85c0-fa8cf08177a9" name="Suspension, 1st axle HS">
+          <attribute name="id" value="63642fe3-271a-4223-85c0-fa8cf08177a9"/>
+          <attribute name="genericId" value="f4315607-64e5-4c14-b9fb-fc18e39aa78b"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Level sensor, 1st axle">
+      <internalElement name="base_0">
+        <internalElement iD="{2ECF2B29-28BF-4EAC-838D-9F991487B469}" name="Level sensor, 1st axle">
+          <attribute name="id" value="{2ECF2B29-28BF-4EAC-838D-9F991487B469}"/>
+          <attribute name="genericId" value="{2ECF2B29-28BF-4EAC-838D-9F991487B469}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="c252c629-231e-4e81-9cbd-b88ae31712eb" name="Level sensor, 1st axle">
+          <attribute name="id" value="c252c629-231e-4e81-9cbd-b88ae31712eb"/>
+          <attribute name="genericId" value="a4f0ca97-3e29-4083-9823-e9d3ebd2f016"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Axle, 1st">
+      <internalElement name="base_0">
+        <internalElement iD="{22C46176-0158-4165-9913-77A001B25223}" name="Axle, 1st">
+          <attribute name="id" value="{22C46176-0158-4165-9913-77A001B25223}"/>
+          <attribute name="genericId" value="{22C46176-0158-4165-9913-77A001B25223}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="994b0d8f-0a2b-4f87-9a52-a83c5fffc3e8" name="Axle 1st, A35">
+          <attribute name="id" value="994b0d8f-0a2b-4f87-9a52-a83c5fffc3e8"/>
+          <attribute name="genericId" value="61b3312e-99d1-4231-9518-10395528eef2"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="7335b0cd-79ac-4d78-ac74-6966fa9c156c" name="Axle 1st, A40">
+          <attribute name="id" value="7335b0cd-79ac-4d78-ac74-6966fa9c156c"/>
+          <attribute name="genericId" value="73508af0-764c-49cb-aeb1-7fbd4021c80c"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_3">
+        <internalElement iD="cb015c46-ef31-4427-85fd-1241dc4054b2" name="Axle 1st, A45">
+          <attribute name="id" value="cb015c46-ef31-4427-85fd-1241dc4054b2"/>
+          <attribute name="genericId" value="8c9b454b-94a5-4433-930f-116998c79e2b"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_4">
+        <internalElement iD="f8f09379-13f3-4529-9d0e-02daa36dedb6" name="Axle 1st, A50">
+          <attribute name="id" value="f8f09379-13f3-4529-9d0e-02daa36dedb6"/>
+          <attribute name="genericId" value="f06c2592-74a9-4018-896e-551a2cd1d181"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_5">
+        <internalElement iD="30f67535-6652-4525-9fcf-02913fa3d023" name="New 5 March">
+          <attribute name="id" value="30f67535-6652-4525-9fcf-02913fa3d023"/>
+          <attribute name="genericId" value="8d1c5b04-17af-4c53-9f2c-c55a3709c57d"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Aftertreatment module">
+      <internalElement name="base_0">
+        <internalElement iD="{8E1DA998-20A8-4B4B-A152-1EB5E5212A2F}" name="Aftertreatment module">
+          <attribute name="id" value="{8E1DA998-20A8-4B4B-A152-1EB5E5212A2F}"/>
+          <attribute name="genericId" value="{8E1DA998-20A8-4B4B-A152-1EB5E5212A2F}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="bedf6034-a07f-45af-a397-66ac4f7d8406" name="Aftertreatment module">
+          <attribute name="id" value="bedf6034-a07f-45af-a397-66ac4f7d8406"/>
+          <attribute name="genericId" value="60b6f306-b316-4949-a214-2b30a73becaa"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Exhaust aftertreatment">
+      <internalElement name="base_0">
+        <internalElement iD="{2D7F019C-DEFF-4CFE-B5C1-391722D18EFA}" name="Exhaust aftertreatment">
+          <attribute name="id" value="{2D7F019C-DEFF-4CFE-B5C1-391722D18EFA}"/>
+          <attribute name="genericId" value="{2D7F019C-DEFF-4CFE-B5C1-391722D18EFA}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="cd04bdb9-1e52-484c-bb3b-25f80033fa36" name="Exhaust aftertreatment StageII/III">
+          <attribute name="id" value="cd04bdb9-1e52-484c-bb3b-25f80033fa36"/>
+          <attribute name="genericId" value="8c9bcdfa-de71-481f-9919-bcefd51afda9"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="ef86bade-6d35-484b-8117-2bb39b98e983" name="Exhaust aftertreatment Tier4F/StageV">
+          <attribute name="id" value="ef86bade-6d35-484b-8117-2bb39b98e983"/>
+          <attribute name="genericId" value="ab1b2993-4411-4336-b23d-cf0a2872a764"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Fenderbox">
+      <internalElement name="base_0">
+        <internalElement iD="{7CBBE931-5183-496D-8802-7F698B9217F6}" name="Fenderbox">
+          <attribute name="id" value="{7CBBE931-5183-496D-8802-7F698B9217F6}"/>
+          <attribute name="genericId" value="{7CBBE931-5183-496D-8802-7F698B9217F6}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="21d826a9-36cd-4d67-abb8-48a367dd601c" name="Fenderbox StageII/III">
+          <attribute name="id" value="21d826a9-36cd-4d67-abb8-48a367dd601c"/>
+          <attribute name="genericId" value="682ee3f2-9898-4ea8-85b9-34638f80ae6b"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="2aafa7de-1040-4f53-815e-616b37742a76" name="Fenderbox Tier4F/StageV">
+          <attribute name="id" value="2aafa7de-1040-4f53-815e-616b37742a76"/>
+          <attribute name="genericId" value="504f1e1d-4b74-435d-bdb0-aa8e711f383f"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="DEF-tank">
+      <internalElement name="base_0">
+        <internalElement iD="{07D7308B-80BF-44F2-87E4-194559B9A156}" name="DEF-tank">
+          <attribute name="id" value="{07D7308B-80BF-44F2-87E4-194559B9A156}"/>
+          <attribute name="genericId" value="{07D7308B-80BF-44F2-87E4-194559B9A156}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="496468d8-6957-4c49-92d1-22ec63862964" name="DEF-tank">
+          <attribute name="id" value="496468d8-6957-4c49-92d1-22ec63862964"/>
+          <attribute name="genericId" value="71ed51b5-44ef-484a-890d-33358d22b26e"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Heat insulation">
+      <internalElement name="base_0">
+        <internalElement iD="{A14092F3-9335-48C3-8D85-01F799E68967}" name="Heat insulation">
+          <attribute name="id" value="{A14092F3-9335-48C3-8D85-01F799E68967}"/>
+          <attribute name="genericId" value="{A14092F3-9335-48C3-8D85-01F799E68967}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="9b589ad7-feb2-4495-86a9-58435a60ce1f" name="Heat insulation">
+          <attribute name="id" value="9b589ad7-feb2-4495-86a9-58435a60ce1f"/>
+          <attribute name="genericId" value="f3d931ec-150f-449c-9289-2b5dbb5cbe95"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="ACM, sensors">
+      <internalElement name="base_0">
+        <internalElement iD="{3587F079-56DB-46A6-A553-CCBDE8E74BE3}" name="ACM, sensors">
+          <attribute name="id" value="{3587F079-56DB-46A6-A553-CCBDE8E74BE3}"/>
+          <attribute name="genericId" value="{3587F079-56DB-46A6-A553-CCBDE8E74BE3}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="1be5ea46-9569-4aa9-b38a-10aa5e7953ce" name="ACM, sensors">
+          <attribute name="id" value="1be5ea46-9569-4aa9-b38a-10aa5e7953ce"/>
+          <attribute name="genericId" value="3850e1e6-f491-4073-91db-8ccedf732ebe"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Air ventilation, EATS">
+      <internalElement name="base_0">
+        <internalElement iD="{5D7DC55E-FD71-4B4E-9D23-F0D00E3A0A2C}" name="Air ventilation, EATS">
+          <attribute name="id" value="{5D7DC55E-FD71-4B4E-9D23-F0D00E3A0A2C}"/>
+          <attribute name="genericId" value="{5D7DC55E-FD71-4B4E-9D23-F0D00E3A0A2C}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="8eee8f87-1627-4473-9be4-8cb1601faca8" name="Air ventilation, EATS">
+          <attribute name="id" value="8eee8f87-1627-4473-9be4-8cb1601faca8"/>
+          <attribute name="genericId" value="753310b7-e96b-4fa9-b5d4-60cfdc906b22"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Engine and transmission">
+      <internalElement name="base_0">
+        <internalElement iD="{BD1C80CF-48E9-4B7C-9C81-453DF714DD46}" name="Engine and transmission">
+          <attribute name="id" value="{BD1C80CF-48E9-4B7C-9C81-453DF714DD46}"/>
+          <attribute name="genericId" value="{BD1C80CF-48E9-4B7C-9C81-453DF714DD46}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="32137fc2-aac1-4453-9111-f7aa9e1d3cb4" name="Engine and transmission">
+          <attribute name="id" value="32137fc2-aac1-4453-9111-f7aa9e1d3cb4"/>
+          <attribute name="genericId" value="001c56f3-c8cb-405e-b6fc-b2c55a74747b"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Engine module">
+      <internalElement name="base_0">
+        <internalElement iD="{B6B908C6-0319-4128-AEE1-E31ACE610703}" name="Engine module">
+          <attribute name="id" value="{B6B908C6-0319-4128-AEE1-E31ACE610703}"/>
+          <attribute name="genericId" value="{B6B908C6-0319-4128-AEE1-E31ACE610703}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="d93134b1-91b6-41c3-88b6-75c65306a5c9" name="Engine module">
+          <attribute name="id" value="d93134b1-91b6-41c3-88b6-75c65306a5c9"/>
+          <attribute name="genericId" value="6f8a1c95-4bbe-4fdb-acbd-79d38a3142b0"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Engine">
+      <internalElement name="base_0">
+        <internalElement iD="{B2688836-742E-452E-848A-176E41E62718}" name="Engine">
+          <attribute name="id" value="{B2688836-742E-452E-848A-176E41E62718}"/>
+          <attribute name="genericId" value="{B2688836-742E-452E-848A-176E41E62718}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="2b433f75-c92d-499f-80cf-7a3e6d90e688" name="Engine D13 StageII">
+          <attribute name="id" value="2b433f75-c92d-499f-80cf-7a3e6d90e688"/>
+          <attribute name="genericId" value="7646cf38-d1a6-4c74-9b58-684bbf2b3ef6"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="3e170d8b-a4a0-4615-8b4c-9e2fdb026781" name="Engine D13 StageIII">
+          <attribute name="id" value="3e170d8b-a4a0-4615-8b4c-9e2fdb026781"/>
+          <attribute name="genericId" value="40b18c8b-973f-4cc1-ad5e-1256e77a594f"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_3">
+        <internalElement iD="95945358-5bfd-4a46-ba7a-5c48ae25071b" name="Engine D13 Tier4F/StageV">
+          <attribute name="id" value="95945358-5bfd-4a46-ba7a-5c48ae25071b"/>
+          <attribute name="genericId" value="fe0965f5-9b7d-4200-8c10-2c195390daf9"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_4">
+        <internalElement iD="45d87885-b9d2-4b17-a1c9-c61b99ee5587" name="Engine D16 StageII">
+          <attribute name="id" value="45d87885-b9d2-4b17-a1c9-c61b99ee5587"/>
+          <attribute name="genericId" value="4077f4fd-cc10-4549-8ed3-18c519070458"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_5">
+        <internalElement iD="cf43f7da-6ad8-4d82-b324-0b0717ec07e8" name="Engine D16 StageIII">
+          <attribute name="id" value="cf43f7da-6ad8-4d82-b324-0b0717ec07e8"/>
+          <attribute name="genericId" value="a1c00ae1-d989-4bed-bf62-e13918d51801"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_6">
+        <internalElement iD="8d68ca6a-9454-4fd4-a471-be6f7341b545" name="Engine D16 Tier4F/StageV">
+          <attribute name="id" value="8d68ca6a-9454-4fd4-a471-be6f7341b545"/>
+          <attribute name="genericId" value="694a68c2-8a87-4dcf-866f-c15cd7568b0f"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Oil filter, engine">
+      <internalElement name="base_0">
+        <internalElement iD="{804F5DFD-67FE-44EC-BBD0-35E8F3E9560C}" name="Oil filter, engine">
+          <attribute name="id" value="{804F5DFD-67FE-44EC-BBD0-35E8F3E9560C}"/>
+          <attribute name="genericId" value="{804F5DFD-67FE-44EC-BBD0-35E8F3E9560C}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="070f354d-842c-42d1-b4d5-050f57c00f44" name="Oil filter, engine">
+          <attribute name="id" value="070f354d-842c-42d1-b4d5-050f57c00f44"/>
+          <attribute name="genericId" value="dda370f2-47f5-4117-be50-b6dec586db6b"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Air compressor">
+      <internalElement name="base_0">
+        <internalElement iD="{E33AA933-BA06-41F1-B991-7BFD5E302CEA}" name="Air compressor">
+          <attribute name="id" value="{E33AA933-BA06-41F1-B991-7BFD5E302CEA}"/>
+          <attribute name="genericId" value="{E33AA933-BA06-41F1-B991-7BFD5E302CEA}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="b68c5b38-d543-4f38-94fa-e5a342d7b359" name="Air compressor">
+          <attribute name="id" value="b68c5b38-d543-4f38-94fa-e5a342d7b359"/>
+          <attribute name="genericId" value="350950e9-4113-492e-b8ea-626f1a56d80c"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="ECU, engine">
+      <internalElement name="base_0">
+        <internalElement iD="{793C686F-A25A-49BC-B992-89B0D9CE1B99}" name="ECU, engine">
+          <attribute name="id" value="{793C686F-A25A-49BC-B992-89B0D9CE1B99}"/>
+          <attribute name="genericId" value="{793C686F-A25A-49BC-B992-89B0D9CE1B99}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="a650f29b-c792-44e3-8ea6-4b4db9815da2" name="ECU, engine">
+          <attribute name="id" value="a650f29b-c792-44e3-8ea6-4b4db9815da2"/>
+          <attribute name="genericId" value="42df6b94-98a7-4c48-bacb-fa18ab634d3a"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Power take-off">
+      <internalElement name="base_0">
+        <internalElement iD="{6F09FD29-DDDF-404F-B9E3-EA77C5FB80F7}" name="Power take-off">
+          <attribute name="id" value="{6F09FD29-DDDF-404F-B9E3-EA77C5FB80F7}"/>
+          <attribute name="genericId" value="{6F09FD29-DDDF-404F-B9E3-EA77C5FB80F7}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="6282bc51-5f67-4642-9797-dac25d9d59f1" name="Power take-off PT9">
+          <attribute name="id" value="6282bc51-5f67-4642-9797-dac25d9d59f1"/>
+          <attribute name="genericId" value="70bfcbf2-b42b-4040-879b-3f0b66493b33"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="27a40278-70b2-488b-a8cc-96dc441b8547" name="Power take-off NAHT">
+          <attribute name="id" value="27a40278-70b2-488b-a8cc-96dc441b8547"/>
+          <attribute name="genericId" value="b5da8166-7b2a-4d5f-b399-d47e75559676"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Transmission">
+      <internalElement name="base_0">
+        <internalElement iD="{CC5B7A3D-D01A-42A8-A589-83DB2BDFD9F8}" name="Transmission">
+          <attribute name="id" value="{CC5B7A3D-D01A-42A8-A589-83DB2BDFD9F8}"/>
+          <attribute name="genericId" value="{CC5B7A3D-D01A-42A8-A589-83DB2BDFD9F8}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="e06fa306-323b-42f2-adda-8f71270a173a" name="Transmission PT9">
+          <attribute name="id" value="e06fa306-323b-42f2-adda-8f71270a173a"/>
+          <attribute name="genericId" value="9e09ee0b-66f8-45be-9da9-62af05023254"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="b75be450-423a-4da1-8894-2ccef5ab39cd" name="Transmission NAHT">
+          <attribute name="id" value="b75be450-423a-4da1-8894-2ccef5ab39cd"/>
+          <attribute name="genericId" value="15f60bab-9128-41e7-8412-c336b8de9624"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Oil filter, transmission">
+      <internalElement name="base_0">
+        <internalElement iD="{1B77C0E8-040E-4DBD-8A94-E90E6679CF76}" name="Oil filter, transmission">
+          <attribute name="id" value="{1B77C0E8-040E-4DBD-8A94-E90E6679CF76}"/>
+          <attribute name="genericId" value="{1B77C0E8-040E-4DBD-8A94-E90E6679CF76}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="52d11936-a9cf-4dcf-af01-50a236968d94" name="Oil filter, transmission PT9">
+          <attribute name="id" value="52d11936-a9cf-4dcf-af01-50a236968d94"/>
+          <attribute name="genericId" value="4be3d6fb-3ea0-4e76-bc24-7e7110aa5096"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Engine mounting, rear">
+      <internalElement name="base_0">
+        <internalElement iD="{3D2787BB-9460-4DA7-8D46-E3D2527B5FCA}" name="Engine mounting, rear">
+          <attribute name="id" value="{3D2787BB-9460-4DA7-8D46-E3D2527B5FCA}"/>
+          <attribute name="genericId" value="{3D2787BB-9460-4DA7-8D46-E3D2527B5FCA}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="e3657fed-561c-4f6d-a1b8-0bb9c10b3a2c" name="Engine mounting, rear">
+          <attribute name="id" value="e3657fed-561c-4f6d-a1b8-0bb9c10b3a2c"/>
+          <attribute name="genericId" value="85a322ea-13b7-479a-9030-c117b6bd4601"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Water cooler module">
+      <internalElement name="base_0">
+        <internalElement iD="{B2335719-27AE-40B8-9CBA-B519E5450021}" name="Water cooler module">
+          <attribute name="id" value="{B2335719-27AE-40B8-9CBA-B519E5450021}"/>
+          <attribute name="genericId" value="{B2335719-27AE-40B8-9CBA-B519E5450021}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="ff5c9301-c7f7-4c48-a556-3b0b03ef6be7" name="Water cooler module">
+          <attribute name="id" value="ff5c9301-c7f7-4c48-a556-3b0b03ef6be7"/>
+          <attribute name="genericId" value="955168b4-ba80-4a1d-aa8c-e1830437778a"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Radiator">
+      <internalElement name="base_0">
+        <internalElement iD="{6835477A-600F-4111-89E3-02B0B73668E4}" name="Radiator">
+          <attribute name="id" value="{6835477A-600F-4111-89E3-02B0B73668E4}"/>
+          <attribute name="genericId" value="{6835477A-600F-4111-89E3-02B0B73668E4}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="c318ddbd-7f7c-44f2-9d8c-8744a75f4e7c" name="Radiator">
+          <attribute name="id" value="c318ddbd-7f7c-44f2-9d8c-8744a75f4e7c"/>
+          <attribute name="genericId" value="63a91cca-bc53-4f68-81dd-30e063ea12e9"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Fuel filter">
+      <internalElement name="base_0">
+        <internalElement iD="{CF7C5BBA-932F-4229-AF1F-1AA1A4C70BB6}" name="Fuel filter">
+          <attribute name="id" value="{CF7C5BBA-932F-4229-AF1F-1AA1A4C70BB6}"/>
+          <attribute name="genericId" value="{CF7C5BBA-932F-4229-AF1F-1AA1A4C70BB6}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="5c34ba44-b3b3-41cc-942c-0e23cf17a610" name="Fuel filter D13">
+          <attribute name="id" value="5c34ba44-b3b3-41cc-942c-0e23cf17a610"/>
+          <attribute name="genericId" value="b408a514-607c-45e6-aa7b-9beafcdf9f03"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="4645ccf8-5dfa-4a02-877f-444a2558f7a3" name="Fuel filter D16">
+          <attribute name="id" value="4645ccf8-5dfa-4a02-877f-444a2558f7a3"/>
+          <attribute name="genericId" value="0ee86567-4f8f-407f-9aad-821f8b097ee3"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Fan guard, radiator">
+      <internalElement name="base_0">
+        <internalElement iD="{C328B22F-8904-4F12-A73D-903F32265F46}" name="Fan guard, radiator">
+          <attribute name="id" value="{C328B22F-8904-4F12-A73D-903F32265F46}"/>
+          <attribute name="genericId" value="{C328B22F-8904-4F12-A73D-903F32265F46}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="50b7eb47-e6a4-462a-b181-9b896271eca8" name="Fan guard radiator A35 A40 A45 A50">
+          <attribute name="id" value="50b7eb47-e6a4-462a-b181-9b896271eca8"/>
+          <attribute name="genericId" value="5a8c14cc-4c0f-40dc-9957-5a2862e1de45"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="27a98ca3-f20b-4af6-9b5b-98b0122247ec" name="Fan guard radiator Tier4F/StageV A45 A50">
+          <attribute name="id" value="27a98ca3-f20b-4af6-9b5b-98b0122247ec"/>
+          <attribute name="genericId" value="03612aa5-4256-448f-9143-89252ed222f5"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Fan shroud, radiator">
+      <internalElement name="base_0">
+        <internalElement iD="{7C4BB065-6B82-4A99-B848-56D6D4524633}" name="Fan shroud, radiator">
+          <attribute name="id" value="{7C4BB065-6B82-4A99-B848-56D6D4524633}"/>
+          <attribute name="genericId" value="{7C4BB065-6B82-4A99-B848-56D6D4524633}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="5cebf73b-5f74-430a-a03d-416b3e89ccc1" name="Fan shroud radiator A35 A40 A45 A50">
+          <attribute name="id" value="5cebf73b-5f74-430a-a03d-416b3e89ccc1"/>
+          <attribute name="genericId" value="3fde1cd2-8858-4912-aa15-c1256319fc61"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="c2dbd8be-8c66-40ba-8689-bb7abc416c5f" name="Fan shroud radiator Tier4F/StageV A45 A50">
+          <attribute name="id" value="c2dbd8be-8c66-40ba-8689-bb7abc416c5f"/>
+          <attribute name="genericId" value="ce55fa37-d225-4ec0-8516-3426de309a05"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Fan, fan motor, radiator">
+      <internalElement name="base_0">
+        <internalElement iD="{A7574F77-2BB9-4C03-AAA7-86CEBBC1F13D}" name="Fan, fan motor, radiator">
+          <attribute name="id" value="{A7574F77-2BB9-4C03-AAA7-86CEBBC1F13D}"/>
+          <attribute name="genericId" value="{A7574F77-2BB9-4C03-AAA7-86CEBBC1F13D}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="7217291e-883d-43b7-ba89-128a13193944" name="Fan motor radiator A35 A40 A45 A50">
+          <attribute name="id" value="7217291e-883d-43b7-ba89-128a13193944"/>
+          <attribute name="genericId" value="05090bec-96d8-46e0-87f5-779d013173d4"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="5ca1e304-8bc8-4a68-9653-a9dd8bbad3dc" name="Fan motor radiator Tier4F/StageV A45 A50">
+          <attribute name="id" value="5ca1e304-8bc8-4a68-9653-a9dd8bbad3dc"/>
+          <attribute name="genericId" value="b3cda9fb-26a7-4535-ac46-d908fb8e251a"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Radiator bracket">
+      <internalElement name="base_0">
+        <internalElement iD="{CB869E38-FBD5-43A0-BC77-A22B2600351E}" name="Radiator bracket">
+          <attribute name="id" value="{CB869E38-FBD5-43A0-BC77-A22B2600351E}"/>
+          <attribute name="genericId" value="{CB869E38-FBD5-43A0-BC77-A22B2600351E}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="a36e3ac1-a529-407e-9974-f458f9a2a016" name="Radiator bracket">
+          <attribute name="id" value="a36e3ac1-a529-407e-9974-f458f9a2a016"/>
+          <attribute name="genericId" value="a35b900e-8269-425f-8a15-134b6b348b86"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Fuel heater">
+      <internalElement name="base_0">
+        <internalElement iD="{94FA09A6-5A93-4740-8B2B-F524FDA0914F}" name="Fuel heater">
+          <attribute name="id" value="{94FA09A6-5A93-4740-8B2B-F524FDA0914F}"/>
+          <attribute name="genericId" value="{94FA09A6-5A93-4740-8B2B-F524FDA0914F}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="1145d061-729f-4346-9d34-6480f53406da" name="Fuel heater D13">
+          <attribute name="id" value="1145d061-729f-4346-9d34-6480f53406da"/>
+          <attribute name="genericId" value="321c9478-d9dc-43e4-bca7-1e8f92759ed4"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="23e9d0fa-5eaf-4f42-9fa4-052ae0f379ad" name="Fuel heater D16">
+          <attribute name="id" value="23e9d0fa-5eaf-4f42-9fa4-052ae0f379ad"/>
+          <attribute name="genericId" value="374f65e2-08a1-4e63-a776-e3a9f55f0fea"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Wheel, 1st">
+      <internalElement name="base_0">
+        <internalElement iD="{9AC9E064-051A-4C08-9B1E-6CF4F54E5433}" name="Wheel, 1st">
+          <attribute name="id" value="{9AC9E064-051A-4C08-9B1E-6CF4F54E5433}"/>
+          <attribute name="genericId" value="{9AC9E064-051A-4C08-9B1E-6CF4F54E5433}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="4034c663-821a-46b6-a4de-7971aa0141ce" name="Wheel, 1st">
+          <attribute name="id" value="4034c663-821a-46b6-a4de-7971aa0141ce"/>
+          <attribute name="genericId" value="248180be-89d3-4d65-acd5-491518b3315f"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Rim, 1st">
+      <internalElement name="base_0">
+        <internalElement iD="{75222A2F-00F7-4463-BD6B-81313D8B58E4}" name="Rim, 1st">
+          <attribute name="id" value="{75222A2F-00F7-4463-BD6B-81313D8B58E4}"/>
+          <attribute name="genericId" value="{75222A2F-00F7-4463-BD6B-81313D8B58E4}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="0b0672f2-473f-4ebe-95fd-a43261d2b6d9" name="Rim 1st, 25-22.00/3.0">
+          <attribute name="id" value="0b0672f2-473f-4ebe-95fd-a43261d2b6d9"/>
+          <attribute name="genericId" value="e541ab21-1203-43a5-afa0-46236550e09b"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="05420348-7629-4f05-8c08-8d0c99a2f841" name="Rim 1st, 24*29/3">
+          <attribute name="id" value="05420348-7629-4f05-8c08-8d0c99a2f841"/>
+          <attribute name="genericId" value="0c7f06a4-8204-45a0-ab3f-0cd8f2de87b7"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_3">
+        <internalElement iD="d496096b-b573-4c9c-944a-d23101d1f0a4" name="Rim 1st, 25-25.00/3.5">
+          <attribute name="id" value="d496096b-b573-4c9c-944a-d23101d1f0a4"/>
+          <attribute name="genericId" value="267429d3-6b74-4b56-bbb9-aa39e0726ad2"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_4">
+        <internalElement iD="b42ec442-ddf0-43c5-844e-44a5e3b5bd12" name="Rim 1st, 27*29/3">
+          <attribute name="id" value="b42ec442-ddf0-43c5-844e-44a5e3b5bd12"/>
+          <attribute name="genericId" value="5a97f1bf-3b48-4250-b052-677f8991e03f"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Tire, 1st">
+      <internalElement name="base_0">
+        <internalElement iD="{06D9A73B-4759-4E01-8047-905FA30DB0CB}" name="Tire, 1st">
+          <attribute name="id" value="{06D9A73B-4759-4E01-8047-905FA30DB0CB}"/>
+          <attribute name="genericId" value="{06D9A73B-4759-4E01-8047-905FA30DB0CB}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="a6c82d89-22db-4935-a67f-3981882e95b5" name="Tire 1st, 26,5R25">
+          <attribute name="id" value="a6c82d89-22db-4935-a67f-3981882e95b5"/>
+          <attribute name="genericId" value="a06229bf-7bd0-454b-ba22-d9535c54daba"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="582713c7-49fb-40a4-a35e-bc5e0a710f15" name="Tire 1st, 775/65R29">
+          <attribute name="id" value="582713c7-49fb-40a4-a35e-bc5e0a710f15"/>
+          <attribute name="genericId" value="0663f8b6-32d6-4601-a034-a5e19d872e6d"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_3">
+        <internalElement iD="87391fdf-1511-4e2e-b8b6-613e86667aad" name="Tire 1st, 29,5R25">
+          <attribute name="id" value="87391fdf-1511-4e2e-b8b6-613e86667aad"/>
+          <attribute name="genericId" value="547e71b7-e2e9-4460-830d-fde1853a82e1"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_4">
+        <internalElement iD="b38bb643-426f-4919-9f50-b98b94edc6fe" name="Tire 1st, 875/65R29">
+          <attribute name="id" value="b38bb643-426f-4919-9f50-b98b94edc6fe"/>
+          <attribute name="genericId" value="d444dea0-bf37-4a58-b089-d18ec462945b"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Hitch module">
+      <internalElement name="base_0">
+        <internalElement iD="{4DE14CF7-6528-4690-9497-4EB2BDD00BBC}" name="Hitch module">
+          <attribute name="id" value="{4DE14CF7-6528-4690-9497-4EB2BDD00BBC}"/>
+          <attribute name="genericId" value="{4DE14CF7-6528-4690-9497-4EB2BDD00BBC}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="7a7fb403-9c07-4ab4-8e07-16e677559e9c" name="Hitch module">
+          <attribute name="id" value="7a7fb403-9c07-4ab4-8e07-16e677559e9c"/>
+          <attribute name="genericId" value="1d8fca4d-3d10-47cf-ae3d-cd6eee9b2f9b"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Intermediate shaft, hitch">
+      <internalElement name="base_0">
+        <internalElement iD="{5E158DD4-9F29-4EFB-AAE3-4AEEF8D5362C}" name="Intermediate shaft, hitch">
+          <attribute name="id" value="{5E158DD4-9F29-4EFB-AAE3-4AEEF8D5362C}"/>
+          <attribute name="genericId" value="{5E158DD4-9F29-4EFB-AAE3-4AEEF8D5362C}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="886ade9c-d14d-4599-a1de-8e1b1153c075" name="Intermediate shaft, hitch">
+          <attribute name="id" value="886ade9c-d14d-4599-a1de-8e1b1153c075"/>
+          <attribute name="genericId" value="831da60d-763e-4486-90ca-879118ba5213"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Articulation hitch">
+      <internalElement name="base_0">
+        <internalElement iD="{2965361F-E1C1-44CC-85BD-800B2865D197}" name="Articulation hitch">
+          <attribute name="id" value="{2965361F-E1C1-44CC-85BD-800B2865D197}"/>
+          <attribute name="genericId" value="{2965361F-E1C1-44CC-85BD-800B2865D197}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="ec201d84-26d4-4ff3-b569-5dff390fbfa1" name="Articulation hitch">
+          <attribute name="id" value="ec201d84-26d4-4ff3-b569-5dff390fbfa1"/>
+          <attribute name="genericId" value="7312f3c9-33a8-4fd7-a47c-23cd54b0d52f"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Bearing vertical">
+      <internalElement name="base_0">
+        <internalElement iD="{E9A1E189-27F2-439E-9003-8BA6E3E90698}" name="Bearing vertical">
+          <attribute name="id" value="{E9A1E189-27F2-439E-9003-8BA6E3E90698}"/>
+          <attribute name="genericId" value="{E9A1E189-27F2-439E-9003-8BA6E3E90698}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="9dc010f4-44c9-4ed0-bebe-87b4546f72a6" name="Bearing vertical">
+          <attribute name="id" value="9dc010f4-44c9-4ed0-bebe-87b4546f72a6"/>
+          <attribute name="genericId" value="56a4deea-150e-4902-b5b2-1f66c098ccef"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Bearing horisontal">
+      <internalElement name="base_0">
+        <internalElement iD="{9EBAFDED-CBE8-434E-A113-268D0E67B1C4}" name="Bearing horisontal">
+          <attribute name="id" value="{9EBAFDED-CBE8-434E-A113-268D0E67B1C4}"/>
+          <attribute name="genericId" value="{9EBAFDED-CBE8-434E-A113-268D0E67B1C4}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="3f02e195-b4e5-47fe-9f7c-19f8542324de" name="Bearing horisontal">
+          <attribute name="id" value="3f02e195-b4e5-47fe-9f7c-19f8542324de"/>
+          <attribute name="genericId" value="0cc6a82a-210a-4820-b2cb-7f368f2f6935"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Front frame">
+      <internalElement name="base_0">
+        <internalElement iD="{CF6563B0-ED20-4943-B256-86DA31A5F0C7}" name="Front frame">
+          <attribute name="id" value="{CF6563B0-ED20-4943-B256-86DA31A5F0C7}"/>
+          <attribute name="genericId" value="{CF6563B0-ED20-4943-B256-86DA31A5F0C7}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="1a50249d-9979-4e4d-ae2a-7c0a975303e9" name="Front frame PT9, Rubber">
+          <attribute name="id" value="1a50249d-9979-4e4d-ae2a-7c0a975303e9"/>
+          <attribute name="genericId" value="824659bb-46ab-4a78-bdd7-ef3fd6984028"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="5be9a874-58f5-42a9-8e2b-82d7fe35d3a1" name="Front frame PT9, HS">
+          <attribute name="id" value="5be9a874-58f5-42a9-8e2b-82d7fe35d3a1"/>
+          <attribute name="genericId" value="779b8e71-a491-4854-887a-ce90e30930b9"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_3">
+        <internalElement iD="1ae2159b-320e-4b26-b0a7-71491f85f306" name="Front frame NAHT, Rubber">
+          <attribute name="id" value="1ae2159b-320e-4b26-b0a7-71491f85f306"/>
+          <attribute name="genericId" value="7b4876ab-3192-47fa-a329-2740805db10e"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_4">
+        <internalElement iD="37a7b06e-6a2b-47f8-8ae8-9e151cbad75a" name="Front frame NAHT, HS">
+          <attribute name="id" value="37a7b06e-6a2b-47f8-8ae8-9e151cbad75a"/>
+          <attribute name="genericId" value="8b71a726-c2a4-42b6-a10a-8807088d3ca2"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Load unit">
+      <internalElement name="base_0">
+        <internalElement iD="{E61A5F3A-7906-4B55-B57E-2FFB44600E38}" name="Load unit">
+          <attribute name="id" value="{E61A5F3A-7906-4B55-B57E-2FFB44600E38}"/>
+          <attribute name="genericId" value="{E61A5F3A-7906-4B55-B57E-2FFB44600E38}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="e11f36e2-4209-4b0a-a77e-c6bcf05f70b3" name="Load unit">
+          <attribute name="id" value="e11f36e2-4209-4b0a-a77e-c6bcf05f70b3"/>
+          <attribute name="genericId" value="a6d10993-589f-4ca3-adad-cc4161b13e54"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Axle module, 3rd">
+      <internalElement name="base_0">
+        <internalElement iD="{019425CE-6BB2-473F-84D2-2167DBD7EEFE}" name="Axle module, 3rd">
+          <attribute name="id" value="{019425CE-6BB2-473F-84D2-2167DBD7EEFE}"/>
+          <attribute name="genericId" value="{019425CE-6BB2-473F-84D2-2167DBD7EEFE}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="006ff386-ab9a-4673-bc3f-f3b4c728fdc7" name="Axle module, 3rd">
+          <attribute name="id" value="006ff386-ab9a-4673-bc3f-f3b4c728fdc7"/>
+          <attribute name="genericId" value="70eb77b7-3782-4217-af82-cc3edf3fb7f1"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Level sensor, 3rd axle">
+      <internalElement name="base_0">
+        <internalElement iD="{6316DDFA-4BA3-4E87-8745-AF304BB1C42C}" name="Level sensor, 3rd axle">
+          <attribute name="id" value="{6316DDFA-4BA3-4E87-8745-AF304BB1C42C}"/>
+          <attribute name="genericId" value="{6316DDFA-4BA3-4E87-8745-AF304BB1C42C}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="54d7676a-13e6-4fc7-9f66-7bd811df14b7" name="Level sensor, 3rd axle">
+          <attribute name="id" value="54d7676a-13e6-4fc7-9f66-7bd811df14b7"/>
+          <attribute name="genericId" value="bcdfcd91-de4a-43fe-9dde-f3919a2f0376"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Axle, 3rd">
+      <internalElement name="base_0">
+        <internalElement iD="{2166C279-666A-46B7-97F3-5C6FD87F1BD4}" name="Axle, 3rd">
+          <attribute name="id" value="{2166C279-666A-46B7-97F3-5C6FD87F1BD4}"/>
+          <attribute name="genericId" value="{2166C279-666A-46B7-97F3-5C6FD87F1BD4}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="5706c8a8-43b8-4c27-9442-3929861f8be6" name="Axle 3rd, A35">
+          <attribute name="id" value="5706c8a8-43b8-4c27-9442-3929861f8be6"/>
+          <attribute name="genericId" value="ba3b0320-6450-4366-925b-b5c1775afad0"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="9de48644-cb22-4c21-b6f4-5e00613e07ea" name="Axle 3rd, A40">
+          <attribute name="id" value="9de48644-cb22-4c21-b6f4-5e00613e07ea"/>
+          <attribute name="genericId" value="3e3f3f58-f548-4889-95e9-46ed1e8fcaff"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_3">
+        <internalElement iD="a67bd59e-dfba-457a-9bfd-ce5c00bccb4a" name="Axle 3rd, A45">
+          <attribute name="id" value="a67bd59e-dfba-457a-9bfd-ce5c00bccb4a"/>
+          <attribute name="genericId" value="2b15a76f-4962-4b65-a7ee-c2a8417e5107"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_4">
+        <internalElement iD="4324d4f0-99c1-4742-910c-7b329dfebd2b" name="Axle 3rd, A50">
+          <attribute name="id" value="4324d4f0-99c1-4742-910c-7b329dfebd2b"/>
+          <attribute name="genericId" value="094f689a-71f4-4e17-a2ce-a1224776a522"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Suspension, 3rd axle">
+      <internalElement name="base_0">
+        <internalElement iD="{510D1C26-FC29-4B0B-A20C-34062CEAFE80}" name="Suspension, 3rd axle">
+          <attribute name="id" value="{510D1C26-FC29-4B0B-A20C-34062CEAFE80}"/>
+          <attribute name="genericId" value="{510D1C26-FC29-4B0B-A20C-34062CEAFE80}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="39ee929b-7e39-41f5-be10-0901a216da02" name="Suspension, 3rd axle Rubber">
+          <attribute name="id" value="39ee929b-7e39-41f5-be10-0901a216da02"/>
+          <attribute name="genericId" value="1309af3a-72f4-47ee-a2b5-314f99bbe04f"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="b1f58da6-7367-4a2f-a7ee-9757a6a0c820" name="Suspension, 3rd axle HS">
+          <attribute name="id" value="b1f58da6-7367-4a2f-a7ee-9757a6a0c820"/>
+          <attribute name="genericId" value="8c5996b0-1b41-4e2c-92eb-1df99b4d81bf"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Axle module, 2nd">
+      <internalElement name="base_0">
+        <internalElement iD="{9935D923-54E0-4719-AD24-BBEB25638422}" name="Axle module, 2nd">
+          <attribute name="id" value="{9935D923-54E0-4719-AD24-BBEB25638422}"/>
+          <attribute name="genericId" value="{9935D923-54E0-4719-AD24-BBEB25638422}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="56aab1f9-ba3a-41f9-957c-7b962e4594a1" name="Axle module, 2nd">
+          <attribute name="id" value="56aab1f9-ba3a-41f9-957c-7b962e4594a1"/>
+          <attribute name="genericId" value="888dddfa-56f5-4907-b9a3-7d7948dd721f"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Level sensor, 2nd axle">
+      <internalElement name="base_0">
+        <internalElement iD="{C595C769-AE0E-48F9-B826-D944604AB3BB}" name="Level sensor, 2nd axle">
+          <attribute name="id" value="{C595C769-AE0E-48F9-B826-D944604AB3BB}"/>
+          <attribute name="genericId" value="{C595C769-AE0E-48F9-B826-D944604AB3BB}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="37f03d5f-1ea8-4ea5-9888-05d0b854feb7" name="Level sensor, 2nd axle">
+          <attribute name="id" value="37f03d5f-1ea8-4ea5-9888-05d0b854feb7"/>
+          <attribute name="genericId" value="ab091249-8598-4194-bd79-5c38cd1f47c8"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Axle, 2nd">
+      <internalElement name="base_0">
+        <internalElement iD="{311B049D-2003-4A27-94AB-FE50002A3485}" name="Axle, 2nd">
+          <attribute name="id" value="{311B049D-2003-4A27-94AB-FE50002A3485}"/>
+          <attribute name="genericId" value="{311B049D-2003-4A27-94AB-FE50002A3485}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="70252487-c99e-42eb-9b04-d2015468a58e" name="Axle 2nd, A35">
+          <attribute name="id" value="70252487-c99e-42eb-9b04-d2015468a58e"/>
+          <attribute name="genericId" value="1c9ba6e8-7a0b-4538-a264-b4842e171d7b"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="8f5d0711-19cd-40cd-8b94-019b92053b04" name="Axle 2nd, A40">
+          <attribute name="id" value="8f5d0711-19cd-40cd-8b94-019b92053b04"/>
+          <attribute name="genericId" value="1d3ef76f-4c20-43f1-941b-5775dc15d98f"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_3">
+        <internalElement iD="5b6cb77b-21c6-4e0f-9e2a-a2c6cd28ece9" name="Axle 2nd, A45">
+          <attribute name="id" value="5b6cb77b-21c6-4e0f-9e2a-a2c6cd28ece9"/>
+          <attribute name="genericId" value="b5117016-75c5-43d4-a7c2-3175b7700409"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_4">
+        <internalElement iD="efa3f6ec-916d-4920-acbf-6e1e98aad0b6" name="Axle 2nd, A50">
+          <attribute name="id" value="efa3f6ec-916d-4920-acbf-6e1e98aad0b6"/>
+          <attribute name="genericId" value="fdc85e53-ad12-493a-a1f8-0bc1173d8b15"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Suspension, 2nd axle">
+      <internalElement name="base_0">
+        <internalElement iD="{65363B33-F2A2-4473-B33D-1BAFE4AC70A5}" name="Suspension, 2nd axle">
+          <attribute name="id" value="{65363B33-F2A2-4473-B33D-1BAFE4AC70A5}"/>
+          <attribute name="genericId" value="{65363B33-F2A2-4473-B33D-1BAFE4AC70A5}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="6bd750a6-959e-421a-8228-5840c865297e" name="Suspension, 2nd axle Rubber">
+          <attribute name="id" value="6bd750a6-959e-421a-8228-5840c865297e"/>
+          <attribute name="genericId" value="66c49b93-cdee-4479-b66e-d2bd149eaadf"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="000186d4-b8e2-4211-b566-a84839a20ddd" name="Suspension, 2nd axle HS">
+          <attribute name="id" value="000186d4-b8e2-4211-b566-a84839a20ddd"/>
+          <attribute name="genericId" value="820f3001-2f4c-426f-ac2c-f25d9e9a9b60"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Wheel, 3rd">
+      <internalElement name="base_0">
+        <internalElement iD="{0C32563A-1E05-4BEC-9D8C-8D2571D3E491}" name="Wheel, 3rd">
+          <attribute name="id" value="{0C32563A-1E05-4BEC-9D8C-8D2571D3E491}"/>
+          <attribute name="genericId" value="{0C32563A-1E05-4BEC-9D8C-8D2571D3E491}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="e244eb54-90a2-4290-be42-36c2340bc162" name="Wheel, 3rd">
+          <attribute name="id" value="e244eb54-90a2-4290-be42-36c2340bc162"/>
+          <attribute name="genericId" value="d20ce0f2-d4c3-4c32-aa17-6f9caae35eba"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Rim, 3rd">
+      <internalElement name="base_0">
+        <internalElement iD="{00292D2D-8B80-4FF0-A17A-026850B02C68}" name="Rim, 3rd">
+          <attribute name="id" value="{00292D2D-8B80-4FF0-A17A-026850B02C68}"/>
+          <attribute name="genericId" value="{00292D2D-8B80-4FF0-A17A-026850B02C68}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="0bef7c21-b861-41b2-9902-d979be9cdb66" name="Rim 3rd, 25-22.00/3.0">
+          <attribute name="id" value="0bef7c21-b861-41b2-9902-d979be9cdb66"/>
+          <attribute name="genericId" value="828ab9c8-c471-4d81-8680-53cce97defb6"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="a7481e11-3be0-4c65-9eed-1b46759b3d4e" name="Rim 3rd, 24*29/3">
+          <attribute name="id" value="a7481e11-3be0-4c65-9eed-1b46759b3d4e"/>
+          <attribute name="genericId" value="075cf929-8d4e-4517-8c42-f8b4a95d031e"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_3">
+        <internalElement iD="d7165a50-0ec3-4867-b811-4e8f72aa9216" name="Rim 3rd, 25-25.00/3.5">
+          <attribute name="id" value="d7165a50-0ec3-4867-b811-4e8f72aa9216"/>
+          <attribute name="genericId" value="edd66fd5-cc8d-44cb-a062-82b9191f5f84"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_4">
+        <internalElement iD="336c2f1d-e379-4a14-8218-696e58f822dd" name="Rim 3rd, 27*29/3">
+          <attribute name="id" value="336c2f1d-e379-4a14-8218-696e58f822dd"/>
+          <attribute name="genericId" value="f44fd78f-1655-4b37-8809-e1fad50afa0a"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Tire, 3rd">
+      <internalElement name="base_0">
+        <internalElement iD="{4B3D62CE-3BF0-4CBE-B99A-D28CFA3446AD}" name="Tire, 3rd">
+          <attribute name="id" value="{4B3D62CE-3BF0-4CBE-B99A-D28CFA3446AD}"/>
+          <attribute name="genericId" value="{4B3D62CE-3BF0-4CBE-B99A-D28CFA3446AD}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="85f0b9af-74ec-4c16-a464-1c339e47741a" name="Tire 3rd, 26,5R25">
+          <attribute name="id" value="85f0b9af-74ec-4c16-a464-1c339e47741a"/>
+          <attribute name="genericId" value="8a34d220-4283-444e-93eb-2dbb3b42da2b"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="7b1ae5ab-ebd1-4e36-a1e9-44ad5344b989" name="Tire 3rd, 775/65R29">
+          <attribute name="id" value="7b1ae5ab-ebd1-4e36-a1e9-44ad5344b989"/>
+          <attribute name="genericId" value="7edd20fa-c3df-439c-80aa-324a6f1baad1"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_3">
+        <internalElement iD="43bacba8-a05d-4283-b058-189640c1630b" name="Tire 3rd, 29,5R25">
+          <attribute name="id" value="43bacba8-a05d-4283-b058-189640c1630b"/>
+          <attribute name="genericId" value="5014110d-4dad-4f46-a1cb-e0e16feacc42"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_4">
+        <internalElement iD="130526ea-f492-4ad3-a207-5edfd9de3fde" name="Tire 3rd, 875/65R29">
+          <attribute name="id" value="130526ea-f492-4ad3-a207-5edfd9de3fde"/>
+          <attribute name="genericId" value="2847a08a-dc99-4821-abc7-641aa17eeae9"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Wheel, 2nd">
+      <internalElement name="base_0">
+        <internalElement iD="{56163C43-B8E6-4B62-AC65-E225BB9C934D}" name="Wheel, 2nd">
+          <attribute name="id" value="{56163C43-B8E6-4B62-AC65-E225BB9C934D}"/>
+          <attribute name="genericId" value="{56163C43-B8E6-4B62-AC65-E225BB9C934D}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="59aef039-1d0e-4c3f-b96f-60fa8dd4a159" name="Wheel, 2nd">
+          <attribute name="id" value="59aef039-1d0e-4c3f-b96f-60fa8dd4a159"/>
+          <attribute name="genericId" value="b47e36c9-b56a-4e24-95a8-a02a25189795"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Rim, 2nd">
+      <internalElement name="base_0">
+        <internalElement iD="{A7E7CD97-8EB0-4888-8D72-8780F9AB705D}" name="Rim, 2nd">
+          <attribute name="id" value="{A7E7CD97-8EB0-4888-8D72-8780F9AB705D}"/>
+          <attribute name="genericId" value="{A7E7CD97-8EB0-4888-8D72-8780F9AB705D}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="f749bd25-da26-4319-8c18-9659497d83cd" name="Rim 2nd, 25-22.00/3.0">
+          <attribute name="id" value="f749bd25-da26-4319-8c18-9659497d83cd"/>
+          <attribute name="genericId" value="0411abca-9564-47ac-a385-ff8c721f5ddb"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="307124ac-d49c-4c21-a99a-f2b3c33f5076" name="Rim 2nd, 24*29/3">
+          <attribute name="id" value="307124ac-d49c-4c21-a99a-f2b3c33f5076"/>
+          <attribute name="genericId" value="fc91a81b-884e-4c00-9231-086d1aa668ff"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_3">
+        <internalElement iD="d955f1b5-4efe-4223-bd8e-f6ae248f78a8" name="Rim 2nd, 25-25.00/3.5">
+          <attribute name="id" value="d955f1b5-4efe-4223-bd8e-f6ae248f78a8"/>
+          <attribute name="genericId" value="32679e74-17f6-47fc-a932-0abddc6d6653"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_4">
+        <internalElement iD="66297e87-8c4e-419d-af83-ddc98c969b39" name="Rim 2nd, 27*29/3">
+          <attribute name="id" value="66297e87-8c4e-419d-af83-ddc98c969b39"/>
+          <attribute name="genericId" value="37bfe8f6-0cda-4a21-bc44-cd96cc0120cd"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Tire, 2nd">
+      <internalElement name="base_0">
+        <internalElement iD="{43B39B97-FFE7-4F2D-B1B5-16EF4B91446B}" name="Tire, 2nd">
+          <attribute name="id" value="{43B39B97-FFE7-4F2D-B1B5-16EF4B91446B}"/>
+          <attribute name="genericId" value="{43B39B97-FFE7-4F2D-B1B5-16EF4B91446B}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="e2847f17-f1d0-4556-a711-2fccf1e69beb" name="Tire 2nd, 26,5R25">
+          <attribute name="id" value="e2847f17-f1d0-4556-a711-2fccf1e69beb"/>
+          <attribute name="genericId" value="588e508b-170c-46f3-8b3d-8ef06d01c523"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="2aefa400-1152-4028-9d32-41705c7864f2" name="Tire 2nd, 775/65R29">
+          <attribute name="id" value="2aefa400-1152-4028-9d32-41705c7864f2"/>
+          <attribute name="genericId" value="59af5673-fd4a-4408-b37b-f72dfe827f1e"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_3">
+        <internalElement iD="b5797faa-53dd-408f-a5ff-ec2a6fe5939c" name="Tire 2nd, 29,5R25">
+          <attribute name="id" value="b5797faa-53dd-408f-a5ff-ec2a6fe5939c"/>
+          <attribute name="genericId" value="86a1c1e8-1d80-4fd6-bac3-be4896da5544"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_4">
+        <internalElement iD="4e51904c-7774-4035-a7c3-0608515576f6" name="Tire 2nd, 875/65R29">
+          <attribute name="id" value="4e51904c-7774-4035-a7c3-0608515576f6"/>
+          <attribute name="genericId" value="750a21e1-8aeb-4db4-85d8-d89646517b68"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Rear frame">
+      <internalElement name="base_0">
+        <internalElement iD="{31D77854-9F83-4F92-A83D-6155BA8828A4}" name="Rear frame">
+          <attribute name="id" value="{31D77854-9F83-4F92-A83D-6155BA8828A4}"/>
+          <attribute name="genericId" value="{31D77854-9F83-4F92-A83D-6155BA8828A4}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="fed482dd-527a-4a41-865e-cfd47cfa6a71" name="Rear frame bogie">
+          <attribute name="id" value="fed482dd-527a-4a41-865e-cfd47cfa6a71"/>
+          <attribute name="genericId" value="10ae47fa-2764-47ab-9a81-c19a50bcce69"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="58661500-3098-4d71-8c79-fe0b6ccd5d7f" name="Rear frame HS">
+          <attribute name="id" value="58661500-3098-4d71-8c79-fe0b6ccd5d7f"/>
+          <attribute name="genericId" value="fd36f269-0866-495e-b1bf-128480b1ec46"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Reverse alarm">
+      <internalElement name="base_0">
+        <internalElement iD="{CE91B8E0-9631-44CD-8087-720CA2BD5BF0}" name="Reverse alarm">
+          <attribute name="id" value="{CE91B8E0-9631-44CD-8087-720CA2BD5BF0}"/>
+          <attribute name="genericId" value="{CE91B8E0-9631-44CD-8087-720CA2BD5BF0}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="b9f53927-786d-4d73-b520-8fd7fc93ca58" name="Reverse alarm audible">
+          <attribute name="id" value="b9f53927-786d-4d73-b520-8fd7fc93ca58"/>
+          <attribute name="genericId" value="6951d816-0d2e-4357-8552-02da8393bf05"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="1fb3254a-7746-4b07-860b-fa3ee73090de" name="Reverse alarm audible (white noise)">
+          <attribute name="id" value="1fb3254a-7746-4b07-860b-fa3ee73090de"/>
+          <attribute name="genericId" value="5f38e070-2f05-4901-b227-a06afa317de3"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Reverse light">
+      <internalElement name="base_0">
+        <internalElement iD="{F9EF6260-95D5-4BA5-BFA0-D65CD8A66F50}" name="Reverse light">
+          <attribute name="id" value="{F9EF6260-95D5-4BA5-BFA0-D65CD8A66F50}"/>
+          <attribute name="genericId" value="{F9EF6260-95D5-4BA5-BFA0-D65CD8A66F50}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="3a2dc01a-7162-49b5-8aaf-126d5506bed6" name="Reverse light single">
+          <attribute name="id" value="3a2dc01a-7162-49b5-8aaf-126d5506bed6"/>
+          <attribute name="genericId" value="29f11144-bef6-4239-b8f9-cde4b049172b"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="1a9a2aad-1f8e-4abb-9e37-1dac82e50419" name="Reverse light dubble">
+          <attribute name="id" value="1a9a2aad-1f8e-4abb-9e37-1dac82e50419"/>
+          <attribute name="genericId" value="a4afaaa9-4e1f-4692-8de0-6574b5b7a7e9"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Camera, rear">
+      <internalElement name="base_0">
+        <internalElement iD="{58E59B18-D927-469A-A724-50BCCC7ADF52}" name="Camera, rear">
+          <attribute name="id" value="{58E59B18-D927-469A-A724-50BCCC7ADF52}"/>
+          <attribute name="genericId" value="{58E59B18-D927-469A-A724-50BCCC7ADF52}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="5ce41dff-f2e9-44a1-a092-e1d8c5e74cf3" name="Camera, rear">
+          <attribute name="id" value="5ce41dff-f2e9-44a1-a092-e1d8c5e74cf3"/>
+          <attribute name="genericId" value="4e48afc6-124f-41f1-9042-5e3d3e2e1253"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Frame extension">
+      <internalElement name="base_0">
+        <internalElement iD="{46362314-8BB2-4987-AEF3-73FF04574925}" name="Frame extension">
+          <attribute name="id" value="{46362314-8BB2-4987-AEF3-73FF04574925}"/>
+          <attribute name="genericId" value="{46362314-8BB2-4987-AEF3-73FF04574925}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="620b83eb-ce51-4074-a24a-f18f61090e46" name="Frame extension">
+          <attribute name="id" value="620b83eb-ce51-4074-a24a-f18f61090e46"/>
+          <attribute name="genericId" value="68174655-403a-4703-8a5a-14c61dafcf5d"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Parking brake">
+      <internalElement name="base_0">
+        <internalElement iD="{27F166BB-8E8E-4407-A921-547E68883BBC}" name="Parking brake">
+          <attribute name="id" value="{27F166BB-8E8E-4407-A921-547E68883BBC}"/>
+          <attribute name="genericId" value="{27F166BB-8E8E-4407-A921-547E68883BBC}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="cc77ccc2-ed91-4197-ad5a-84d97287855f" name="Parking brake A35 A40">
+          <attribute name="id" value="cc77ccc2-ed91-4197-ad5a-84d97287855f"/>
+          <attribute name="genericId" value="e2d3d1f8-3557-43c5-be38-4de6c3f0804a"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="09ced708-6a33-43cc-a0ac-d0527be32ba2" name="Parking brake A45 A50">
+          <attribute name="id" value="09ced708-6a33-43cc-a0ac-d0527be32ba2"/>
+          <attribute name="genericId" value="2c47129f-2b85-4755-91d0-3163431621b2"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Brake cooling, rear">
+      <internalElement name="base_0">
+        <internalElement iD="{AAFE6D5C-5D7A-42D6-9F08-6800B739069C}" name="Brake cooling, rear">
+          <attribute name="id" value="{AAFE6D5C-5D7A-42D6-9F08-6800B739069C}"/>
+          <attribute name="genericId" value="{AAFE6D5C-5D7A-42D6-9F08-6800B739069C}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="2d304dd6-a37e-4929-9802-47bb671b37e8" name="Brake cooling, rear A35 A40 A45">
+          <attribute name="id" value="2d304dd6-a37e-4929-9802-47bb671b37e8"/>
+          <attribute name="genericId" value="6edd895f-8e31-4044-9f9f-a40a2e990a75"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="b5bc14ba-a154-4fb6-bd2f-f3c2105abcb4" name="Brake cooling, rear A50">
+          <attribute name="id" value="b5bc14ba-a154-4fb6-bd2f-f3c2105abcb4"/>
+          <attribute name="genericId" value="167b8740-9704-4350-a2f8-b699939a8c3c"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Bogie beam">
+      <internalElement name="base_0">
+        <internalElement iD="{297C6CEA-B777-4E91-8D72-22875A6F2099}" name="Bogie beam">
+          <attribute name="id" value="{297C6CEA-B777-4E91-8D72-22875A6F2099}"/>
+          <attribute name="genericId" value="{297C6CEA-B777-4E91-8D72-22875A6F2099}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="0f7f5d24-ff52-49a5-b71d-aea4ab6eedb9" name="Bogie beam without OBW">
+          <attribute name="id" value="0f7f5d24-ff52-49a5-b71d-aea4ab6eedb9"/>
+          <attribute name="genericId" value="cf8dc590-8d56-48d8-ab4f-b8f68be1b9c5"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="c0838f0a-1189-4546-8a4e-ba2f997ea167" name="Bogie beam with OBW">
+          <attribute name="id" value="c0838f0a-1189-4546-8a4e-ba2f997ea167"/>
+          <attribute name="genericId" value="53a8fdf0-0700-460c-a73a-e105d1432424"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+    <internalElement name="Brake line, rear">
+      <internalElement name="base_0">
+        <internalElement iD="{3539428B-F620-4A9A-BFF4-9A292EF3E838}" name="Brake line, rear">
+          <attribute name="id" value="{3539428B-F620-4A9A-BFF4-9A292EF3E838}"/>
+          <attribute name="genericId" value="{3539428B-F620-4A9A-BFF4-9A292EF3E838}"/>
+          <attribute name="origin" value="IFD"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_1">
+        <internalElement iD="641b893e-9582-42a7-a37f-0d8be90ed3ae" name="Brake lines, rear A35 A40 A45">
+          <attribute name="id" value="641b893e-9582-42a7-a37f-0d8be90ed3ae"/>
+          <attribute name="genericId" value="9d1eab30-ffc6-445d-81c7-ad307b095972"/>
+        </internalElement>
+      </internalElement>
+      <internalElement name="variant_2">
+        <internalElement iD="7c2c381b-8255-4ba1-9415-417b0eca4655" name="Brake lines, rear A50">
+          <attribute name="id" value="7c2c381b-8255-4ba1-9415-417b0eca4655"/>
+          <attribute name="genericId" value="58f4b015-d85b-45e8-98f6-e49848166cc3"/>
+        </internalElement>
+      </internalElement>
+    </internalElement>
+  </instanceHierarchy>
+</caex:CAEXFile>

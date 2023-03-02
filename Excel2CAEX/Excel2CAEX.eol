@@ -1,0 +1,143 @@
+"Loading libraries...".println();
+
+//load libraries
+
+
+"Create model root".println();
+var file : new CAEX!CAEXFile(fileName="VCE");
+var m : new CAEX!InstanceHierarchy(name="VCE");
+file.instanceHierarchy.add(m);
+
+"Generating model content...".println();
+
+
+// nesting classes
+var all_blocks : OrderedSet;
+
+var blocks1 : OrderedSet;
+var blocks2 : OrderedSet;
+var blocks3 : OrderedSet;
+var blocks4 : OrderedSet;
+
+
+for (row in Excel!Matrix.all) { 
+	
+	var id = row.ID;
+	var genericId= row.GenericID;
+
+	//var p_top : UML!Package;
+	var p_top : CAEX!InternalElement;
+
+	//p_top = m.packagedElements.selectOne(p|p.isTypeOf(UML!Package) and p.name == row.Name);
+	p_top = m.internalElement.selectOne(p|p.isTypeOf(CAEX!InternalElement) and p.name == row.Name);
+	if(p_top.isUndefined() and row.No == "0.0"){
+		//p_top = new UML!Package;
+		p_top = new CAEX!InternalElement;
+		p_top.name = row.Name;
+		//m.packagedElement.add(p_top);
+		p_top.println();
+		m.internalElement.add(p_top);
+	}
+	
+	//var p_variant : new UML!Package;
+	var p_variant : new CAEX!InternalElement;
+	
+	p_variant.name = row.No == "0.0"? 
+		"base_"+row.No:
+		"variant_"+row.No;
+		
+	p_variant.name = p_variant.name.substring(0, p_variant.name.length()-2); //removing decimal part from variant number.
+	//p_top.packagedElement.add(p_variant);
+	p_top.internalElement.add(p_variant);
+	
+	//var c : new UML!Class;
+	var c : new CAEX!InternalElement;
+	c.name = row.VariantName != "" ? 
+		(row.VariantName):
+		row.Name;
+
+		
+	//p_variant.packagedElement.add(c);
+	p_variant.internalElement.add(c);
+	
+	//Annotation: SysML
+	//c.applyStereotype(blockStereotype);
+	/*RoleRequirement to be added here*/
+	
+	all_blocks.add(c);
+	
+	//annotation: AML
+	//c.applyStereotype(sucStereotype);
+	
+	//annotation: VCE
+	//var typeStereotype = vceProfile.getPackagedElement(row.Type);
+	/*RoleRequirement to be added here*/
+
+	//the current Class is a Module or a DesignUnit, depending on the content of the Excel Sheet
+	//c.applyStereotype(typeStereotype);
+	/*RoleRequirement to be added here*/
+	
+	
+	//we can collect all the information from the spreadsheet for each CPS element using the VCE profile
+	//var cpsElement = c.applyStereotype(cpsElementStereotype); 
+	/* We create attributes instead */
+
+	//cpsElement.id = row.ID;
+	var cpsElement_id : new CAEX!Attribute;
+	c.iD = row.ID;
+	cpsElement_id.name = "id";
+	cpsElement_id.value = row.ID;
+	c.attribute.add(cpsElement_id);
+	
+	//cpsElement.genericId = row.GenericID;
+	var cpsElement_genericId : new CAEX!Attribute;
+	cpsElement_genericId.name = "genericId";
+	cpsElement_genericId.value = row.GenericID;
+	c.attribute.add(cpsElement_genericId);
+	
+	//cpsElement.origin ?= row.Origin;
+	if(not row.Origin.isUndefined()){
+		var cpsElement_origin : new CAEX!Attribute;
+		cpsElement_origin.name = "origin";
+		cpsElement_origin.value = row.Origin;
+		c.attribute.add(cpsElement_origin);	
+	}
+
+
+	"Variability modeling...".println();
+	
+	//cpsElement.no ?= row.No; 
+	if(not No.isUndefined()){
+		var cpsElement_no : new CAEX!Attribute;
+		cpsElement_no.name = "no";
+		cpsElement_no.value = row.No;
+		c.attribute.add(cpsElement_no);	
+	}
+	
+	/*skipped
+	//the baseVersion is identified by 0, variants No is greater than 0.
+ 	if(cpsElement.no.asFloat() > 0){
+ 		"via VEL annotations".println();
+ 		var velOptionalStructuralVariationPoint = c.applyStereotype(velOptionalStructuralVariationPointStereotype);
+ 		all_blocks.add(c); // add the class to the set of base elements
+ 		
+ 		"via VCE annotations".println();
+ 		//given the identified variant..
+ 		var variant = c.applyStereotype(variantStereotype); 
+ 		//..we look for the corresponding base version of the variant Design Unit element (= an annotated UML Class)
+ 		var elements : Sequence = m.getPackagedElements().asSequence(); 
+ 		var designUnitsClasses : Sequence = elements.select(c|c.isTypeOf(UML!Class) and c.isDesignUnit()); 
+ 		//..as reported in the row.Name column in the spreadsheet 
+ 		var designUnitsClass = designUnitsClasses.selectOne(c|c.name == row.Name); 
+ 		//..if the base version exists the we establish the bidirectional association
+ 		if(not designUnitsClass.isUndefined()){
+ 			
+			variant.baseVersion = designUnitsClass.getStereotypeApplication(designUnitStereotype);	
+ 			
+ 		}
+ 	}
+ 	
+ 	*/
+
+}
+

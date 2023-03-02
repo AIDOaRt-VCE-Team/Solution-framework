@@ -1,97 +1,12 @@
-var umlTool : new Native("org.eclipse.epsilon.emc.uml.dt.UMLTool");
-
-"Loading profiles...".println();
-
-//registered
-"--SysML".println();
-var sysmlProfile = umlTool.getProfile("http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks");
-
-var activitiesProfile = sysmlProfile.getPackagedElement("Activities");
-var allocationsProfile = sysmlProfile.getPackagedElement("Allocations");
-var blocksProfile = sysmlProfile.getPackagedElement("Blocks");
-var constraintBlocksProfile = sysmlProfile.getPackagedElement("ConstraintBlocks");
-var deprecatedElementsProfile = sysmlProfile.getPackagedElement("DeprecatedElements");
-var modelElementsProfile = sysmlProfile.getPackagedElement("ModelElements");
-var portsAndFlowsProfile = sysmlProfile.getPackagedElement("PortsAndFlows");
-var requirementsProfile = sysmlProfile.getPackagedElement("Requirements");
-
-"--Ecore".println();
-var ecoreProfile = umlTool.getProfileFromPathmapUri("pathmap://UML_PROFILES/Ecore.profile.uml");
-
-//available in the same workspace
-"--AutomationML".println();
-var amlProfile = AML!Profile.all.first();
-"--Variability Exchange Language".println();
-var velProfile = VEL!Profile.all.first();
-"--Volvo Construction Equipment".println();
-var vceProfile = VCE!Profile.all.first();
-
 "Loading libraries...".println();
 
 //load libraries
-// Load the standard UML primitive types library
-"--UMLPrimitiveTypes".println();
-var libURI = UML.resource.uri.createURI("platform:/plugin/org.eclipse.uml2.uml.resources/libraries/UMLPrimitiveTypes.library.uml");
-var libResource = UML.resource.resourceSet.createResource(libURI);
-libResource.load(null);
-UML.resource.resourceSet.resources.add(libResource);
-libResource.println();
-
-// Load the SysML standard library
-"--SysML-Standard-Library".println();
-var sysmlLibURI = UML.resource.uri.createURI("platform:/plugin/org.eclipse.papyrus.sysml16_2.0.0.202203311810/resources/library/SysML-Standard-Library.uml");
-var sysmlLibResource = UML.resource.resourceSet.createResource(sysmlLibURI);
-sysmlLibResource.load(null);
-UML.resource.resourceSet.resources.add(sysmlLibResource);
-sysmlLibResource.println();
-
 
 
 "Create model root".println();
-var m : new UML!Model(name="VCE");
-
-"Applying profiles and loading stereotypes...".println();
-
-"--Ecore".println();
-m.applyProfile(ecoreProfile);
-
-"--SysML".println();
-m.applyProfile(sysmlProfile);
-
-m.applyProfile(activitiesProfile); // because SysML includes many profile packages
-m.applyProfile(allocationsProfile); // because SysML includes many profile packages
-m.applyProfile(blocksProfile); // because SysML includes many profile packages
-m.applyProfile(constraintBlocksProfile); // because SysML includes many profile packages
-m.applyProfile(deprecatedElementsProfile); // because SysML includes many profile packages
-m.applyProfile(modelElementsProfile); // because SysML includes many profile packages
-m.applyProfile(portsAndFlowsProfile); // because SysML includes many profile packages
-m.applyProfile(requirementsProfile); // because SysML includes many profile packages
-
-
-var blockStereotype = blocksProfile.getPackagedElement("Block");
-
-"--AutomationML".println();
-m.applyProfile(amlProfile);
-var sucStereotype = amlProfile.getPackagedElement("SUC");
-var extInterfaceStereotype = amlProfile.getPackagedElement("ExtI");
-
-"--Variability Exchange Language".println();
-m.applyProfile(velProfile);
-var velModelStereotype = velProfile.getPackagedElement("VariabilityExchangeModel");
-var velOptionalStructuralVariationPointStereotype = velProfile.getPackagedElement("OptionalStructuralVariationPoint");
-"--Volvo Construction Equipment".println();
-m.applyProfile(vceProfile);
-var cpsElementStereotype = vceProfile.getPackagedElement("CpsElement");
-var variantStereotype = vceProfile.getPackagedElement("Variant");
-var designUnitStereotype = vceProfile.getPackagedElement("Design Unit");
-var moduleStereotype = vceProfile.getPackagedElement("Module");
-
+var m : new CAEX!CAEXFile(name="VCE");
 
 "Generating model content...".println();
-
-m.applyStereotype(velModelStereotype);
-
-//collection of unique IDs from the Excel document
 
 
 // nesting classes
@@ -108,7 +23,8 @@ for (row in Excel!Matrix.all) {
 	var id = row.ID;
 	var genericId= row.GenericID;
 
-	var p_top : UML!Package;
+	//var p_top : UML!Package;
+	var p_top : CAEX!InstanceHierarchy;
 
 	p_top = m.packagedElements.selectOne(p|p.isTypeOf(UML!Package) and p.name == row.Name);
 	p_top.println();
@@ -118,7 +34,8 @@ for (row in Excel!Matrix.all) {
 		m.packagedElement.add(p_top);
 	}
 	
-	var p_variant : new UML!Package;
+	//var p_variant : new UML!Package;
+	var p_variant : new CAEX!InternalElement;
 	
 	p_variant.name = row.No == "0.0"? 
 		"base_"+row.No:
@@ -132,25 +49,8 @@ for (row in Excel!Matrix.all) {
 		(row.VariantName):
 		row.Name;
 
-	
+		
 	p_variant.packagedElement.add(c);
-
-
-	//add default mechanical ports
-	var port1 : new UML!Port;
-	port1.name = "input";
-	
-
-	var port2 : new UML!Port;
-	port2.name = "output";
-
-	
-	c.ownedAttribute.add(port1);
-	c.ownedAttribute.add(port2);
-
-	//apply ExtInterfaceStereotype
-	port1.applyStereotype(extInterfaceStereotype);
-	port2.applyStereotype(extInterfaceStereotype);
 	
 	//Annotation: SysML
 	c.applyStereotype(blockStereotype);
@@ -205,27 +105,17 @@ for (row in Excel!Matrix.all) {
 	blocks3 = all_blocks.select(b| not b.isVariant()).asOrderedSet();
 	blocks4 = all_blocks.select(b| not b.isVariant()).asOrderedSet();
 	
-
-	var block1_base;
-	var block2_base;
-	var block3_base;
-	var block4_base;
-	
-	var block1_variant;
-	var block2_variant;
-	var block3_variant;
-	var block4_variant;
-	
 for (row in Excel!Matrix.all) { 
-	block1_base = blocks1.selectOne(b|b.name==row.Level1 and not b.isVariant());
-	block2_base = blocks2.selectOne(b|b.name==row.Level2 and not b.isVariant());
-	block3_base = blocks3.selectOne(b|b.name==row.Level3 and not b.isVariant());
-	block4_base = blocks4.selectOne(b|b.name==row.Level4 and not b.isVariant());
+	var block1_base = blocks1.selectOne(b|b.name==row.Level1 and not b.isVariant());
+	var block2_base = blocks2.selectOne(b|b.name==row.Level2 and not b.isVariant());
+	var block3_base = blocks3.selectOne(b|b.name==row.Level3 and not b.isVariant());
+	var block4_base = blocks4.selectOne(b|b.name==row.Level4 and not b.isVariant());
 	
-	block1_variant = blocks1.selectOne(b|b.name==row.Level1 and b.isVariant());
-	block2_variant = blocks2.selectOne(b|b.name==row.Level2 and b.isVariant());
-	block3_variant = blocks3.selectOne(b|b.name==row.Level3 and b.isVariant());
-	block4_variant = blocks4.selectOne(b|b.name==row.Level4 and b.isVariant());
+	var block1_variant = blocks1.selectOne(b|b.name==row.Level1 and b.isVariant());
+	var block2_variant = blocks2.selectOne(b|b.name==row.Level2 and b.isVariant());
+	var block3_variant = blocks3.selectOne(b|b.name==row.Level3 and b.isVariant());
+	var block4_variant = blocks4.selectOne(b|b.name==row.Level4 and b.isVariant());
+	
 
 /*
 Association createAssociation(boolean end1IsNavigable,
@@ -242,7 +132,7 @@ Association createAssociation(boolean end1IsNavigable,
 */
 
 
-	if(not block2_variant.isUndefined() and false){
+	if(not block2_variant.isUndefined()){
 		var containmentAss = block1_base.createAssociation(true,
 	                              UML!AggregationKind#composite,//AggregationKind end1Aggregation,
 	                              block2_variant.name.toLowerCase().trim(),//java.lang.String end1Name,
@@ -256,11 +146,8 @@ Association createAssociation(boolean end1IsNavigable,
 	                              1);
 		//m.packagedElement.add(containmentAss);
 		//containmentAss.println();
-		block1_base.println();
-		block2_variant.println();
-		block1_base.nestedClassifier.add(block2_variant);
 	}
-	if (not block2_base.isUndefined() and false) {
+	if (not block2_base.isUndefined()) {
 		var containmentAss = block1_base.createAssociation(true,
 	                              UML!AggregationKind#composite,//AggregationKind end1Aggregation,
 	                              block2_base.name.toLowerCase().trim(),//java.lang.String end1Name,
@@ -274,11 +161,10 @@ Association createAssociation(boolean end1IsNavigable,
 	                              1);
 		//m.packagedElement.add(containmentAss);
 		//containmentAss.println();
-		
 	}
 	
 	
-	if(not block3_variant.isUndefined() and false){
+	if(not block3_variant.isUndefined()){
 		var containmentAss = block2_base.createAssociation(true,
 	                              UML!AggregationKind#composite,//AggregationKind end1Aggregation,
 	                              block3_variant.name.toLowerCase().trim(),//java.lang.String end1Name,
@@ -293,7 +179,7 @@ Association createAssociation(boolean end1IsNavigable,
 		//m.packagedElement.add(containmentAss);
 		//containmentAss.println();
 	}
-	if (not block3_base.isUndefined() and false) {
+	if (not block3_base.isUndefined()) {
 		var containmentAss = block2_base.createAssociation(true,
 	                              UML!AggregationKind#composite,//AggregationKind end1Aggregation,
 	                              block3_base.name.toLowerCase().trim(),//java.lang.String end1Name,
@@ -309,7 +195,7 @@ Association createAssociation(boolean end1IsNavigable,
 		//containmentAss.println();
 	}
 
-	if(not block4_variant.isUndefined() and false){
+	if(not block4_variant.isUndefined()){
 		var containmentAss = block3_base.createAssociation(true,
 	                              UML!AggregationKind#composite,//AggregationKind end1Aggregation,
 	                              block3_variant.name.toLowerCase().trim(),//java.lang.String end1Name,
@@ -324,7 +210,7 @@ Association createAssociation(boolean end1IsNavigable,
 		//m.packagedElement.add(containmentAss);
 		//containmentAss.println();
 	}
-	if (not block4_base.isUndefined() and false) {
+	if (not block4_base.isUndefined()) {
 		var containmentAss = block3_base.createAssociation(true,
 	                              UML!AggregationKind#composite,//AggregationKind end1Aggregation,
 	                              block4_base.name.toLowerCase().trim(),//java.lang.String end1Name,
@@ -342,19 +228,8 @@ Association createAssociation(boolean end1IsNavigable,
 
 }
 
-//"blocks1".println();
-for (e in blocks1) { 
-   if(false)e.name.println();
-}
 
-"block1_base".println();
-for (e in block1_base) { 
-   if(true)e.name.println();
-}
-"block1_variant".println();
-for (e in block1_variant) { 
-   if(true)e.name.println();
-}
+
 "DONE".println();
 	blocks1.println();
 	blocks2.println();

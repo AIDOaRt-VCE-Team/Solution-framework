@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<caex:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:caex="http://www.dke.de/CAEX/300" fileName="AIDOaRt_Hackaton_ART-NG">
+  <instanceHierarchy name="AIDOaRt_Hackaton_ART-NGIH">
+    <internalElement name="DumperBobyUnit" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0">
+      <attribute name="serialNumber" attributeDataType="Integer"/>
+      <internalElement name="Wearplate" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0/@systemUnitClass.0">
+        <attribute name="serialNumber" attributeDataType="String"/>
+        <attribute name="fgiCaf" attributeDataType="String"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m1" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      </internalElement>
+      <internalElement name="Spillguard" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0/@systemUnitClass.1">
+        <attribute name="serialNumber" attributeDataType="String"/>
+        <attribute name="fgiCaf" attributeDataType="String"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m1" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      </internalElement>
+      <internalElement name="Tailgate" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0/@systemUnitClass.2">
+        <attribute name="serialNumber" attributeDataType="String"/>
+        <attribute name="fgiCaf" attributeDataType="String"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m1" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m2" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      </internalElement>
+      <internalElement name="BodyAttachment" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0/@systemUnitClass.3">
+        <attribute name="serialNumber" attributeDataType="String"/>
+        <attribute name="fgiCaf" attributeDataType="String"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m1" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m2" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      </internalElement>
+      <internalElement name="DumperBody" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0/@systemUnitClass.4">
+        <attribute name="serialNumber" attributeDataType="String"/>
+        <attribute name="fgiCaf" attributeDataType="String"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m1" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m2" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m3" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m4" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m5" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m6" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m7" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m8" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      </internalElement>
+      <internalElement name="BodySideExtension" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0/@systemUnitClass.5">
+        <attribute name="serialNumber" attributeDataType="String"/>
+        <attribute name="fgiCaf" attributeDataType="String"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m1"/>
+      </internalElement>
+      <internalElement name="TailLight" baseSystemUnit="//@systemUnitClassLib.0/@systemUnitClass.0/@systemUnitClass.6">
+        <attribute name="serialNumber" attributeDataType="String"/>
+        <attribute name="fgiCaf" attributeDataType="String"/>
+        <externalInterface xsi:type="caex:ExternalInterface" name="m1" baseClass="//@interfaceClassLib.0/@interfaceClass.0"/>
+      </internalElement>
+    </internalElement>
+  </instanceHierarchy>
+  <interfaceClassLib name="AIDOaRt_Hackaton_ART-NGICLib">
+    <interfaceClass name="Mechanical"/>
+  </interfaceClassLib>
+  <roleClassLib name="AIDOaRt_Hackaton_ART-NGRCLib">
+    <roleClass name="MandatoryDesignUnit"/>
+    <roleClass name="DesignUnitWithVariants"/>
+    <roleClass name="OptionalDesignUnit"/>
+    <roleClass name="DesignUnit"/>
+    <roleClass name="PrimarySystem"/>
+    <roleClass name="SecondarySystem"/>
+  </roleClassLib>
+  <systemUnitClassLib name="AIDOaRt_Hackaton_ART-NGSUCLib">
+    <systemUnitClass name="DumperBobyUnit">
+      <systemUnitClass name="Wearplate"/>
+      <systemUnitClass name="Spillguard"/>
+      <systemUnitClass name="Tailgate"/>
+      <systemUnitClass name="BodyAttachment"/>
+      <systemUnitClass name="DumperBody"/>
+      <systemUnitClass name="BodySideExtension"/>
+      <systemUnitClass name="TailLight"/>
+    </systemUnitClass>
+  </systemUnitClassLib>
+</caex:CAEXFile>

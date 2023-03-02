@@ -1,0 +1,112 @@
+pre {
+	"Running ETL".println();
+	var caexFile = new CAEX30!CAEXFile;
+	caexFile.fileName="caex_model";
+	var iH= new CAEX30!InstanceHierarchy;
+	iH.name="test_name";
+	var umlTool : new Native("org.eclipse.epsilon.emc.uml.dt.UMLTool");
+	var sysmlProfile = umlTool.getProfile("http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks");
+	
+	var activitiesProfile = sysmlProfile.getPackagedElement("Activities");
+	var allocationsProfile = sysmlProfile.getPackagedElement("Allocations");
+	var blocksProfile = sysmlProfile.getPackagedElement("Blocks");
+	var constraintBlocksProfile = sysmlProfile.getPackagedElement("ConstraintBlocks");
+	var deprecatedElementsProfile = sysmlProfile.getPackagedElement("DeprecatedElements");
+	var modelElementsProfile = sysmlProfile.getPackagedElement("ModelElements");
+	var portsAndFlowsProfile = sysmlProfile.getPackagedElement("PortsAndFlows");
+	var requirementsProfile = sysmlProfile.getPackagedElement("Requirements");
+
+//	var amlProfile = AML!Profile.all.first();
+	
+	var blockStereotype = blocksProfile.getPackagedElement("Block");
+//	var sucStereotype = amlProfile.getPackagedElement("SUC");
+	
+}
+
+post{
+	caexFile.instanceHierarchy.add(iH);
+}
+
+	
+
+rule SysML2CAEX
+	transform s : UML!Class 
+	to  ie: CAEX30!InternalElement{
+		guard : s.hasStereotypes(blockStereotype)
+		("Class name ... "+s.name).println();
+		ie.name= s.name;
+		iH.internalElement.add(ie);
+		for(el in s.nestedClassifier){
+			("inner element :: "+el.name).println();
+		}
+		for(prp in s.ownedAttribute){
+//			("ownedAttribute _____ "+prp.name).println();
+//			("ownedAttribute type >>>>>>>>>>>>> "+prp.EClass.name).println();
+//			("ownedAttribute >_> "+prp).println();
+			if (prp.EClass.name="Property"){
+				var attr= new CAEX30!Attribute;
+				attr.name = prp.name;
+				attr.attributeDataType= prp.type.name;
+				ie.attribute.add(attr);
+			} else if (prp.EClass.name="Port"){
+				("Port type >_> "+prp).println();
+				var port=new CAEX30!ExternalInterface;
+				port.name = prp.name;
+				ie.externalInterface.add(port);
+			}
+		}
+		for (c in s.ownedConnector){
+			("Connector type >_> "+c).println();
+			var link=new CAEX30!InternalLink;
+			link.name = c.name;
+			link.addInternalLinkPartners(c);
+			ie.internalLink.add(link);
+		}
+}
+	
+operation Any hasStereotypes(r : Any) {
+	if (self.getAppliedStereotypes().first().isDefined()){
+		if (self.getAppliedStereotypes().first().name = r.name)
+			return true;
+		else return false;
+	}
+	return true;
+}
+
+operation Any addInternalLinkPartners(c : Any) {
+	var temp = c.end;
+	self.refPartnerSideA=temp.first().partWithPort.name;
+	("->RefPartnerSideA of "+self.name+"("+temp.first().partWithPort.name+") is added!").println();
+	self.refPartnerSideB=temp.second().partWithPort.name;	
+	("->RefPartnerSideB of "+self.name+"("+temp.second().partWithPort.name+") is added!").println();
+}
+
+
+
+operation Any appendEquivalentsOfChildrenOf(source : Any) {	
+	for (child in source) {
+			//('--child lvl 0: ['+child.name+"] is child of -> "+ self).println();
+			("+++++++-self :"+self).println();
+			("+++++++source :"+child+" <---> "+source).println();
+			//self.packagedElement.add(source.first());
+//			('inner child is: '+child.internalElement.notEmpty()).println();
+			self.internalElement.add(child);
+//			self.appendEquivalentsOfChildrenOf(ch);
+//			if(child.packageElement.notEmpty()){
+//				("-------+self :"+self).println();
+//				("-------source :"+child.first()+" <---> "+source.first()).println();
+//				//source.first().packagedElement ::=child.first();
+//				//('child.internalElement is::: ['+child.internalElement+"]--- "+self).println();
+//				for (ch in child.internalElement) {
+//					//('--child  lvl 1: ['+ch.name+"] is child of -> "+self).println();
+//					//("******self :"+ch+" <---> "+child.internalElement).println();
+//					//self.packagedElement.add(source.internalElement.first());
+//					self.internalElement ::=ch;
+//					self.appendEquivalentsOfChildrenOf(ch);
+//				}
+//			}
+		}
+}
+
+
+
