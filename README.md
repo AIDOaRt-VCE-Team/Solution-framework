@@ -25,10 +25,14 @@ The approach enable the capabilities depicted in the folloowing Use Case Diagram
 
 ![ucd](https://user-images.githubusercontent.com/925612/222381595-0f88b93d-da94-4154-92b3-57efe3a3390d.png)
 
-
 The solution architecture is depcited in the following component diagram:
 
 <img width="1481" alt="architecture" src="https://user-images.githubusercontent.com/925612/222380745-9d2f59ca-4675-4895-b2e2-4b88d9a98bf9.png">
+
+The following figure shows an high-level workflow enabled by the proposed solution architecture.
+
+<img width="1148" alt="workflow" src="https://user-images.githubusercontent.com/925612/222382197-19f5c400-1c5d-4503-8475-f56b1da49118.png">
+
 
 In the following, we list internal and external links to repositories hosting the source codes of the integrated components:
 
