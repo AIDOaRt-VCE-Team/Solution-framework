@@ -21,18 +21,15 @@ All the resources, including the tools and the article, have been realized by:
 A demo video is able at this link: [https://1drv.ms/v/s!AmJxkbIYXF4KgZRZFJZnc17IrJ-fqw?e=TNeutf](https://1drv.ms/v/s!AmJxkbIYXF4KgZRZFJZnc17IrJ-fqw?e=TNeutf).
 
 ## Use cases and solution architecture
-The approach enable the capabilities depicted in the folloowing Use Case Diagram:
+The approach enables the capabilities depicted in the following Use Case Diagram:
+![UCD](https://github.com/AIDOaRt-VCE-Team/Solution-framework/assets/8625909/6da37eb7-f737-46dd-962f-60f418e7cb8d)
 
-![ucd](https://user-images.githubusercontent.com/925612/222381595-0f88b93d-da94-4154-92b3-57efe3a3390d.png)
+The solution architecture is depicted in the following component diagram:
+<img width="1338" alt="architecture" src="https://github.com/AIDOaRt-VCE-Team/Solution-framework/assets/8625909/abe22bb6-deca-4033-b88e-a002125469f0">
 
-The solution architecture is depcited in the following component diagram:
+The following figure shows a high-level workflow enabled by the proposed solution architecture.
 
-<img width="1481" alt="architecture" src="https://user-images.githubusercontent.com/925612/222380745-9d2f59ca-4675-4895-b2e2-4b88d9a98bf9.png">
-
-The following figure shows an high-level workflow enabled by the proposed solution architecture.
-
-<img width="1148" alt="workflow" src="https://user-images.githubusercontent.com/925612/222382197-19f5c400-1c5d-4503-8475-f56b1da49118.png">
-
+<img width="1648" alt="workflow" src="https://github.com/AIDOaRt-VCE-Team/Solution-framework/assets/8625909/1e29fbed-da3f-43fe-a114-07c2fd765dda">
 
 In the following, we list internal and external links to repositories hosting the source codes of the integrated components:
 
