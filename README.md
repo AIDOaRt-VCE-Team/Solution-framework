@@ -57,4 +57,5 @@ In the following, we list internal and external links to repositories hosting th
 
 - VIATRA Generator: [https://github.com/viatra/VIATRA-Generator](https://github.com/viatra/VIATRA-Generator)
 - EMF Random instantiator: [https://github.com/atlanmod/mondo-atlzoo-benchmark](https://github.com/atlanmod/mondo-atlzoo-benchmark/tree/master/fr.inria.atlanmod.instantiator)
+- LLM-based generator: [https://github.com/hepsycode/modelingOperationRec_ASE](https://github.com/hepsycode/modelingOperationRec_ASE)
 
